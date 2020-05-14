@@ -1,0 +1,318 @@
+<html>
+<head>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128206321-1"></script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128206321-1');
+</script>
+
+	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+		
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+</script>
+
+
+
+
+	
+<style>
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+	
+.column {
+  float: left;
+  width: 50%;
+}
+	
+.columnb {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+	
+	
+	
+	
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+	
+<div align='center' id='holder'></div>
+
+
+
+<div align='center' id='tool bar'></div>
+
+
+<div id='main'>
+
+
+
+<!-- BOOKS -->
+<div id='books'>
+
+<div id='bookPic'>
+<a href=''> <img src='img/Books.png' style="width: 85%; padding-left:20px;"></a>
+</div>
+
+<div id='bookDescription' style="padding-right:50px; padding-left:5px;" align='center'>
+<h1>Children Books</h1>
+
+<p>Bob the Bear and Friends</p>
+
+<div align='justify'>
+<p>I am working on a series of books centered around a bear Bob and his friends. The first in the series gives a friendly introduction for children to set theory made with my friend, mathematician and illustrator <a href="http://www2.math.ou.edu/~jrandich/">Joey Randich</a>. The second in the series "Bob and the Impossible Zoo" where Bob visits a zoo full of fun paradoxes. </p>
+</div>
+
+		
+<p></p>
+<br/>
+to see more click the picture or: <a href=''>See the Books!</a>
+          
+<br></br>
+ 
+</div>
+
+</div>
+
+
+
+<!-- SOFTWARE -->
+<div id='software'>
+
+<div id='softPic'>
+<a href=''> <img src='img/Software.png' style="width: 85%; padding-left:20px;"></a>
+</div>
+
+<div id='softDescription' style="padding-right:50px; padding-left:5px;" align='center'>
+<h1>Software and Games</h1>
+
+<p>Math Software and Games for all Ages</p>
+
+<div align='justify'>
+<p>I been developing a variety of games for the mathematics classrooms and homes. The games and activities are desinged for Pre-K up to AP Calculus.</p>
+</div>
+
+		
+<p></p>
+<br/>
+to try the game out just click the picture or: <a href=''>See the Games!</a>
+          
+<br></br>
+ 
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+	
+	
+<script type='text/javascript' src='scripts/windowSize.js'></script>
+
+<script type='text/javascript' src='scripts/menu.js'></script>
+
+
+
+
+
+<script>
+where='rs';
+
+
+
+var main=document.getElementById('main');
+
+
+var books=document.getElementById('books');
+var bookPic=document.getElementById('bookPic');
+var bookDescription=document.getElementById('bookDescription');
+
+
+var soft=document.getElementById('software');
+var softPic=document.getElementById('softPic');
+var softDescription=document.getElementById('softDescription');
+
+
+var mainStyle=document.createAttribute('style');
+
+
+var bookStyle=document.createAttribute('style');
+
+var bookClass=document.createAttribute('class');
+
+var bookPicClass=document.createAttribute('class');
+
+var bookDClass=document.createAttribute('class');
+
+var bookDStyle=document.createAttribute('style');
+
+var softClass=document.createAttribute('class');
+
+var softPicClass=document.createAttribute('class');
+
+var softDClass=document.createAttribute('class');
+
+
+var softDStyle=document.createAttribute('style');
+
+
+
+
+DrawBanner();
+
+
+DrawWindow();
+
+
+//RESIZE
+window.addEventListener("resize", resizer);
+
+
+function DrawWindow(){
+
+	var theMainSize='';
+		
+	var offset=main.offsetTop;
+	var p=h-offset;
+	
+	
+	mainStyle.value='height:'+p+'px; overflow-y:auto; overflow-x:hidden';
+			
+		
+	
+	main.setAttributeNode(mainStyle);
+	
+	
+	
+	//FULL SCREEN ON DESKTOP
+	if (w>=1058 && phoneNo()){
+		bookClass.value='row';
+		bookPicClass.value='column';
+		bookDClass.value='column';
+		
+		bookStyle.value='padding-top:25px';
+		
+		bookDStyle.value='padding-top:100px; padding-right:50px';
+		
+		softClass.value='row';
+		softPicClass.value='column';
+		softDClass.value='column';
+		
+		softDStyle.value='padding-top:100px; padding-right:50px';
+		
+		
+		books.setAttributeNode(bookClass);
+		books.setAttributeNode(bookStyle);
+		bookPic.setAttributeNode(bookPicClass);
+		bookDescription.setAttributeNode(bookDClass);
+		
+		bookDescription.setAttributeNode(bookDStyle);
+		
+		soft.setAttributeNode(softClass);
+		softPic.setAttributeNode(softPicClass);
+		softDescription.setAttributeNode(softDClass);
+		
+		softDescription.setAttributeNode(softDStyle);
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	//NOT FULL SCREEN 
+	if (w<1058){
+	
+	
+		bookClass.value='';
+		bookPicClass.value='';
+		bookDClass.value='';
+		
+		bookStyle.value='';
+		
+		bookDStyle.value='';
+		
+		softClass.value='';
+		softPicClass.value='';
+		softDClass.value='';
+		
+		softDStyle.value='';
+		
+		
+		books.setAttributeNode(bookClass);
+		books.setAttributeNode(bookStyle);
+		bookPic.setAttributeNode(bookPicClass);
+		bookDescription.setAttributeNode(bookDClass);
+		
+		bookDescription.setAttributeNode(bookDStyle);
+		
+		soft.setAttributeNode(softClass);
+		softPic.setAttributeNode(softPicClass);
+		softDescription.setAttributeNode(softDClass);
+		
+		softDescription.setAttributeNode(softDStyle);
+	
+		
+	
+	}
+	
+	
+
+
+}
+  
+ 
+	
+</script>
+	
+</body>
+
+</html>

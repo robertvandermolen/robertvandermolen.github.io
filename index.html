@@ -40,11 +40,8 @@ html {
     overflow-y: hidden;
     overflow-x: hidden;
 }
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-	
+
+
 .column {
   float: left;
   width: 50%;
@@ -89,96 +86,95 @@ html {
 
 
 
-<div id='filler'></div>
+<div id='main' align='center'>
+
+
+<div id='mainPic' align='left'><div style="padding-top:9px"><img src="img/me_serious.png" style="width:100%" id='mainmainPic'></div></div>
 
 
 
-<div  id='main'>
-	<p></p>
-		
-	<div >
-		
-	<div class='row'  id='poop' >
-			
-			<div class='columnb' align='center' id='mainpic' >
-	<img src="img/me_serious.png" style="width:75%" id='mainmainPic'>
+<div id='content' >
+
+<div id='contentHolder'>
+
+<!-- PADDING -->
+<div align='center' id='padder' style="padding-right:50px; padding-left:5px; padding-top:9px">
+
+
+
+
+<!-- ABOUT SECTION  -->
+<h3 class="mb-0">About</h3>
+<div align='justify'>
+<p>I am an assistant professor of mathemtatics in the Department of Science and Mathematics at <a href='http://smwc.edu'>Saint Mary-of-the-Woods College</a>. I received my PhD in mathematics from the <a href='http://math.sc.edu'>University of South Carolina</a> under the supervision of <a href='http://people.math.sc.edu/ballard/'>Dr. Matthew Ballard</a>. I received my undergraduate and masters degree in mathematics from the <a href='http://cofc.edu'>College of Charleston</a>. My master's thesis was completed under the supervision of Dr. Oleg Smirnov. Also at the College of Charleston I was funded by the NSF under the supervision of <a href='http://langvillea.people.cofc.edu/'>Dr. Amy Langville</a> dealing with applications to demographic searches with clique partionting and operations research.</p>
 </div>
-			<div class='column'   id='content'>
-			<div align='center' style="padding-right:50px; padding-left:50px ">
-            <h3 class="mb-0">About</h3>
-                        <div align='justify'>
-            <p>I am an assistant professor of mathemtatics in the Department of Science and Mathematics at <a href='http://smwc.edu'>Saint Mary-of-the-Woods College</a>. I received my PhD in mathematics from the <a href='http://math.sc.edu'>University of South Carolina</a> under the supervision of <a href='http://people.math.sc.edu/ballard/'>Dr. Matthew Ballard</a>. I received my undergraduate and masters degree in mathematics from the <a href='http://cofc.edu'>College of Charleston</a>. My master's thesis under the supervision of Dr. Oleg Smirnov. Also at the College of Charleston I was funded by NSF through a grant from <a href='http://langvillea.people.cofc.edu/'>Dr. Amy Langville</a> to develop models for applications to demographic searches with clique partionting and operations research.</p>
-			</div>
-			
-			 <h3 class="hb-0">Teaching</h3>
-			 <p>Click for <a href="teaching.html"> More Details</a> about past and present classes</p>
-			 <div align='justify'>
-            <p>This semester (Fall 2020) I am teaching MA... Click for the  <a href=''>syllabus</a> 
-            </p>
-            
-            <img src="img/schedule_fall_2020.jpg" align='center' style="width:100%" id='mainmainPic'>
-            
-			</div>
-			
-         
-			<h3 class="mb-0">Research Interests</h3>
-			<div align='justify'>
-            <p>My research interests include algebra and algebraic geometry. In particular, I am interested in algebraic groups, Lie algebras, hom-Lie algebras, geometric invariant theory, reductive groups, toric varieties, derived geometry, and graded algebras.</p>
-			</div>
-			
-			
-			
-			
-			<p></p>
-			
-			
-            <h3 class="mb-0" href="">Papers/Preprints</h3>
-			<p> Click for <a href="papers.html"> More Details</a> on my research</p>
-			<div align='justify'>
-            <p> Kernels for Grassmannian Flops <a href="grassker.pdf">(pre-print)</a> </p>
-            <p> Universal Embedding of Hom-Lie Triple Systems <a href="preprinthomlie.pdf">(pre-print)</a></p>
-            <p>Bounded Operators on a Hilbert Space with finite $\mathbb{Z}$-grading <a href="https://search.proquest.com/docview/1530298602">(Master Thesis)</a></p>
-			</div>
-            
-			
-		
 
 
 
-			<h3 class="mb-0">Organizational</h3>
-			<div align='justify'>
-            stuff here?
-			</div>
-           
-            <h3 class="mb-0">Personal</h3>
-			<div align='justify'>
-            <p>My personal interests include mathematics education, philosophy, Turntablilism, and writing <a href="joy.html">Children's Math Books</a>.</p>
-			</div>
+
+<!-- TEACHING -->
+<h3 class="hb-0">Teaching</h3>
+<p>Click for <a href="teaching.html"> More Details</a> about past and present classes</p>
+<div align='justify'>
+<p>This semester (Fall 2020) I am teaching MA... Click for the  <a href=''>syllabus</a></p>
             
-            <h3 class="mb-0">Contact</h3>
-            <p>Email: robertv(at)smwc(dot)edu</p>
-            <p>Office: Hulman Hall #306</p>
+<img src="img/schedule_fall_2020.jpg" align='center' style="width:100%" id='mainmainPic'>
+
+<p></p>
+</div>
+
+
+
+
+<!-- RESEARCH -->
+<h3 class="mb-0">Research Interests</h3>
+<div align='justify'>
+<p>My research interests include algebra and algebraic geometry. In particular, I am interested in algebraic groups, Lie algebras, hom-Lie algebras, geometric invariant theory, reductive groups, toric varieties, derived geometry, and graded algebras.</p>
+</div>
+
+
+
+
+
+<!-- PAPERS -->
+<h3 class="mb-0" href="">Papers/Preprints</h3>
+<p> Click for <a href="papers.html"> More Details</a> on my research</p>
+<div align='justify'>
+<p> Kernels for Grassmannian Flops <a href="grassker.pdf">(pre-print)</a> </p>
+<p> Universal Embedding of Hom-Lie Triple Systems <a href="preprinthomlie.pdf">(pre-print)</a></p>
+<p>Bounded Operators on a Hilbert Space with finite $\mathbb{Z}$-grading <a href="https://search.proquest.com/docview/1530298602">(Master Thesis)</a></p>
+</div>
+            
+
+
+
+
+<!-- CONTACT -->
+<h3 class="mb-0">Contact</h3>
+<p>Email: Robert.Vandermolen(at)smwc(dot)edu</p>
+<p>Office: Hulman Hall #306</p>
           
 
-     
+<p>
+<a href="noether.html" class="mr-2 mb-2">Collected works of mine from #Noethember celebrating the life and career of Emmy Noether.</a>
+</p>
 
-	   
-	           <p>
-          <a href="noether.html" class="mr-2 mb-2">Collected works of mine from #Noethember celebrating the life and career of Emmy Noether.</a>
-       </p>
-<p></p>
-</br>
-</div>
+
+
 </div>
 
 
-		
-	
-	</div>
-	</div>
-	
-	
-	
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
 	
 	
 	
@@ -186,13 +182,47 @@ html {
 <script type='text/javascript' src='scripts/windowSize.js'></script>
 
 <script type='text/javascript' src='scripts/menu.js'></script>
+
+
+
 	
 <script>
+
+
 	
+	
+	
+	where='abt';
+	
+	
+	var main=document.getElementById('main');
+	var pic=document.getElementById('mainPic');
+	var thePic=document.getElementById('mainmainPic');
+	var cont=document.getElementById('content');
+	var contHold=document.getElementById('contentHolder');
+	var padder=document.getElementById('padder');
+	
+	
+	
+	var mainStyle=document.createAttribute('style');
+	var mainClass=document.createAttribute('class');
+	
+	
+	var picClass=document.createAttribute('class');
+	
+	var theStyle=document.createAttribute('style');
+	
+	var contClass=document.createAttribute('class');
+	var contStyle=document.createAttribute('style');
+	
+	var padStyle=document.createAttribute('style');
+
 	
 		
 	
 	DrawBanner();
+	
+	DrawWindow();
 	
 	
 		
@@ -201,60 +231,94 @@ html {
 	
 	
 	
-							
-	//FUNCTIONS
 	
+	
+	function DrawWindow(){
+	
+		var theMainSize='';
+		
+		var offset=main.offsetTop;
+		var p=h-offset;
+	
+		//FULL SCREEN ON DESKTOP
+		if (w>=1058 && phoneNo()){
+			
+			mainClass.value='row';
+			contClass.value='column';
+			picClass.value='columnb';
+			theStyle.value='height:'+0.98*p+'px; padding-left:25px;';
+			contStyle.value='height:'+p+'px; overflow-y:auto;';
+			
+			padStyle.value="padding-right:50px; padding-left:5px; padding-top:9px"
+			
+			
+			main.setAttributeNode(mainClass);
+			
+			contHold.setAttributeNode(contStyle);
+			cont.setAttributeNode(contClass);
+			
+			
+			pic.setAttributeNode(picClass);
+			thePic.setAttributeNode(theStyle);
+			
+			padder.setAttributeNode(padStyle);
+			
+			
+			
+			theMainSize='big';
+			
+			console.log('left pic right text');
+			
+			
+		}
+		
+		//NOT FULL SCREEN
+		if (w<1058){
+		
+			mainStyle.value='height:'+p+'px; overflow-y:auto;';
+			
+			mainClass.value='';
+			contClass.value='';
+			picClass.value='';
+			theStyle.value='width:100%';
+			contStyle.value='';
+			
+			padStyle.value="padding-right:50px; padding-left:50px; padding-top:9px"
+			
+			
+			main.setAttributeNode(mainClass);
+			main.setAttributeNode(mainStyle);
+			
+			contHold.setAttributeNode(contStyle);
+			cont.setAttributeNode(contClass);
+			
+			
+			pic.setAttributeNode(picClass);
+			thePic.setAttributeNode(theStyle);
+			
+			padder.setAttributeNode(padStyle);
+			
+			
+			theMainSize='med';
+			
+			
+			console.log('straight up and down pic');
+			
+		}
 		
 		
-		
-	function phoneNo(){
-	if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		return false;
+	
+	
 	}
-	else{return true;}}
-	function phoneYes(){
-		if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		return true;
-	}}
 	
 	
 	
-	function clickSocial(e){
-		
-		var elemLeft= bruceBanner.offsetLeft;
-		var elemTop=bruceBanner.offsetTop;
 		
 		
-		
-		var x=e.clientX-elemLeft;
-		var y=e.clientY-elemTop;
-		var help=(167/1299)*(w-5);
-		
-		var peepx=w*.9;
-		var peepx2=w*.87;
-		
-		var peepy=(167/1299)*(w-5)*.5;
-		var peepy2=(167/1299)*(w-5)*.75;
-		
-		var pressx=w*.91;
-		var pressx2=w*.9508;
-		var pressy=help*.66;
-		var pressy2=help;
-		
-		
-		if (x<=peepx && peepx2<=x && y<=peepy2 && peepy<=y){
-			window.open('https://twitter.com/algebrasnotwar?ref_src=twsrc%5Etfw');
-		};
-		
-		if (x<=pressx2 && pressx<=x && help*.66<=y){
-			window.open('https://algebraiccafe.wordpress.com/');
-		};
 		
 	
-		
-	}
 	
-	</script>
+</script>
  
 </body>
 

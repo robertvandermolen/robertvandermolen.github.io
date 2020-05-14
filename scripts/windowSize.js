@@ -22,5 +22,8 @@ function resizer(){
 		
 	DrawBanner();
 	
+	DrawWindow();
+	
+	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
