@@ -157,11 +157,11 @@ function DrawBanner(){
 	
 	if(theSize!='sm'){
 		srcBtn.addEventListener('click',function(){
-			window.open("http://people.math.sc.edu/robertv/papers.html", "_self");
+			window.open("research.html", "_self");
 			//console.log('worked')
 		});
 		teachBtn.addEventListener('click',function(){
-			window.open("http://people.math.sc.edu/robertv/teaching.html", "_self");
+			window.open("teach.html", "_self");
 			//console.log('worked')
 		});
 
