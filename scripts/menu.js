@@ -150,7 +150,7 @@ function DrawBanner(){
 		console.log('worked')
 	});
 	cvBtn.addEventListener('click',function(){
-		window.open("http://people.math.sc.edu/robertv/vitae.html", "_self");
+		window.open("vitae.html", "_self");
 		//console.log('worked')
 	});
 	
