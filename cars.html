@@ -1,0 +1,977 @@
+<html>
+	
+<head>
+	
+	
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	
+
+<style>
+body {
+	
+	font-family: 'Roboto';font-size: 22px;	
+	
+    max-width: 100%;
+    overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+	
+#myProgress {
+  width: 100%;
+  background-color: white;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: blue;
+  text-align: center
+  line-height: 30px;
+  color: white;
+}
+	
+			.container { 
+  height: 200px;
+  position: relative;
+ 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+	
+	
+	
+<body>
+
+
+
+<!-- WHERE EVERYTHING SHOWS UP -->
+<div id='main' align='center'></div>
+<div id='rando' align='center'></div>
+
+
+
+
+
+<script>
+
+	window.addEventListener('keypress',easterEgg);
+	var hiddenMessage='';
+	
+	
+	
+	//THE STANDARD VARIABLES (FOR WINDOW SIZE)
+	var w=window.innerWidth;
+	var H=window.innerHeight;
+	var h=H-H/10;
+	var minner=Math.min(w,h);
+	
+	//console.log('minner/4:'+minner/4);
+	
+	
+	var directionCount=3;
+
+	
+	
+	
+	var ongoingTouches=[];
+	
+	
+	
+	//SO WE CAN CHANGE WHAT SHOWS UP!
+	var Main=document.getElementById('main');
+	
+	var butt=document.getElementById('rando');
+	
+	
+	
+	
+	var appleSize=Math.min(w/8,h/5.5);
+	
+	
+	
+	var appleFirstSpace=(3*w/100);
+	
+	var appleTopSpace=(h-5*appleSize)/2;
+	
+	var appleSpace=0;
+	
+	
+	
+	var beenRando=[];
+	
+	
+	
+	//FOR DRAWING
+	var canvas;
+	var width;
+	var height;
+	var ctx;
+	var elemLeft;
+	var elemTop;
+	
+	//RED APPLES
+	var apple1X=appleFirstSpace;
+	var apple1Y=appleTopSpace;
+	var a1=0;
+	
+	var apple2X=appleSize+appleSpace+appleFirstSpace;
+	var apple2Y=appleTopSpace;
+	var a2=0;
+	
+	var apple3X=appleFirstSpace;
+	var apple3Y=appleSize+appleTopSpace;
+	var a3=0;
+	
+	var apple4X=appleSize+appleSpace+appleFirstSpace;
+	var apple4Y=appleSize+appleTopSpace;
+	var a4=0;
+	
+	
+	//GREEN APPLES
+	var apple5X=appleFirstSpace
+	var apple5Y=2*appleSize+appleTopSpace;
+	var a5=0;
+	
+	var apple6X=(appleSize+appleSpace+appleFirstSpace);
+	var apple6Y=2*appleSize+appleTopSpace;
+	var a6=0;
+	
+	var apple7X=appleFirstSpace;
+	var apple7Y=3*appleSize+appleTopSpace;
+	var a7=0;
+	
+	var apple8X=appleSize+appleSpace+appleFirstSpace;
+	var apple8Y=3*appleSize+appleTopSpace;
+	var a8=0;
+	
+	var apple9X=appleFirstSpace;
+	var apple9Y=4*appleSize+appleTopSpace;
+	var a9=0;
+	
+	var apple10X=appleSize+appleSpace+appleFirstSpace;
+	var apple10Y=4*appleSize+appleTopSpace;
+	var a10=0;
+	
+	
+	
+	Main.innerHTML='<div class="container"><div class="center" align="center"><h3>Game is Loading ... </h3></div></div><div class="container"><div class="center"><div class="spinner-border text-primary" style="width: 8rem; height: 8rem;" role="status"><span class="sr-only">Game is LOADING...  please wait...</span></div></div></div><div><br> <h3>Please Wait ...</h3> </div>';
+	
+	
+	
+	
+	
+	var car1=new Image();
+	var car2=new Image();
+	var car3=new Image();
+	var car4=new Image();
+	var car5=new Image();
+	var car6=new Image();
+	var car7=new Image();
+	var car8=new Image();
+	var car9=new Image();
+	var car10=new Image();
+	
+	
+	
+	car1.src='img/Car_001.png';
+	car1.onload=function(){
+	
+		car2.src='img/Car_002.png';
+		car2.onload=function(){
+		
+	
+		car3.src='img/Car_003.png';
+		car3.onload=function(){
+		
+		
+		car4.src='img/Car_004.png';
+		car4.onload=function(){
+		
+		car5.src='img/Car_005.png';
+		car5.onload=function(){
+		
+		car6.src='img/Car_006.png';
+		car6.onload=function(){
+		
+		car7.src='img/Car_007.png';
+		car7.onload=function(){
+		
+		car8.src='img/Car_008.png';
+		car8.onload=function(){
+		
+		car9.src='img/Car_009.png';
+		car9.onload=function(){
+		
+		car10.src='img/Car_010.png';
+		car10.onload=function(){
+		
+	
+		canvasSetUp();
+	
+		canvas.addEventListener('touchstart',Todrag);
+		canvas.addEventListener('mousedown',mouseTodrag);
+		
+		butt.innerHTML='<button type="button" class="btn btn-outline-primary" onclick="goRando()">Random Number:</button>';
+		drawGame();
+		
+		
+		}}}
+		
+		}}}}}}
+		
+	}
+	
+	function thePopulation(){
+	
+		
+		
+		for(j=0;j<10;j++){
+			if(j%2==0){
+				
+				drawRed(j+1, appleFirstSpace,Math.floor(j/2)*appleSize+appleTopSpace,appleSize,appleSize);
+			}
+			if(j%2==1){
+
+				drawRed(j+1, appleSize+appleSpace+appleFirstSpace,Math.floor(j/2)*appleSize+appleTopSpace,appleSize,appleSize);
+			}
+		}
+		
+		
+	}
+	
+	function goRando(){
+		var coocoo=true;
+		while(coocoo){
+			var numRando=Math.floor(Math.random() * 10)+1;
+			butt.innerHTML='<button type="button" class="btn btn-outline-primary" onclick="goRando()">Random Number:</button> '+numRando;
+			if(notInRando(numRando)){
+				coocoo=false;
+			}
+			if(beenRando.length==10){
+				coocoo=false;
+				butt.innerHTML='Population Used All Up!';
+			}
+		}
+		console.log(numRando);
+		beenRando.push(numRando);
+		console.log(beenRando);
+	}
+	
+	
+	function fixApples(WW,HH,ww,hh){
+		apple1X=apple1X/WW*ww;
+		apple1Y=apple1Y/HH*hh;
+		
+		apple2X=apple2X/WW*ww;
+		apple2Y=apple2Y/HH*hh;
+		
+		apple3X=apple3X/WW*ww;
+		apple3Y=apple3Y/HH*hh;
+		
+		apple4X=apple4X/WW*ww;
+		apple4Y=apple4Y/HH*hh;
+		
+		apple5X=apple5X/WW*ww;
+		apple5Y=apple5Y/HH*hh;
+		
+		apple6X=apple6X/WW*ww;
+		apple6Y=apple6Y/HH*hh;
+		
+		apple7X=apple7X/WW*ww;
+		apple7Y=apple7Y/HH*hh;
+		
+		apple8X=apple8X/WW*ww;
+		apple8Y=apple8Y/HH*hh;
+	}
+	
+	
+	function drawGame(){
+		//canvasSetUp();
+		cleanCanvas();
+		ctx.font = "30px Roboto";
+		ctx.fillStyle = "black";
+		ctx.fillText("Population", 10, 50);
+		
+		ctx.fillText("Sample", w-(30*5), 50);
+		
+		
+		
+		ctx.beginPath();
+		ctx.moveTo(w/2, 0);
+		ctx.lineTo(w/2, h);
+		ctx.stroke();
+		
+		
+		//DRAW RED APPLES
+		drawRed(1, apple1X,apple1Y,appleSize,appleSize);
+		drawRed(2, apple2X,apple2Y,appleSize,appleSize);
+		drawRed(3, apple3X,apple3Y,appleSize,appleSize);
+		drawRed(4, apple4X,apple4Y,appleSize,appleSize);
+		
+		//DRAW GREEN APPLES
+		drawRed(5, apple5X,apple5Y,appleSize,appleSize);
+		drawRed(6, apple6X,apple6Y,appleSize,appleSize);
+		drawRed(7, apple7X,apple7Y,appleSize,appleSize);
+		drawRed(8, apple8X,apple8Y,appleSize,appleSize);
+		
+		
+		drawRed(9, apple9X,apple9Y,appleSize,appleSize);
+		drawRed(10, apple10X,apple10Y,appleSize,appleSize);
+		
+		thePopulation()
+		
+		
+		//DRAW DIRECTIONS
+		ctx.fillStyle = "black";
+		
+		
+		canvas.addEventListener('touchstart',Todrag);
+		canvas.addEventListener('mousedown',mouseTodrag);
+	}
+	
+	
+	
+	function drawRed(c,a,b,ww,hh){
+		ctx.drawImage(eval('car'+c),a,b,ww,hh);
+	}
+	
+	
+	
+	//SET UP CANVAS 
+	function canvasSetUp(){
+		Main.innerHTML='<canvas id="myCanvas"></canvas>';
+		canvas=document.getElementById('myCanvas');
+		width = canvas.width=w;
+		height = canvas.height=h;
+		ctx = canvas.getContext('2d');	
+		//elemLeft=canvas.offsetLeft;
+		//elemTop=canvas.offsetTop;
+	}
+	
+	
+	
+	function cleanCanvas(){
+		ctx.beginPath();
+		ctx.rect(0,0,w,h);
+		ctx.fillStyle='white';
+		ctx.fill();
+		ctx.fillstyle='black';
+		
+		//drawGame();
+	}
+	
+	function mouseTodrag(e){
+		var nX=e.clientX;
+		var nY=e.clientY;
+		
+		
+		if (inApple(nX,nY)){
+			canvas.removeEventListener('mousedown',mouseTodrag);
+			canvas.addEventListener('mousemove',mousedrag);
+			canvas.addEventListener('mouseup',mousestop);
+		}
+		
+	}
+	
+	
+	
+	function Todrag(e){
+		e.preventDefault();
+		
+		if(directionCount>=2){
+			var touches=e.changedTouches
+			
+			
+			var nX;
+			var nY;
+			
+			for(i=0;i<touches.length;i++){
+			
+				nX=touches[i].pageX;
+				nY=touches[i].pageY;
+			
+				ongoingTouches.push(copyTouch(touches[i]));
+			}
+			
+			
+			if (inApple(nX,nY)){
+			canvas.removeEventListener('touchstart',Todrag);
+			canvas.addEventListener('touchmove',drag);
+			canvas.addEventListener('touchend',stop);
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	function inApple(xx,yy){
+	
+		
+		//return true;
+		
+		
+		if(xx<(apple1X+(appleSize/2))+(appleSize/2) && xx>(apple1X+(appleSize/2))-(appleSize/2) && yy<(apple1Y+(appleSize/2))+(appleSize/2) && yy>(apple1Y+(appleSize/2))-(appleSize/2)){
+			a1=1;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple2X+(appleSize/2))+(appleSize/2) && xx>(apple2X+(appleSize/2))-(appleSize/2) && yy<(apple2Y+(appleSize/2))+(appleSize/2) && yy>(apple2Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=1;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple3X+(appleSize/2))+(appleSize/2) && xx>(apple3X+(appleSize/2))-(appleSize/2) && yy<(apple3Y+(appleSize/2))+(appleSize/2) && yy>(apple3Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=1;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple4X+(appleSize/2))+(appleSize/2) && xx>(apple4X+(appleSize/2))-(appleSize/2) && yy<(apple4Y+(appleSize/2))+(appleSize/2) && yy>(apple4Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=1;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple5X+(appleSize/2))+(appleSize/2) && xx>(apple5X+(appleSize/2))-(appleSize/2) && yy<(apple5Y+(appleSize/2))+(appleSize/2) && yy>(apple5Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=1;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple6X+(appleSize/2))+(appleSize/2) && xx>(apple6X+(appleSize/2))-(appleSize/2) && yy<(apple6Y+(appleSize/2))+(appleSize/2) && yy>(apple6Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=1;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple7X+(appleSize/2))+(appleSize/2) && xx>(apple7X+(appleSize/2))-(appleSize/2) && yy<(apple7Y+(appleSize/2))+(appleSize/2) && yy>(apple7Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=1;
+			a8=0;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		
+		if(xx<(apple8X+(appleSize/2))+(appleSize/2) && xx>(apple8X+(appleSize/2))-(appleSize/2) && yy<(apple8Y+(appleSize/2))+(appleSize/2) && yy>(apple8Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=1;
+			a9=0;
+			a10=0;
+			return true;
+		}
+		if(xx<(apple9X+(appleSize/2))+(appleSize/2) && xx>(apple9X+(appleSize/2))-(appleSize/2) && yy<(apple9Y+(appleSize/2))+(appleSize/2) && yy>(apple9Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=1;
+			a10=0;
+			return true;
+		}
+		if(xx<(apple10X+(appleSize/2))+(appleSize/2) && xx>(apple10X+(appleSize/2))-(appleSize/2) && yy<(apple10Y+(appleSize/2))+(appleSize/2) && yy>(apple10Y+(appleSize/2))-(appleSize/2)){
+			a1=0;
+			a2=0;
+			a3=0;
+			a4=0;
+			a5=0;
+			a6=0;
+			a7=0;
+			a8=0;
+			a9=0;
+			a10=1;
+			return true;
+		}
+	}
+	
+	
+	function mousestop(e){
+		canvas.removeEventListener('mousemove',mousedrag);
+		canvas.removeEventListener('mouseup',mousestop);
+		
+		
+		
+		
+		greenIn();
+		canvas.addEventListener('mousedown',mouseTodrag);
+			
+		
+		
+	}
+	
+	
+	function stop(e){
+		canvas.removeEventListener('touchmove',drag);
+		canvas.removeEventListener('touchend',stop);
+		
+		
+		greenIn();
+		canvas.addEventListener('touchstart',Todrag);
+			
+		
+	}
+	
+	
+	function notInRando(c){
+	
+		doubleCheck=true;
+	
+		for(i=0;i<beenRando.length;i++){
+			if(beenRando[i]==c){
+				doubleCheck=false;
+			}
+		}
+		
+		return doubleCheck;
+		
+	}
+	
+	
+	
+	
+	
+	function greenIn(){
+	
+		
+		var halfW=w/2;
+		
+		for(j=0;j<10;j++){
+			//console.log(j+1+':')
+			//console.log(notInRando(j));
+			
+			if(eval('apple'+eval(j+1)+'X>'+halfW) && notInRando(j+1)){
+				
+				if(j%2==0){
+					eval('apple'+eval(j+1)+'X='+appleFirstSpace);
+				}
+				if(j%2==1){
+					eval('apple'+eval(j+1)+'X='+eval(appleSize+appleSpace+appleFirstSpace));
+				}
+				
+				
+				eval('apple'+eval(j+1)+'Y='+eval(Math.floor(j/2)*appleSize+appleTopSpace));
+				
+			}
+		}
+	
+		
+		drawGame();
+	}
+	
+	
+	
+	
+	
+	function mousedrag(e){
+		var x=e.clientX;
+		var y=e.clientY;
+		
+		if(a1==1){
+			apple1X=x-(appleSize/2);
+			apple1Y=y-(appleSize/2);
+		}
+		
+		if(a2==1){
+			apple2X=x-(appleSize/2);
+			apple2Y=y-(appleSize/2);
+		}
+		
+		if(a3==1){
+			apple3X=x-(appleSize/2);
+			apple3Y=y-(appleSize/2);
+		}
+		
+		
+		if(a4==1){
+			apple4X=x-(appleSize/2);
+			apple4Y=y-(appleSize/2);
+		}
+		
+		if(a5==1){
+			apple5X=x-(appleSize/2);
+			apple5Y=y-(appleSize/2);
+		}
+		
+		if(a6==1){
+			apple6X=x-(appleSize/2);
+			apple6Y=y-(appleSize/2);
+		}
+		
+		if(a7==1){
+			apple7X=x-(appleSize/2);
+			apple7Y=y-(appleSize/2);
+		}
+		
+		if(a8==1){
+			apple8X=x-(appleSize/2);
+			apple8Y=y-(appleSize/2);
+		}
+		if(a9==1){
+			apple9X=x-(appleSize/2);
+			apple9Y=y-(appleSize/2);
+		}
+		if(a10==1){
+			apple10X=x-(appleSize/2);
+			apple10Y=y-(appleSize/2);
+		}
+		
+		
+		//cleanCanvas();
+		//Main.innerHTML='';
+		//canvasSetUp();
+		drawGame();
+		//drawRed(x-minner/8,y-minner/8,minner/4,minner/4);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	function drag(e){
+	
+		e.preventDefault();
+		var x;
+		var y;
+		
+		var touches=e.changedTouches;
+	
+	
+	
+		for(i=0;i<touches.length;i++){
+		
+			ongoingTouches.push(copyTouch(touches[i]));
+			
+			
+			var idx = ongoingTouchIndexById(touches[i].identifier);
+			
+			
+			if(idx>=0){
+				x=ongoingTouches[idx].pageX;
+				y=ongoingTouches[idx].pageY;
+			
+				
+			
+			
+			
+				if(a1==1){
+					apple1X=x-(appleSize/2);
+					apple1Y=y-(appleSize/2);
+				}
+				
+				if(a2==1){
+					apple2X=x-(appleSize/2);
+					apple2Y=y-(appleSize/2);
+				}
+				
+				if(a3==1){
+					apple3X=x-(appleSize/2);
+					apple3Y=y-(appleSize/2);
+				}
+				
+				
+				if(a4==1){
+					apple4X=x-(appleSize/2);
+					apple4Y=y-(appleSize/2);
+				}
+				
+				if(a5==1){
+					apple5X=x-(appleSize/2);
+					apple5Y=y-(appleSize/2);
+				}
+				
+				if(a6==1){
+					apple6X=x-(appleSize/2);
+					apple6Y=y-(appleSize/2);
+				}
+				
+				if(a7==1){
+					apple7X=x-(appleSize/2);
+					apple7Y=y-(appleSize/2);
+				}
+				
+				if(a8==1){
+					apple8X=x-(appleSize/2);
+					apple8Y=y-(appleSize/2);
+				}
+				if(a9==1){
+					apple9X=x-(appleSize/2);
+					apple9Y=y-(appleSize/2);
+				}
+				if(a10==1){
+					apple10X=x-(appleSize/2);
+					apple10Y=y-(appleSize/2);
+				}
+				
+				
+				drawGame();
+			
+			}
+			
+			
+			ongoingTouches.splice(idx, 1, copyTouch(touches[i]));
+			
+			
+		}
+		
+		//cleanCanvas();
+		//Main.innerHTML='';
+		//canvasSetUp();
+		//drawGame();
+		//drawRed(x-minner/8,y-minner/8,minner/4,minner/4);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	window.addEventListener("resize", function(){
+		//UPDATE THE NEW SIZE OF WINDOW
+		
+		var oldW=w;
+		var oldH=h;
+		
+		
+		
+		w=window.innerWidth;
+		h=window.innerHeight;	
+		minner=Math.min(w,h);
+		
+		fixApples(oldW,oldH,w,h)
+		
+		drawGame();
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	function easterEgg(e){
+		if (hiddenMessage.length<3){
+			hiddenMessage=hiddenMessage+e.key;
+		}
+		else{
+			hiddenMessage='';
+		}
+		if (hiddenMessage=='win'){
+			//document.removeEventListener('click',startClick);
+			window.removeEventListener('keypress',easterEgg);
+			//inTest();
+			console.log('works');
+			win=1;
+			//drawGame();
+			stop();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	// STUFF FOR TOUCH....
+	
+	
+	function ongoingTouchIndexById(idToFind) {
+	  for (var i = 0; i < ongoingTouches.length; i++) {
+	    var id = ongoingTouches[i].identifier;
+	    
+	    if (id == idToFind) {
+	      return i;
+	    }
+	  }
+	  return -1;    // not found
+	}
+
+
+
+
+
+	
+	
+	function copyTouch({ identifier, pageX, pageY }) {
+	  return { identifier, pageX, pageY };
+	}
+		
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+	
+	
+	
+	
+</html>
