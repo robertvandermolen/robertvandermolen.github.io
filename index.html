@@ -398,7 +398,12 @@ html {
 			mainClass.value='row';
 			contClass.value='column';
 			picClass.value='columnb';
-			theStyle.value='width:'+0.5*w+'px; padding-left:25px;';
+			if(0.5*w<=h){
+				theStyle.value='width:'+0.5*w+'px; padding-left:25px; ';
+			}
+			if(0.5*w>h){
+				theStyle.value='width:'+0.98*p+'px; padding-left:25px; padding-top:'+(p-(0.98*p))/2+'px;';
+			}
 			contStyle.value='height:'+p+'px; overflow-y:auto;';
 			
 			padStyle.value="padding-right:50px; padding-left:5px; padding-top:9px"
@@ -411,7 +416,7 @@ html {
 			
 			
 			pic.setAttributeNode(picClass);
-			//thePic.setAttributeNode(theStyle);
+			thePic.setAttributeNode(theStyle);
 			
 			padder.setAttributeNode(padStyle);
 			
