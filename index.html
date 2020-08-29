@@ -398,10 +398,10 @@ html {
 			mainClass.value='row';
 			contClass.value='column';
 			picClass.value='columnb';
-			if(0.5*w<=h){
+			if(0.5*w<=0.98*p){
 				theStyle.value='width:'+0.5*w+'px; padding-left:25px; ';
 			}
-			if(0.5*w>h){
+			if(0.5*w>0.98*p){
 				theStyle.value='width:'+0.98*p+'px; padding-left:25px; padding-top:'+(p-(0.98*p))/2+'px;';
 			}
 			contStyle.value='height:'+p+'px; overflow-y:auto;';
