@@ -5,7 +5,7 @@ var h=window.innerHeight;
 
 var offset;
 
-console.log('yo');
+
 
 
 
