@@ -393,7 +393,7 @@ html {
 		var p=h-offset;
 	
 		//FULL SCREEN ON DESKTOP
-		if (w>=1932 && phoneNo()){
+		if (w>=1032 && phoneNo()){
 			
 			mainClass.value='row';
 			contClass.value='column';
@@ -407,11 +407,11 @@ html {
 			main.setAttributeNode(mainClass);
 			
 			contHold.setAttributeNode(contStyle);
-			cont.setAttributeNode(contClass);
+			cont.setAttributeNode(theStyle);
 			
 			
 			pic.setAttributeNode(picClass);
-			thePic.setAttributeNode(theStyle);
+			thePic.setAttributeNode(contStyle);
 			
 			padder.setAttributeNode(padStyle);
 			
@@ -424,7 +424,7 @@ html {
 		}
 		
 		//NOT FULL SCREEN
-		if (w<1932){
+		if (w<1032){
 			console.log('not full screen');
 			console.log('w: '+w);
 			mainStyle.value='height:'+p+'px; overflow-y:auto;';
