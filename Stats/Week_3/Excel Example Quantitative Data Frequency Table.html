@@ -18,39 +18,85 @@
 
 </head>
 <body style="font-family: verdana, sans-serif;font-size: 14px;">
+
+
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+function back(){
+	window.location.href = "Frequency%20Table%20Quantitative%20EXAMPLE.html";
+
+}
+
+function forward(){
+	window.location.href = "Now%20You%20Try!%20Frequency%20Tables.html";
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Excel Example</p><p> Frequency Table</p><p> (Quantitative Data)</p> </span></strong></h1>
+<hr/>
+</div>
+
+
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 1:</span></strong> Enter your data</span></h1>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_1.jpg" alt="step 1 excel frequency quantitative " title="step 1 excel frequency quantitative " style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_1.jpg" alt="step 1 excel frequency quantitative " title="step 1 excel frequency quantitative " style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 2:</span></strong> Create a row of 1's next to your data (this is how we will count them in the future) you can do this by typing one in a single cell then copying (CTRL+C) and pasting (CTRL+V) in the rest of the rows</span><span style="font-size: 14pt;"></span></h1>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_2.jpg" alt="step 2 excel frequency quantitative " title="step 2 excel frequency quantitative " style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_2.jpg" alt="step 2 excel frequency quantitative " title="step 2 excel frequency quantitative " style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 3:</span></strong> Calculate the Range by using the formula</span></h1>
 <p style="text-align: center;"><span style="font-size: 18pt;">=MAX([Range of Data])-MIN([Range of Data])</span></p>
 <p><span style="font-size: 14pt;">you can enter [Range of Data] by clicking and dragging</span></p>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_3.jpg" alt="step 3 excel quantitative frequency" title="step 3 excel quantitative frequency" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_3.jpg" alt="step 3 excel quantitative frequency" title="step 3 excel quantitative frequency" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 4:</span></strong> Find class width by taking the range and dividing it by the number of desired classes (in this example it is 8)</span></h1>
 <p><span style="font-size: 18pt;">\[=\dfrac{\text{Range}}{\text{number of classes}}\]</span></p>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_4.jpg" alt="step 4 excel quantitative frequency table" title="step 4 excel quantitative frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_4.jpg" alt="step 4 excel quantitative frequency table" title="step 4 excel quantitative frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 5:</span></strong> Create your rows by making the top boundary first adding the smallest number to the number from step 5, then by adding the previous number to the class width and so on</span></h1>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_5.jpg" alt="step 5 excel quantitative frequency" title="step 5 excel quantitative frequency" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_6.jpg" alt="step 5.2 excell quantitative frequency table" title="step 5.2 excell quantitative frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_5.jpg" alt="step 5 excel quantitative frequency" title="step 5 excel quantitative frequency" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_6.jpg" alt="step 5.2 excell quantitative frequency table" title="step 5.2 excell quantitative frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 6:</span></strong> To calculate the first frequency enter the formula</span></h1>
 <p style="text-align: center;"><span style="font-size: 18pt;">=SUMIF([Range of Data],"&lt;(first bound)",[column of 1's])</span></p>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_6_1.jpg" alt="step 6 quantititative data frequency table excel" title="step 6 quantititative data frequency table excel" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_6_1.jpg" alt="step 6 quantititative data frequency table excel" title="step 6 quantititative data frequency table excel" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 7:</span></strong> for the other rows enter the formula</span></h1>
 <p style="text-align: center;"><span style="font-size: 18pt;">=SUMIF([Range of Data],"&lt;(bound)",[column of 1's])-SUM([Range of previous frequencies])</span></p>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_7.jpg" alt="step 8 excel quant frequency table" title="step 8 excel quant frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_7.jpg" alt="step 8 excel quant frequency table" title="step 8 excel quant frequency table" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 8:</span></strong> Done!</span></h1>
-<p><span style="font-size: 14pt;"><img src="/content/enforced/21193-2020-21F-MA-25303/excel_quant_freq_8.jpg" alt="" title="" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;"><img src="excel_quant_freq_8.jpg" alt="" title="" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
 <hr />
 <p><span style="font-size: 14pt;">To see this done watch the following video:</span></p>
+<div align='center'>
 <p><span style="font-size: 14pt;"> <video title="Excel Example Frequency Table Quantitiative" width="400" height="300" controls="controls">
-	<source src="Video-Examples-Frequency%20Tables-quantitative.xlsx%20-%20Excel%202020-09-04%2014-07-57.mp4" type="video/mp4" />
+	<source src="/content/enforced/21192-2020-21F-MA-25301/Video-Examples-Frequency Tables-quantitative.xlsx - Excel 2020-09-04 14-07-57.mp4" type="video/mp4" />
 </video> </span></p>
+<div>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+</div>
 </body>
 </html>
