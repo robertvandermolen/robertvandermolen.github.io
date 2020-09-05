@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+
+<div style="padding: 25px 50px 75px 50px;">
+
+
+
+<script>
+function back(){
+	window.location.href = "Excel%20Example%20Frequency%20Table%20Qualitative%20Data.html";
+
+}
+
+function forward(){
+	window.location.href = "Excel%20Example%20Quantitative%20Data%20Frequency%20Table.html";
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;">Example Frequency Table (Quantitative Data) </span></strong></h1>
+</div>
+
+<h1><strong><span style="font-size: 24pt;">Objective: Take a first look at the data</span></strong></h1>
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">Data: Ages of 50 wealthiest people in the world (Forbes Magazine)&nbsp;</span></p>
+<p><span style="font-size: 14pt;"><img src="weathiest_data.jpg" alt="50 wealthiest people age data" title="50 wealthiest people age data" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<hr/>
+<p> <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 1:</span></strong></h1><span style="font-size: 14pt;">As our objective is to take a first look at the data it is helpful to look at how spread out the data is to do that we first find the smallest and largest data value</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Smallest: 27</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Largest: 92</span></p>
+<p><span style="font-size: 14pt;">Using these numbers we can find the <strong>range</strong> of the data, this is the distance between the smallest and largest number. To calculate the range on subtracts the smallest number from the largest number:</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Largest-Smallest</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">92-27=65</span></p>
+<p></p>
+<hr />
+<p> <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 2:</span></strong></h1><span style="font-size: 14pt;">Now we need to determine how many classes we will want...</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">This is up to scientist (the student) and is usually done with some trial and error... that is you choose a number a classes then you see how your data aligns, if it is too clumped you spread out the data by choosing a larger number of classes. If you see that their there are too few in each class you may choose to use less!</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">Another way this is done is if there are "natural" classes (ranges) of the numbers in this example we may wish to split the ages by:&nbsp;20's, 30's, 40's,... etc. This can have it's down sides to as the classes may make our own biases influence the conclusions!!!</span></p>
+<p></p>
+<p><span style="font-size: 14pt;">For our example we will choose the number of classes to be 8... that is we want to divide our range by 8</span></p>
+<p><span style="font-size: 14pt;">\[{65}\div{8}=8.1\]</span><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">Since our ages are only in whole numbers we will round down to 8 this will be our <strong>class range&nbsp;</strong></span></p>
+<p><span style="font-size: 14pt;">Now to build our classes:</span></p>
+<p><span style="font-size: 14pt;">Start with the smallest number then add our class range... ie.&nbsp;</span><span style="font-size: 14pt;">27+8=35</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">First Class: 27--35</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;">(That is all numbers between 27 and 35 including 27 and 35)</span></p>
+<p><span style="font-size: 14pt;">Now take the next whole number, 36 and add 8... i.e. 36+8=44</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Second Class: 36--44</span></p>
+<p><span style="font-size: 14pt;">Now repeat the process...</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Third Class: 45--53</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Fourth Class: 54--62</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Fifth Class: 63--71</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Sixth Class: 72-80</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Seventh Class: 81-89</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Eighth Class: 90-98</span></p>
+<p><span style="font-size: 14pt;">In each class the bottom number and top number are called the <strong>class boundaries</strong> where the bottom number is the <strong>lower class boundary</strong> and the top number is the <strong>upper class boundary&nbsp;</strong></span></p>
+<hr />
+<p> <h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 3:</span></strong></h1><span style="font-size: 14pt;">Next we tally up how many data points fall in each category then create our frequency table as we did in the previous example!</span></p>
+<p><span style="font-size: 14pt;"><img src="quantitative_frequency_tally.jpg" alt="top 5 wealthiest people tally" title="top 5 wealthiest people tally" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<hr />
+<p><span style="font-size: 14pt;">To see this worked out watch the following video:</span></p>
+<div align='center'>
+<p><span style="font-size: 14pt;"> <video title="Video Example Frequency Table Quantitative Dat " width="400" height="300" controls="controls">
+	<source src="freq_table_quant_video.MP4" type="video/mp4" />
+</video> </span></p>
+</div>
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;"></span></p>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+</div>
+</body>
+</html>
