@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<div class="alert alert-dark" role="alert">
+<p style="text-align: center;"><span style="color: #0c090a;"><span style="font-size: 18.6667px;"><span style="text-decoration: underline;"> <strong>Population Variance</strong></span> the average of the squares of the distance each value is from the mean.</span></span></p>
+</div>
+<p><span style="font-size: 14pt;">That is for a population data set with \(n\) elements, i.e. \(P=\{x_1,...,x_n\}\) with population mean \(\mu\) we calculate the population variance as</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[\sigma^2=\frac{\Big(\sum_{i=1}^n\big(x-\mu\big)^2\Big)}{n}\]</span></p>
+<p><span style="font-size: 14pt;">Note that we denote the population variance with the Greek letter \(\sigma^2\) "sigma squared"</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+<div class="card">
+<div class="card-body"><span style="font-size: 18pt;">Finding the Population Standard Deviation</span></div>
+<div class="card-body"><span style="font-size: 18pt;">Step 1</span><span style="font-size: 18pt;"></span></div>
+<div class="card-body"><span style="font-size: 14pt;">Find the mean for the data.</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[\mu=\frac{\Big(\sum_{i=1}^nx_i\Big)}{n}\]</span></div>
+<div class="card-body"><span style="font-size: 18pt;">Step 2</span></div>
+<div class="card-body"><span style="font-size: 14pt;">Find the "deviation" of each data value.</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[x_i-\mu\]</span></div>
+<div class="card-body"><span style="font-size: 18pt;">Step 3</span></div>
+<div class="card-body"><span style="font-size: 14pt;">Square each of the deviations (from step 2)</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[(x_i-\mu)^2\]</span></div>
+<div class="card-body"><span style="font-size: 18pt;">Step 4</span></div>
+<div class="card-body"><span style="font-size: 14pt;">Find the sum of the squares (from step 3)</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[\sum_{i=1}^n(x_i-\mu)^2\]</span></div>
+<div class="card-body"><span style="font-size: 18pt;">Step 5</span></div>
+<div class="card-body"><span style="font-size: 14pt;">Divide by the number of data, \(n\)</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[\sigma^2=\frac{\Big(\sum_{i=1}^nx_i-\mu\Big)}{n}\]</span></div>
+</div>
+</body>
+</html>

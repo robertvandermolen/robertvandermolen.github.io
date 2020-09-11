@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<p><span style="font-size: 14pt;">A testing lab wishes to test two experimental brands of outdoor paint to see how long each will last before fading. The testing lab makes 6 gallons of each paint to test. Since different chemical agents are added to each group and only six cans are involved, these two groups constitute two small populations from a previous example, the data for Brand B is given here</span></p>
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td class="table-dark"><span style="font-size: 14pt;">Brand B</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">35</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt; color: #000000;">45</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">30</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">35</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">40</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt; color: #000000;">25</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 14pt;">We will now find the standard deviation for Brand B's data set.</span><span style="font-size: 14pt;"></span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 1:</span></strong> Find the mean</span></h1>
+<p><span style="font-size: 14pt;">\[\mu=\frac{\sum X}{N}=\frac{35+45+30+35+40+25}{6}=\frac{210}{6}=35\]</span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 2:</span></strong> Subtract the mean from each value \((X-\mu)\)</span></h1>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">35-35=0</span></td>
+<td><span style="font-size: 14pt;">45-35=10</span></td>
+<td><span style="font-size: 14pt;">30-35=-5</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">35-35=0</span></td>
+<td><span style="font-size: 14pt;">40-35=5</span></td>
+<td><span style="font-size: 14pt;">25-35=-10</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 3:</span></strong> Square each result \((X-\mu)^2\)</span></h1>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">\(0^2=0\)</span></td>
+<td><span style="font-size: 14pt;">\(10^2=100\)</span></td>
+<td><span style="font-size: 14pt;">\((-5)^2=25\)</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 14pt;">\(0^2=0\)</span></td>
+<td><span style="font-size: 14pt;">\(5^2=25\)</span></td>
+<td><span style="font-size: 14pt;">\((-10)^2=100\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 4:</span></strong> Find the sum of the squares \(\sum (X-\mu)^2\)</span></h1>
+<p><span style="font-size: 14pt;">\[\sum (X-\mu)^2=0+100+25+0+25+100=250\]</span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 5:</span></strong> Divide the sum by \(N\) to get the variance</span></h1>
+<p><span style="font-size: 14pt;">\[\sigma^2=\frac{\sum (X-\mu)^2}{N}=\frac{250}{6}=41.7\]</span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 6:</span></strong> Take the square root of the variance to get the standard deviation</span></h1>
+<p><span style="font-size: 14pt;">\[\sigma=\sqrt{\frac{\sum (X-\mu)^2}{N}}=\sqrt{41.7}\approx 6.5\]</span></p>
+</body>
+</html>
