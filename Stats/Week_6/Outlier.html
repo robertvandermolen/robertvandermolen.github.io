@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<div class="alert alert-dark" role="alert">
+<p style="text-align: center;"><span style="color: #0c090a;"><span style="font-size: 18.6667px;"><span style="text-decoration: underline;"> <strong>Outlier</strong></span> is an extremely high or an extremely low data value when compared with the rest of the data values.</span></span></p>
+</div>
+<p><span style="font-size: 14pt;"><span style="font-size: 18pt;"><strong>Rule of thumb</strong></span>: an outlier is is a value that is 1 and a half the length of the interquartile range either below \(Q_1\) or above \(Q_3\), that is as a good bench mark we consider outliers to be values that are farther from \(Q_1\) or \(Q_3\) than they are from each other.</span></p>
+<p><span style="font-size: 14pt;">An outlier can strongly affect the mean and standard deviation of a variable. For example, suppose a researcher mistakenly recorded an extremely high data value. This value would then make the mean and standard deviation of the variable much larger than they really were.</span></p>
+<div class="card">
+<div class="card-body"><strong><span style="font-size: 18pt;">Identify an outlier:</span></strong></div>
+<div class="card-body"><strong><span style="font-size: 18pt;">Step 1</span></strong></div>
+<div class="card-body"><span style="font-size: 14pt;">Arrange the data in order from lowest to highest and find \(Q_1\) and \(Q_3\)</span></div>
+<div class="card-body"><strong><span style="font-size: 18pt;">Step 2</span></strong></div>
+<div class="card-body"><span style="font-size: 14pt;">Find the interquartile range:</span></div>
+<div class="card-body" style="text-align: center;"><span style="font-size: 14pt;">\[\text{IQR}=Q_3-Q_1\]</span></div>
+<div class="card-body"><strong><span style="font-size: 18pt;">Step 3</span></strong></div>
+<div class="card-body"><span style="font-size: 14pt;">Multiply the IQR by 1.5</span></div>
+<div class="card-body"><strong><span style="font-size: 18pt;">Step 4</span></strong></div>
+<div class="card-body"><span style="font-size: 14pt;">Subtract the value obtained in step 3 from \(Q_1\) and add the value obtained in step 3 to \(Q_3\)</span></div>
+<div class="card-body"><strong><span style="font-size: 18pt;">Step 5</span></strong></div>
+<div class="card-body"><span style="font-size: 14pt;">Check the data set for any data value that is smaller than \(Q_1-1.5\cdot(\text{IQR})\) or larger than \(Q_3+1.5\cdot(\text{IQR})\)</span></div>
+</div>
+</body>
+</html>

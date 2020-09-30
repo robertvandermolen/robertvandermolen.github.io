@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<p><span style="font-size: 14pt;">The number of traffic violations recorded by a police department for a 10-day period is shown. Find the percentile rank of the data value 16.</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">22</span></td>
+<td><span style="font-size: 14pt;">19</span></td>
+<td><span style="font-size: 14pt;">25</span></td>
+<td><span style="font-size: 14pt;">24</span></td>
+<td><span style="font-size: 14pt;">18</span></td>
+<td><span style="font-size: 14pt;">15</span></td>
+<td><span style="font-size: 14pt;">9</span></td>
+<td><span style="font-size: 14pt;">12</span></td>
+<td><span style="font-size: 14pt;">16</span></td>
+<td><span style="font-size: 14pt;">20</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<hr />
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step1:</span></strong>&nbsp;</span></h1>
+<p><span style="font-size: 14pt;">Arrange the data from lowest to highest</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">9</span></td>
+<td><span style="font-size: 14pt;">12</span></td>
+<td><span style="font-size: 14pt;">15</span></td>
+<td><span style="font-size: 14pt;">16</span></td>
+<td><span style="font-size: 14pt;">18</span></td>
+<td><span style="font-size: 14pt;">19</span></td>
+<td><span style="font-size: 14pt;">20</span></td>
+<td><span style="font-size: 14pt;">22</span></td>
+<td><span style="font-size: 14pt;">24</span></td>
+<td><span style="font-size: 14pt;">25</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p></p>
+<h1><strong><span style="font-size: 24pt;">Step 2:&nbsp;</span></strong></h1>
+<p><span style="font-size: 14pt;">Count how many data entries are less than your data point</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">There are 3 data points below 16, namely: 9, 12, and 15</span></p>
+<hr />
+<h1><strong><span style="font-size: 24pt;">Step 3:</span></strong></h1>
+<p><span style="font-size: 14pt;">Plug into formula</span></p>
+<p><span style="font-size: 14pt;">\[\text{Percentile}=\left(\text{number of values below }X\right)\cdot\frac{100}{\text{total number of data points}}\]</span></p>
+<p><span style="font-size: 14pt;">\[=3\cdot \frac{100}{10}=30^{\text{th}}\text{ percentile}\]</span></p>
+</body>
+</html>

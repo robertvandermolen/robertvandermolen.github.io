@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<p><span style="font-size: 14pt;">For this example we will use data I found on Zillow this summer on house prices in West Terre Haute</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">60</span></td>
+<td><span style="font-size: 14pt;">90</span></td>
+<td><span style="font-size: 14pt;">70</span></td>
+<td><span style="font-size: 14pt;">38</span></td>
+<td><span style="font-size: 14pt;">101</span></td>
+<td><span style="font-size: 14pt;">60</span></td>
+<td><span style="font-size: 14pt;">250</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 1:</span></strong> Find the median (Q2)</span></h1>
+<p><span style="font-size: 14pt;">remember that we did this by first putting our data in order and then finding the center value (for odd)</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">38</span></td>
+<td><span style="font-size: 14pt;">60</span></td>
+<td><span style="font-size: 14pt;">60</span></td>
+<td><span style="font-size: 14pt;"><span style="color: #2b78e4;">70</span></span></td>
+<td><span style="font-size: 14pt;">90</span></td>
+<td><span style="font-size: 14pt;">101</span></td>
+<td><span style="font-size: 14pt;">250</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 14pt;">So we see that our median (or second quartile) is <span style="color: #2b78e4;">70</span></span></p>
+<hr />
+<p><span style="font-size: 14pt;"><span style="color: #2b78e4;"></span></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 2:</span></strong> Find the median of the lower half of the data (Q1)</span></h1>
+<p><span style="font-size: 14pt;">now that we have split our data in two pieces we can find the median of the lower half</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">38</span></td>
+<td><span style="font-size: 14pt; color: #cc0000;">60</span></td>
+<td><span style="font-size: 14pt;">60</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 14pt;">We see that the middle value of this lower part of our data is <span style="color: #cc0000;">60</span>, our third quartile</span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<h1><span style="font-size: 14pt;"><strong><span style="font-size: 24pt;">Step 3:</span></strong> Find the median of the top half of our data (Q3)</span></h1>
+<p><span style="font-size: 14pt;">now we look at only the top half of our data and find the median</span></p>
+<table class="table">
+<tbody>
+<tr>
+<td><span style="font-size: 14pt;">90</span></td>
+<td><span style="font-size: 14pt; color: #009e0f;">101</span></td>
+<td><span style="font-size: 14pt;">250</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 14pt;">We see that the middle value of the upper part of our data is <span style="color: #009e0f;">101</span>, our third quartile&nbsp;</span></p>
+<hr />
+<p><span style="font-size: 14pt;"></span></p>
+<p><span style="font-size: 14pt;">If you want to see this done watch the following video:</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+</body>
+</html>

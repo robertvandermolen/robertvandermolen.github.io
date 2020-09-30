@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<div>
+<div align="center">
+<h4>Here are some vocab and the collapsible feature makes it possible to study like notecards</h4>
+</div>
+<div align="center">
+<h5>By Clicking the word it will show or hide the definition!</h5>
+</div>
+</div>
+<div id="vocabList"></div>
+<p>
+<script>
+
+var vocab=[['Z Score','for a value is obtained by subtracting the mean from the value and dividing the result by the standard deviation.'],
+['Percentiles', 'compares your data to 100.'],
+['Quartiles','divide the distribution into four equal groups'],
+['Interquartile Range','the difference between the third and first quartiles.'],
+['Outlier','is an extremely high or an extremely low data value when compared with the rest of the data values.'],
+['Nonreistant statistics', 'statistics effected by outliers, i.e. they change drastically if you ignore outliers'],
+['Resistant Statistic','statistic not (very) effected by outliers'],
+['Exploratory Data Analysis (EDA)', 'examine data to find out what information can be discovered about the data'],
+['Boxplot',' is a graph of a data set obtained by drawing a horizontal line from the minimum data value to Q1, drawing a horizontal line from Q3 to the maximum data value, and drawing a box whose vertical sides pass through Q1 and Q3 with a vertical line inside the box passing through the median or Q2.'],
+];
+
+var main=document.getElementById('vocabList');
+
+var theSet='<div><div><div class="accordion" id="accordionExample">';
+
+var theEnd='</div></div></div>';
+
+for(i=0;i<vocab.length;i++){
+	for(j=0;j<2;j++){
+		if(j==0){
+			theSet=theSet+'<div class="card"><div class="card-header" id="heading+'+i+'"><h2 class="mb-0"><button class="btn btn-outline-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="false" aria-controls="collapse'+i+'"> '+vocab[i][0]+' </button></h2></div><div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordionExample">';
+		}
+		if(j==1){
+			theSet=theSet+'<div class="card-body">'+vocab[i][1]+'</div></div></div>';
+		}
+	}
+}
+
+main.innerHTML=theSet+theEnd;
+
+</script>
+</p>
+</body>
+</html>
