@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<script type='text/javascript' src='week_7.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=31;
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+function forward(){
+	window.location.href = Lister[where+1];
+}	
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Formula Sheet</p><p>Week 7</p></span></strong></h1>
+<hr/>
+</div>
+
+<p><strong><span style="font-size: 18pt;">Formula Sheet:</span></strong></p>
+<p><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287553" target="_self">Probability of an event</a> \(E\):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(E)=\frac{\text{number of outcomes in the event }E}{\text{number of outcomes in the sample space}}=\frac{|E|}{|S|}\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287554" target="_self">Probability of the Complement</a> of an event \(E\):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(\overline{E})=1-P(E)\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287555" target="_self">Empirical Probability</a>:</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(E)=\frac{\text{frequency of the class}}{\text{total frequencies in the table}}=\frac{f}{n}\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287556" target="_self">Addition Rule</a> (general):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(A\text{ or } B)=P(A)+P(B)-P(A\text{ and } B)\] </span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287556" target="_self">Addition Rule</a> (mutually exclusive events):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(A\text{ or } B)=P(A)+P(B)\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287558" target="_self">Multiplication Rule</a> (Independent Events):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(A\text{ and }B)=P(A)\cdot P(B)\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287560" target="_self">Multiplication Rule</a> (dependent Events):</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[P(A\text{ and }B)=P(A)\cdot P(B)\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;">The arrangement of \(n\) objects in a specific order using&nbsp;<mjx-container jax="CHTML" role="presentation" ctxtmenu_counter="1" tabindex="0"><mjx-math aria-hidden="true"><mjx-mi><mjx-c></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml role="presentation" unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math></mjx-assistive-mml></mjx-container>&nbsp;objects at a time (<a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287567" target="_self">permutations</a>)</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[_nP_r=\frac{n!}{(n-r)!}\]</span></p>
+<p style="text-align: left;"><span style="font-size: 14pt;">The number of <a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287567" target="_self">permutations</a> of \(n\) objects when \(r_1\) objects are identical, \(r_2\) objects are identical,...,\(r_p\) objects are identical, etc. is: (where \(r_1+r_2+...+r_p=n\))</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[\frac{n!}{r_1!r_2!...r_p!}\]</span></p>
+<p><span style="font-size: 14pt;">The number of \(r\) objects selected from \(n\) objects is denoted by \(_nC_r\) and is given by the formula (<a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=21192&amp;type=content&amp;rcode=smwc-287569" target="_self">combinations</a>)</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">\[_nC_r=\frac{n!}{(n-r)!\cdot r!}\]</span></p>
+</body>
+</html>
