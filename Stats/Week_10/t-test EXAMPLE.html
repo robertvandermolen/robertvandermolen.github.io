@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+
+
+
+
+<script type='text/javascript' src='week10.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=18;
+
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+
+
+function forward(){
+	window.location.href = Lister[where+1];
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>t-test</p><p>EXAMPLE</p></span></strong></h1>
+<hr/>
+</div>
+
+
+
+
+
+
+
+<p><span style="font-size: 14pt;">Medical researchers found that people who take aspirin take on average 8.6 tablets a week. A medical doctor wanted to see if he could reduce the number of aspirin tablets a person consumes if the subjects practiced yoga twice a week. A random sample of 12 people who take aspirin were taught yoga, and after a 12-week period the doctor found that they took an average of 6.8 tablets for one week, with a sample standard deviation 2.37. Test the claim at \(\alpha=0.10\). Assume the variable is normally distributed.</span></p>
+<p><span style="font-size: 14pt;">Step 1:&nbsp;</span></p>
+<p><span style="font-size: 14pt;">Write the hypothesis&nbsp;</span></p>
+<p><span style="font-size: 14pt;">\[H_0:\mu=8.6\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; H_1: \mu&lt;8.6 \text{ (claim)}\]</span></p>
+<p><span style="font-size: 14pt;">So this is a left-tail test</span></p>
+<p><span style="font-size: 14pt;">Step 2:</span></p>
+<p><span style="font-size: 14pt;">Since we do not know the population standard deviation we need to look in the t-table for one-tail 0.1 and we get&nbsp;</span></p>
+<p><span style="font-size: 14pt;">\[t_{\alpha}=-1.363\]</span></p>
+<p><span style="font-size: 14pt;">Step 3:</span></p>
+<p><span style="font-size: 14pt;">Calculate the test value</span></p>
+<p><span style="font-size: 14pt;">\[\text{Test Value}=\frac{6.8-8.6}{\frac{2.37}{\sqrt{12}}}=-2.63\]</span></p>
+<p><span style="font-size: 14pt;">Step 4:</span></p>
+<p><span style="font-size: 14pt;">Note</span></p>
+<p><span style="font-size: 14pt;">\[-2.63&lt;-1.363\]</span></p>
+<p><span style="font-size: 14pt;">So we reject \(H_0\)</span></p>
+<p><span style="font-size: 14pt;">Step 5:</span></p>
+<p><span style="font-size: 14pt;">Conclusion</span></p>
+<p><span style="font-size: 14pt;">There is enough evidence to support the claim.</span></p>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div></div>
+</body>
+</html>

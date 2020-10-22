@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+
+
+
+
+
+<script type='text/javascript' src='week10.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=9;
+
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+
+
+function forward(){
+	window.location.href = Lister[where+1];
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Confidence Intervals</p><p>(\(\sigma\) unknown)</p><p>Now You Try!</p></span></strong></h1>
+<hr/>
+</div>
+
+
+
+
+
+
+<p><span style="font-size: 14pt;"><span style="font-size: 18pt;"><strong>1)&nbsp;</strong><span style="font-size: 14pt;">A meteorologist who sampled 13 randomly selected thunder storms found that the average speed at which they traveled across a certain state was 15.0 miles per hour. The standard deviation of the sample was 1.7 miles per hour. Find the 99% confidence interval of the mean. If a meteorologist wanted to use the highest speed to predict the times it would take storms to travel across the state in order to issue warnings, what figure would she likely use?</span></span></span><span style="font-size: 14pt;"></span></p>
+<hr />
+<p><span style="font-size: 14pt;"><span style="font-size: 18pt;"><strong>2)</strong></span> At a large company, the Director of Research found that the average work time lost by employees due to accidents was 98 hours per year. She used a random sample of 18 employees. The standard deviation of the sample was 5.6 hours.Estimate the population mean for the number of hours lost due to accidents for the company,using a 95% confidence interval.</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+<hr />
+<p><span style="font-size: 14pt;"><span style="font-size: 18pt;"><strong>3)</strong></span> For a group of 12 men subjected to a stress test situation, the average heart rate was 109 beats per minute. The standard deviation was 4. Find the 99% confidence interval of the population mean.</span></p>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div></div>
+</body>
+</html>

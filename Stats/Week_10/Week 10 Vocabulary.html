@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+
+
+
+
+<script type='text/javascript' src='week10.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=20;
+
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+
+
+function forward(){
+	window.location.href = Lister[where+1];
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Week 10</p><p>Vocabulary</p></span></strong></h1>
+<hr/>
+</div>
+
+
+
+
+
+
+
+<div>
+<div align="center">
+<h4>Here are some vocab and the collapsible feature makes it possible to study like notecards</h4>
+</div>
+<div align="center">
+<h5>By Clicking the word it will show or hide the definition!</h5>
+</div>
+</div>
+<div id="vocabList"></div>
+<script>
+
+var vocab=[['point estimate','a specific numerical value estimate of a parameter'],
+['Unbiased Estimator', 'the expected value or the mean of the estimates obtained from samples of a given size is equal to the parameter being estimated'],
+['Consistent Estimator','as sample size increases, the value of the estimator approaches the value of the parameter estimated'],
+['Relatively Efficent Estimator','of all the statistics that can be used to estimate a parameter, the relatively efficient estimator has the smallest variance'],
+['Confidence Level','the probability that the interval estimate will contain the parameter, assuming that a large number of samples are selected and that the estimation process on the same parameter is repeated.'],
+['Confidence Interval','a specific interval estimate of a parameter determined by using data obtained from a sample and by using the specific confidence level of the estimate. '],
+['Degrees of Freedom','the number of values that are free to vary after a sample statistic has been computed.'],
+['statistical hypothesis','is a conjecture about a population parameter. This conjecture may or may not be true.'],
+['null hypothesis','is a statistical hypothesis that states that there is no difference between a parameter and a specific value, or that there is no difference between two parameters.'],
+['alternative hypothesis','is a statistical hypothesis that states the existence of a difference between a parameter and a specific value, or states that there is a difference between two parameters.'],
+['z-test','is a statistical test for the mean of a population. It can be used either when n>=30 or when the population is normally distributed and the population standard deviation is known'],
+['Level of significance','is the maximum probability of committing a type I error'],
+['Type I Error','occurs if you reject the null hypothesis when it is true.'],
+['Type II Error','occurs if you do not reject the null hypothesis when it is false.'],
+['statistical test','uses the data obtained from a sample to make a decision about whether the null hypothesis should be rejected.'],
+['test statistic','The numerical value obtained from a statistical test'],
+['critical region','is the range of test values that indicates that there is a significant difference and that the null hypothesis should be rejected.'],
+['noncritical region','is the range of test values that indicates that the difference was probably due to chance and that the null hypothesis should not be rejected'],
+['critical value','separates the critical region from the noncritical region.']];
+
+var main=document.getElementById('vocabList');
+
+var theSet='<div><div><div class="accordion" id="accordionExample">';
+
+var theEnd='</div></div></div>';
+
+for(i=0;i<vocab.length;i++){
+	for(j=0;j<2;j++){
+		if(j==0){
+			theSet=theSet+'<div class="card"><div class="card-header" id="heading+'+i+'"><h2 class="mb-0"><button class="btn btn-outline-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="false" aria-controls="collapse'+i+'"> '+vocab[i][0]+' </button></h2></div><div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordionExample">';
+		}
+		if(j==1){
+			theSet=theSet+'<div class="card-body">'+vocab[i][1]+'</div></div></div>';
+		}
+	}
+}
+
+main.innerHTML=theSet+theEnd;
+
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div></div>
+</body>
+</html>
