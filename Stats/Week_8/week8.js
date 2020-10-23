@@ -17,7 +17,6 @@ var Lister=[
 'Now%20You%20Try!%20(Standard%20Normal%20Areas).html',
 'Converting%20from%20z%20score%20and%20back.html',
 'Normal%20Probability%20Distribution.html',
-'Normal%20Distribution%20EXAMPLES.html',
 'Converting%20to%20z-score%20to%20find%20probability%20of%20a%20normal%20random%20variable%20P(xa).html',
 'Converting%20to%20z-score%20to%20find%20probability%20of%20a%20normal%20random%20variable%20to%20the%20right%20P(Xa).html',
 'Converting%20to%20z-score%20to%20find%20probability%20of%20a%20normal%20random%20variable%20P(axb).html',
