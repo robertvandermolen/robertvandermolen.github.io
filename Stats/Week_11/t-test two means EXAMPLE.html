@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='week10.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=12;
+
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+
+
+function forward(){
+	window.location.href = Lister[where+1];
+}
+		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>t-test</p><p>two-means</p><p>Example</p></span></strong></h1>
+<hr/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<p><span style="font-size: 14pt;">A study was done to see if there is a difference between the number of sick days people without children take and the number of sick days people with children take. A random sample of 9 childless people found that the mean of the number of sick days taken was 5.5. The standard deviation of the sample was 1.23. A random sample of 7 people with at least one child found that the mean was 4.3 days and a standard deviation of 1.19 days. At \(\alpha=0.05\), can it be concluded that there is a difference in the means?</span></p>
+<p><span style="font-size: 14pt;">Step 1:&nbsp;</span></p>
+<p><span style="font-size: 14pt;">Identify the hypothesis and claim</span></p>
+<p><span style="font-size: 14pt;">\[H_0:\mu_1-\mu_2=0\;\;\;\;\;\;\; H_1:\mu_1- \mu_2\neq0\text{ (Claim)}\]</span></p>
+<p><span style="font-size: 14pt;">Step 2:</span></p>
+<p><span style="font-size: 14pt;">Collect the data</span></p>
+<p><span style="font-size: 14pt;">\[n_1=9\</span><span style="font-size: 14pt;">]</span></p>
+<p><span style="font-size: 14pt;">\[n_2=7\]</span></p>
+<p><span style="font-size: 14pt;">\[\overline{x}_1=5.5\]</span></p>
+<p><span style="font-size: 14pt;">\[\overline{x}_2=4.3\]</span></p>
+<p><span style="font-size: 14pt;">\[s_1=1.23\]</span></p>
+<p><span style="font-size: 14pt;">\[s_2=1.19\]</span></p>
+<p><span style="font-size: 14pt;">\[\alpha=0.05\]</span></p>
+<p><span style="font-size: 14pt;">Step 3:&nbsp;</span></p>
+<p><span style="font-size: 14pt;">Plug into the <a href="hypothesis_testing.xlsx" target="_self">hypothesis Calculator!</a></span></p>
+<p><span style="font-size: 14pt;"><img src="Untitled%20presentation%20(6).jpg" alt="2-mean hypothesis example t" title="2-mean hypothesis example t" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;">Now you can use any method and you have all of the needed data. Let's do my favorite P-Value</span></p>
+<p><span style="font-size: 14pt;">Step 4:&nbsp;</span></p>
+<p><span style="font-size: 14pt;">Analysis and conclusion.</span></p>
+<p><span style="font-size: 14pt;">Note that \(p&gt;1-\frac{\alpha}{2}\) i.e.</span></p>
+<p><span style="font-size: 14pt;">\[0.975679&gt;0.975\]</span></p>
+<p><span style="font-size: 14pt;">hence we reject \(H_0\) and there is enough evidence to support the claim.&nbsp;</span></p>
+<p><span style="font-size: 14pt;"></span></p>
+
+
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+</div>
+</body>
+</html>
