@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- MATHJAX CODE -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 14px;">
+
+
+
+<script type='text/javascript' src='week10.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=18;
+
+
+function back(){
+	window.location.href = Lister[where-1];
+}
+function forward(){
+	window.location.href = Lister[where+1];
+}		
+</script>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Calculating</p><p>Regression Lines</p><p>Example</p></span></strong></h1>
+<hr/>
+</div>
+
+
+
+
+<p><span style="font-size: 14pt;">The following data shows the number of hits and the number of at bats for 7 major league players in recent World Series. If there is enough evidence to suggest a strong linear relationship between at bats and hits, with a significance of 0.05, then predict the number of hits expected if a player gets 80 at bats.&nbsp;</span></p>
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td style="width: 16px;"><span style="font-size: 14pt;">At Bats</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">51</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">67</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">77</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">44</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">55</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">39</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">45</span></td>
+</tr>
+<tr>
+<td style="width: 16px;"><span style="font-size: 14pt;">Hits</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">19</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">25</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">30</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">20</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">23</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">16</span></td>
+<td style="width: 16px;"><span style="font-size: 14pt;">18</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 14pt;">Step 1:</span></p>
+<p><span style="font-size: 14pt;">Enter Data into calculator</span></p>
+<p><span style="font-size: 14pt;"><img src="regression_line_example.jpg" alt="regression line excel example" title="regression line excel example" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></span></p>
+<p><span style="font-size: 14pt;">We see that we have a p-value of 0.9999, this is greater that \(1-\frac{\alpha}{2}\) thus we reject the null hypothesis of \(\rho=0\) and hence we conclude that this sample suggests that it is likely that this data is linearly correlated.</span></p>
+<p><span style="font-size: 14pt;">Step 2:</span></p>
+<p><span style="font-size: 14pt;">Since we concluded that this data is linearly correlated we look back at our calculator and see that </span></p>
+<p><span style="font-size: 14pt;">\[a=3.2\]</span></p>
+<p><span style="font-size: 14pt;">\[b=0.34\]</span></p>
+<p><span style="font-size: 14pt;">So this means that we can approximate our data with the line</span></p>
+<p><span style="font-size: 14pt;">\[y=0.34x+3.2\]</span></p>
+<p><span style="font-size: 14pt;">Step 4:</span></p>
+<p><span style="font-size: 14pt;">To approximate the number of hits likely if a player gets 80 at bats, we replace the \(x\) in the above equation to get</span></p>
+<p><span style="font-size: 14pt;">\[\text{number of hits }=y=0.34\cdot(80)+3.2=30.4\]</span></p>
+<p><span style="font-size: 14pt;">So we should expect around 30.4 hits if we give a player 80 at bats.</span></p>
+
+<div align='right'>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>
+</div></div>
+</body>
+</html>
