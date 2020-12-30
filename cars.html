@@ -133,45 +133,65 @@ body {
 	
 	//RED APPLES
 	var apple1X=appleFirstSpace;
+	var apple1Xs=appleFirstSpace;
 	var apple1Y=appleTopSpace;
+	var apple1Ys=appleTopSpace;
 	var a1=0;
 	
 	var apple2X=appleSize+appleSpace+appleFirstSpace;
+	var apple2Xs=appleSize+appleSpace+appleFirstSpace;
 	var apple2Y=appleTopSpace;
+	var apple2Ys=appleTopSpace;
 	var a2=0;
 	
 	var apple3X=appleFirstSpace;
+	var apple3Xs=appleFirstSpace;
 	var apple3Y=appleSize+appleTopSpace;
+	var apple3Ys=appleSize+appleTopSpace;
 	var a3=0;
 	
 	var apple4X=appleSize+appleSpace+appleFirstSpace;
+	var apple4Xs=appleSize+appleSpace+appleFirstSpace;
 	var apple4Y=appleSize+appleTopSpace;
+	var apple4Ys=appleSize+appleTopSpace;
 	var a4=0;
 	
 	
 	//GREEN APPLES
 	var apple5X=appleFirstSpace
+	var apple5Xs=appleFirstSpace
 	var apple5Y=2*appleSize+appleTopSpace;
+	var apple5Ys=2*appleSize+appleTopSpace;
 	var a5=0;
 	
 	var apple6X=(appleSize+appleSpace+appleFirstSpace);
+	var apple6Xs=(appleSize+appleSpace+appleFirstSpace);
 	var apple6Y=2*appleSize+appleTopSpace;
+	var apple6Ys=2*appleSize+appleTopSpace;
 	var a6=0;
 	
 	var apple7X=appleFirstSpace;
+	var apple7Xs=appleFirstSpace;
 	var apple7Y=3*appleSize+appleTopSpace;
+	var apple7Ys=3*appleSize+appleTopSpace;
 	var a7=0;
 	
 	var apple8X=appleSize+appleSpace+appleFirstSpace;
+	var apple8Xs=appleSize+appleSpace+appleFirstSpace;
 	var apple8Y=3*appleSize+appleTopSpace;
+	var apple8Ys=3*appleSize+appleTopSpace;
 	var a8=0;
 	
 	var apple9X=appleFirstSpace;
+	var apple9Xs=appleFirstSpace;
 	var apple9Y=4*appleSize+appleTopSpace;
+	var apple9Ys=4*appleSize+appleTopSpace;
 	var a9=0;
 	
 	var apple10X=appleSize+appleSpace+appleFirstSpace;
+	var apple10Xs=appleSize+appleSpace+appleFirstSpace;
 	var apple10Y=4*appleSize+appleTopSpace;
+	var apple10Ys=4*appleSize+appleTopSpace;
 	var a10=0;
 	
 	
@@ -248,14 +268,14 @@ body {
 		
 		
 		for(j=0;j<10;j++){
-			if(j%2==0){
+			//if(j%2==0){
 				
-				drawRed(j+1, appleFirstSpace,Math.floor(j/2)*appleSize+appleTopSpace,appleSize,appleSize);
-			}
+				drawRed(j+1, eval('apple'+eval(j+1)+'Xs'),eval('apple'+eval(j+1)+'Ys'),appleSize,appleSize);
+			/*}
 			if(j%2==1){
 
 				drawRed(j+1, appleSize+appleSpace+appleFirstSpace,Math.floor(j/2)*appleSize+appleTopSpace,appleSize,appleSize);
-			}
+			}*/
 		}
 		
 		
