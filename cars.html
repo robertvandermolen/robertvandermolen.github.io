@@ -650,15 +650,15 @@ body {
 			
 			if(eval('apple'+eval(j+1)+'X>'+halfW) && notInRando(j+1)){
 				
-				if(j%2==0){
-					eval('apple'+eval(j+1)+'X='+appleFirstSpace);
-				}
+				//if(j%2==0){
+					eval('apple'+eval(j+1)+'X='+eval('apple'+eval(j+1)+'Xs'));
+				/*}
 				if(j%2==1){
 					eval('apple'+eval(j+1)+'X='+eval(appleSize+appleSpace+appleFirstSpace));
-				}
+				}*/
 				
 				
-				eval('apple'+eval(j+1)+'Y='+eval(Math.floor(j/2)*appleSize+appleTopSpace));
+				eval('apple'+eval(j+1)+'Y='+eval('apple'+eval(j+1)+'Ys'));
 				
 			}
 		}
