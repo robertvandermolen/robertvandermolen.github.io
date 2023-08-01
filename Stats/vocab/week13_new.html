@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+
+<script type='text/javascript' src='week_7.js'></script>
+<div style="padding: 25px 50px 75px 50px;">
+<script>
+
+var where=30;
+
+function back(){
+	window.location.href = Lister[where-1];
+
+}
+
+function forward(){
+	window.location.href = Lister[where+1];
+}	
+</script>
+
+<div align='right'>
+<!--<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button-->
+</div>
+
+<div align='center'>
+<h1><strong><span style="font-size: 36pt;"><p>Vocabulary</p><p>Week 13</p></span></strong></h1>
+<hr/>
+</div>
+
+<div>
+<div align="center">
+<h4>Here are some vocab and the collapsible feature makes it possible to study like notecards</h4>
+</div>
+<div align="center">
+<h5>By Clicking the word it will show or hide the definition!</h5>
+</div>
+</div>
+<div id="vocabList"></div>
+<script>
+
+var vocab=[
+['chi-square test of variance','To test variability, use the chi-square test of a single variance. The test may be left-, right-, or two-tailed, and its hypotheses are always expressed in terms of the variance (or standard deviation).'],
+['chi-square goodness of fit','To assess whether a data set fits a specific distribution, you can apply the goodness-of-fit hypothesis test that uses the chi-square distribution. The null hypothesis for this test states that the data come from the assumed distribution. The test compares observed values against the values you would expect to have if your data followed the assumed distribution. The test is almost always right-tailed. Each observation or cell category must have an expected value of at least five.'],
+['Analysis of Variance','also referred to as ANOVA, is a method of testing whether or not the means of three or more populations are equal. The method is applicable if: all populations of interest are normally distributed. the populations have equal standard deviations. samples (not necessarily of the same size) are randomly and independently selected from each population. The test statistic for analysis of variance is the F-ratio.'],
+['One-Way ANOVA','a method of testing whether or not the means of three or more populations are equal; the method is applicable if: all populations of interest are normally distributed. the populations have equal standard deviations. samples (not necessarily of the same size) are randomly and independently selected from each population. there is one independent variable and one dependent variable. The test statistic for analysis of variance is the F-ratio.']
+];
+  
+  
+var main=document.getElementById('vocabList');
+
+var theSet='<div><div><div class="accordion" id="accordionExample">';
+
+var theEnd='</div></div></div>';
+
+for(i=0;i<vocab.length;i++){
+	for(j=0;j<2;j++){
+		if(j==0){
+			theSet=theSet+'<div class="card"><div class="card-header" id="heading+'+i+'"><h2 class="mb-0"><button class="btn btn-outline-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="false" aria-controls="collapse'+i+'"> '+vocab[i][0]+' </button></h2></div><div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordionExample">';
+		}
+		if(j==1){
+			theSet=theSet+'<div class="card-body">'+vocab[i][1]+'</div></div></div>';
+		}
+	}
+}
+
+main.innerHTML=theSet+theEnd;
+
+</script>
+
+<div align='right'>
+<!--<button type="button" class="btn btn-outline-primary btn-lg" onclick='back()'>
+<svg  width="32" height="37" viewBox="0 0 20 20" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>
+</button>
+<button type="button" class="btn btn-outline-primary btn-lg" onclick='forward()'>
+<svg class="bi bi-chevron-right" width="32" height="37" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+</button>-->
+</div></div>
+</body>
+</html>
