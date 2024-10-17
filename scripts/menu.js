@@ -6,7 +6,7 @@ var bigBar='<p></p><button type="button" class="btn btn-outline-secondary btn-lg
 var medBar='<p></p><button type="button" class="btn btn-outline-secondary btn-sm" id="aboutBtn">About</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsbtn">Text Books</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsrchbtn">Research</button><button type="button" class="btn btn-outline-secondary btn-sm" id="cvbtn">CV</button>';
 
 	
-var smBar='<p></p><div class="btn-group  btn-block" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary" id="aboutBtn">About</button><button type="button" class="btn btn-secondary" id="cvbtn">CV</button><button type="button" class="btn btn-secondary" id="grantsbtn">Books etc.</button></div>';
+var smBar='<p></p><div class="btn-group  btn-block" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary" id="aboutBtn">About</button><button type="button" class="btn btn-secondary" id="cvbtn">CV</button><button type="button" class="btn btn-secondary" id="bkbtn">Books etc.</button></div>';
 	
 
 
@@ -138,7 +138,7 @@ function DrawBanner(){
 	srcBtn=document.getElementById('rsrchbtn');
 	//teachBtn=document.getElementById('teachbtn');
 	//semBtn=document.getElementById('sembtn');
-	rsBtn=document.getElementById('rsbtn');
+	bkBtn=document.getElementById('bkbtn');
 	//semBtn=document.getElementById('sembtn');
 	//talkBtn=document.getElementById('talkbtn');
 
@@ -152,6 +152,10 @@ function DrawBanner(){
 	});
 	cvBtn.addEventListener('click',function(){
 		window.open("new_CV.pdf", "_self");
+		//console.log('worked')
+	});
+	bkBtn.addEventListener('click',function(){
+		window.open("bk_etc.html", "_self");
 		//console.log('worked')
 	});
 	
