@@ -99,27 +99,28 @@ function DrawBanner(){
 
 
 	var theSize='';
-		
-	//FULL SCREEN ON DESKTOP
-	if (w>=1058 && phoneNo()){
 
-		toolBar.innerHTML=bigBar;
-		theSize='big';
+	
+	//FULL SCREEN ON DESKTOP
+	//if (w>=1058 && phoneNo()){
+
+	//	toolBar.innerHTML=bigBar;
+	//	theSize='big';
 		
 		
-	}
+	//}
 	
 	//NOT FULL SCREEN ON DESKTOP OR TABLETS
-	if (w<1058 && w>=684 && phoneNo()){
+	//if (w<1058 && w>=684 && phoneNo()){
 		
-		toolBar.innerHTML=medBar;
-		theSize='med';
+	//	toolBar.innerHTML=medBar;
+	//	theSize='med';
 		
-	}
+	//}
 	
 	
 	//CELL PHONES
-	if (w<684 || phoneYes()){
+	if (w<684 || w>=684 || phoneYes()){
 	
 		toolBar.innerHTML=smBar;
 		theSize='sm';
