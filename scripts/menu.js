@@ -1,12 +1,12 @@
 	
 
 
-var bigBar='<p></p><button type="button" class="btn btn-outline-secondary btn-lg" id="aboutBtn">About</button><button type="button" class="btn btn-outline-secondary btn-lg" id="rsbtn">Early Childhood Software + Books</button><button type="button" class="btn btn-outline-secondary btn-lg" id="teachbtn">Teaching</button><button type="button" class="btn btn-outline-secondary btn-lg" id="rsrchbtn">Research</button><button type="button" class="btn btn-outline-secondary btn-lg" id="talkbtn">Talks/Presentations</button><button type="button" class="btn btn-outline-secondary btn-lg" id="cvbtn">CV</button>';
+var bigBar='<p></p><button type="button" class="btn btn-outline-secondary btn-lg" id="aboutBtn">About</button><button type="button" class="btn btn-outline-secondary btn-lg" id="rsbtn">Text Books</button><button type="button" class="btn btn-outline-secondary btn-lg" id="rsrchbtn">Research</button><button type="button" class="btn btn-outline-secondary btn-lg" id="cvbtn">CV</button>';
 	
-var medBar='<p></p><button type="button" class="btn btn-outline-secondary btn-sm" id="aboutBtn">About</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsbtn">Early Childhood Software + Books</button><button type="button" class="btn btn-outline-secondary btn-sm" id="teachbtn">Teaching</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsrchbtn">Research</button><button type="button" class="btn btn-outline-secondary btn-sm" id="talkbtn">Talks/Presentations</button><button type="button" class="btn btn-outline-secondary btn-sm" id="cvbtn">CV</button>';
+var medBar='<p></p><button type="button" class="btn btn-outline-secondary btn-sm" id="aboutBtn">About</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsbtn">Text Books</button><button type="button" class="btn btn-outline-secondary btn-sm" id="rsrchbtn">Research</button><button type="button" class="btn btn-outline-secondary btn-sm" id="cvbtn">CV</button>';
 
 	
-var smBar='<p></p><div class="btn-group  btn-block" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary" id="aboutBtn">About</button><button type="button" class="btn btn-secondary" id="cvbtn">CV</button><button type="button" class="btn btn-secondary" id="grantsbtn">Books etc.</button><button type="button" class="btn btn-secondary" id="morebtn">More...</button></div>';
+var smBar='<p></p><div class="btn-group  btn-block" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary" id="aboutBtn">About</button><button type="button" class="btn btn-secondary" id="cvbtn">CV</button><button type="button" class="btn btn-secondary" id="grantsbtn">Books etc.</button></div>';
 	
 
 
