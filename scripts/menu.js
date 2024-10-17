@@ -135,11 +135,11 @@ function DrawBanner(){
 	cvBtn=document.getElementById('cvbtn');
 	//grBtn=document.getElementById('grantsbtn');
 	srcBtn=document.getElementById('rsrchbtn');
-	teachBtn=document.getElementById('teachbtn');
+	//teachBtn=document.getElementById('teachbtn');
 	//semBtn=document.getElementById('sembtn');
 	rsBtn=document.getElementById('rsbtn');
-	semBtn=document.getElementById('sembtn');
-	talkBtn=document.getElementById('talkbtn');
+	//semBtn=document.getElementById('sembtn');
+	//talkBtn=document.getElementById('talkbtn');
 
 
 
@@ -156,7 +156,7 @@ function DrawBanner(){
 	
 	
 	if(theSize!='sm'){
-		srcBtn.addEventListener('click',function(){
+		rsrcBtn.addEventListener('click',function(){
 			window.open("research.html", "_self");
 			//console.log('worked')
 		});
@@ -170,10 +170,7 @@ function DrawBanner(){
 			window.open("books.html", "_self");
 			//console.log('worked')
 		});
-		talkBtn.addEventListener('click',function(){
-			window.open("talks.html", "_self");
-			//console.log('worked');
-		});
+		
 
 
 	
