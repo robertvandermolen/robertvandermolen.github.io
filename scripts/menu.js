@@ -151,7 +151,7 @@ function DrawBanner(){
 		console.log('worked')
 	});
 	cvBtn.addEventListener('click',function(){
-		window.open("vitae.html", "_self");
+		window.open("new_CV.pdf", "_self");
 		//console.log('worked')
 	});
 	
