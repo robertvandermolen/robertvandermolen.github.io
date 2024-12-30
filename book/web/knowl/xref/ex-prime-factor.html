@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.5.5</span><span class="period">.</span>
+</h3>
+<div class="para">
+<em class="alert">Prove:</em> Every natural number <span class="process-math">\(n\gt1\)</span> has a prime factor.</div>
+<details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical">
+<div class="para">Choose an arbitrary <span class="process-math">\(n\in\N\text{,}\)</span> if <span class="process-math">\(n\)</span> is prime the indeed <span class="process-math">\(n\)</span> has a prime factor, namely itself. If <span class="process-math">\(n\)</span> is composite then something other than <span class="process-math">\(n\)</span> and <span class="process-math">\(1\)</span> must divide <span class="process-math">\(n\text{.}\)</span> Therefore the following set is non-empty:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\{m\in\N\text{ }|\text{ }m|n,\text{ }m\neq n, \text{ and }m\neq 1\}
+\end{equation*}
+</div>
+<div class="para">By WOP, <span class="process-math">\(R\)</span> has a smallest element, denote this element as <span class="process-math">\(p\in T\text{.}\)</span>
+</div>
+</div>
+<div class="para">For the sake of contradiction assume that <span class="process-math">\(p\)</span> is not prime, that is we assume that <span class="process-math">\(p\)</span> is composite. By definition of composite we can find a divisor <span class="process-math">\(d\)</span> such that <span class="process-math">\(d\neq 1\)</span> and <span class="process-math">\(d\neq p\text{,}\)</span> yet by definition of divides we can find a <span class="process-math">\(k\in\Z\)</span> such that <span class="process-math">\(p=dk\)</span> and we can find a <span class="process-math">\(t\in\N\)</span> such that <span class="process-math">\(n=tp\text{,}\)</span> thus <span class="process-math">\(n=tdk\text{,}\)</span> therefore <span class="process-math">\(d\in R\)</span> Yet by <a href="sec-6-5-big-ones.html#lem-divisor-less-than" class="xref" data-knowl="./knowl/xref/lem-divisor-less-than.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.5.4">Lemma 6.5.4</a> we have that <span class="process-math">\(d\leq p\)</span> yet we assumed <span class="process-math">\(d\neq p\)</span> hence <span class="process-math">\(d\lt p\)</span> a contradiction to <span class="process-math">\(p\)</span> being the smallest element of <span class="process-math">\(R\text{.}\)</span> <span class="process-math">\(\square\)</span>
+</div></article></details></article><span class="incontext"><a class="internal" href="sec-6-5-big-ones.html#ex-prime-factor">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Equivalence Relations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="A Beginning, a Muddle, and an End">
+<meta property="book:author" content="
+        Robert
+        Vandermolen
+      ">
+<meta property="book:author" content="
+        Faith
+        Molnar
+      ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/new-custon-style.css">
+<style>
+#subsec-1-1-2-axioms-3-1 { counter-set: subsec-1-1-2-axioms-3-1 0; }
+#subsec-1-1-2-axioms-3-1 > li::marker { content: ""counter(subsec-1-1-2-axioms-3-1,decimal)"."; }
+#subsec-1-1-2-axioms-3-1 > li { counter-increment: subsec-1-1-2-axioms-3-1; }
+#prop-example-4 { counter-set: prop-example-4 0; }
+#prop-example-4 > li::marker { content: "("counter(prop-example-4,upper-alpha)")"; }
+#prop-example-4 > li { counter-increment: prop-example-4; }
+#not-prop-example-3 { counter-set: not-prop-example-3 0; }
+#not-prop-example-3 > li::marker { content: "("counter(not-prop-example-3,upper-alpha)")"; }
+#not-prop-example-3 > li { counter-increment: not-prop-example-3; }
+#ex-negation-3-1 { counter-set: ex-negation-3-1 0; }
+#ex-negation-3-1 > li::marker { content: "("counter(ex-negation-3-1,upper-alpha)")"; }
+#ex-negation-3-1 > li { counter-increment: ex-negation-3-1; }
+#ex-conjunction-4 { counter-set: ex-conjunction-4 0; }
+#ex-conjunction-4 > li::marker { content: "("counter(ex-conjunction-4,upper-alpha)")"; }
+#ex-conjunction-4 > li { counter-increment: ex-conjunction-4; }
+#ex-or-4-1 { counter-set: ex-or-4-1 0; }
+#ex-or-4-1 > li::marker { content: "("counter(ex-or-4-1,upper-alpha)")"; }
+#ex-or-4-1 > li { counter-increment: ex-or-4-1; }
+#ex-lying-9-1 { counter-set: ex-lying-9-1 0; }
+#ex-lying-9-1 > li::marker { content: ""counter(ex-lying-9-1,decimal)"."; }
+#ex-lying-9-1 > li { counter-increment: ex-lying-9-1; }
+#ex-lying-9-1-1-2 { counter-set: ex-lying-9-1-1-2 0; }
+#ex-lying-9-1-1-2 > li::marker { content: "("counter(ex-lying-9-1-1-2,lower-alpha)")"; }
+#ex-lying-9-1-1-2 > li { counter-increment: ex-lying-9-1-1-2; }
+#ex-lying-9-1-2-2 { counter-set: ex-lying-9-1-2-2 0; }
+#ex-lying-9-1-2-2 > li::marker { content: "("counter(ex-lying-9-1-2-2,lower-alpha)")"; }
+#ex-lying-9-1-2-2 > li { counter-increment: ex-lying-9-1-2-2; }
+#subsec-2-5-4-existential-5-5 { counter-set: subsec-2-5-4-existential-5-5 0; }
+#subsec-2-5-4-existential-5-5 > li::marker { content: "("counter(subsec-2-5-4-existential-5-5,upper-alpha)")"; }
+#subsec-2-5-4-existential-5-5 > li { counter-increment: subsec-2-5-4-existential-5-5; }
+#subsec-2-5-5-universal-8-2 { counter-set: subsec-2-5-5-universal-8-2 0; }
+#subsec-2-5-5-universal-8-2 > li::marker { content: "("counter(subsec-2-5-5-universal-8-2,upper-alpha)")"; }
+#subsec-2-5-5-universal-8-2 > li { counter-increment: subsec-2-5-5-universal-8-2; }
+#subsec-2-5-6-neg-quant-6-6 { counter-set: subsec-2-5-6-neg-quant-6-6 0; }
+#subsec-2-5-6-neg-quant-6-6 > li::marker { content: ""counter(subsec-2-5-6-neg-quant-6-6,decimal)"."; }
+#subsec-2-5-6-neg-quant-6-6 > li { counter-increment: subsec-2-5-6-neg-quant-6-6; }
+#subsec-2-5-8-unique-4-1 { counter-set: subsec-2-5-8-unique-4-1 0; }
+#subsec-2-5-8-unique-4-1 > li::marker { content: "("counter(subsec-2-5-8-unique-4-1,upper-alpha)")"; }
+#subsec-2-5-8-unique-4-1 > li { counter-increment: subsec-2-5-8-unique-4-1; }
+#sec-1-4-2 { counter-set: sec-1-4-2 0; }
+#sec-1-4-2 > li::marker { content: ""counter(sec-1-4-2,decimal)"."; }
+#sec-1-4-2 > li { counter-increment: sec-1-4-2; }
+#sec-1-4-2-1-2 { counter-set: sec-1-4-2-1-2 0; }
+#sec-1-4-2-1-2 > li::marker { content: "("counter(sec-1-4-2-1-2,lower-alpha)")"; }
+#sec-1-4-2-1-2 > li { counter-increment: sec-1-4-2-1-2; }
+#sec-1-4-2-3-2 { counter-set: sec-1-4-2-3-2 0; }
+#sec-1-4-2-3-2 > li::marker { content: "("counter(sec-1-4-2-3-2,lower-alpha)")"; }
+#sec-1-4-2-3-2 > li { counter-increment: sec-1-4-2-3-2; }
+#sec-1-4-2-4-2 { counter-set: sec-1-4-2-4-2 0; }
+#sec-1-4-2-4-2 > li::marker { content: "("counter(sec-1-4-2-4-2,lower-alpha)")"; }
+#sec-1-4-2-4-2 > li { counter-increment: sec-1-4-2-4-2; }
+#sec-1-4-2-5-1-2 { counter-set: sec-1-4-2-5-1-2 0; }
+#sec-1-4-2-5-1-2 > li::marker { content: "("counter(sec-1-4-2-5-1-2,lower-alpha)")"; }
+#sec-1-4-2-5-1-2 > li { counter-increment: sec-1-4-2-5-1-2; }
+#sec-1-4-2-6-1-2 { counter-set: sec-1-4-2-6-1-2 0; }
+#sec-1-4-2-6-1-2 > li::marker { content: "("counter(sec-1-4-2-6-1-2,lower-alpha)")"; }
+#sec-1-4-2-6-1-2 > li { counter-increment: sec-1-4-2-6-1-2; }
+#sec-1-4-2-7-2 { counter-set: sec-1-4-2-7-2 0; }
+#sec-1-4-2-7-2 > li::marker { content: "("counter(sec-1-4-2-7-2,lower-alpha)")"; }
+#sec-1-4-2-7-2 > li { counter-increment: sec-1-4-2-7-2; }
+#sec-1-4-2-8-1-3 { counter-set: sec-1-4-2-8-1-3 0; }
+#sec-1-4-2-8-1-3 > li::marker { content: "("counter(sec-1-4-2-8-1-3,lower-alpha)")"; }
+#sec-1-4-2-8-1-3 > li { counter-increment: sec-1-4-2-8-1-3; }
+#sec-1-4-2-9-1-1 { counter-set: sec-1-4-2-9-1-1 0; }
+#sec-1-4-2-9-1-1 > li::marker { content: "("counter(sec-1-4-2-9-1-1,lower-alpha)")"; }
+#sec-1-4-2-9-1-1 > li { counter-increment: sec-1-4-2-9-1-1; }
+#sec-3-2-prop-forms-13-5-1 { counter-set: sec-3-2-prop-forms-13-5-1 0; }
+#sec-3-2-prop-forms-13-5-1 > li::marker { content: "("counter(sec-3-2-prop-forms-13-5-1,upper-alpha)")"; }
+#sec-3-2-prop-forms-13-5-1 > li { counter-increment: sec-3-2-prop-forms-13-5-1; }
+#sec-3-5-ch-03-exercises-2 { counter-set: sec-3-5-ch-03-exercises-2 0; }
+#sec-3-5-ch-03-exercises-2 > li::marker { content: ""counter(sec-3-5-ch-03-exercises-2,decimal)"."; }
+#sec-3-5-ch-03-exercises-2 > li { counter-increment: sec-3-5-ch-03-exercises-2; }
+#sec-3-5-ch-03-exercises-2-1-2 { counter-set: sec-3-5-ch-03-exercises-2-1-2 0; }
+#sec-3-5-ch-03-exercises-2-1-2 > li::marker { content: "("counter(sec-3-5-ch-03-exercises-2-1-2,lower-alpha)")"; }
+#sec-3-5-ch-03-exercises-2-1-2 > li { counter-increment: sec-3-5-ch-03-exercises-2-1-2; }
+#sec-3-5-ch-03-exercises-2-3-4 { counter-set: sec-3-5-ch-03-exercises-2-3-4 0; }
+#sec-3-5-ch-03-exercises-2-3-4 > li::marker { content: "("counter(sec-3-5-ch-03-exercises-2-3-4,upper-alpha)")"; }
+#sec-3-5-ch-03-exercises-2-3-4 > li { counter-increment: sec-3-5-ch-03-exercises-2-3-4; }
+#sec-4-1-1-what-we-assume-4 { counter-set: sec-4-1-1-what-we-assume-4 0; }
+#sec-4-1-1-what-we-assume-4 > li::marker { content: ""counter(sec-4-1-1-what-we-assume-4,decimal)"."; }
+#sec-4-1-1-what-we-assume-4 > li { counter-increment: sec-4-1-1-what-we-assume-4; }
+#sec-4-1-1-what-we-assume-6 { counter-set: sec-4-1-1-what-we-assume-6 0; }
+#sec-4-1-1-what-we-assume-6 > li::marker { content: ""counter(sec-4-1-1-what-we-assume-6,decimal)"."; }
+#sec-4-1-1-what-we-assume-6 > li { counter-increment: sec-4-1-1-what-we-assume-6; }
+#sec-3-8-exercises-3 { counter-set: sec-3-8-exercises-3 0; }
+#sec-3-8-exercises-3 > li::marker { content: ""counter(sec-3-8-exercises-3,decimal)"."; }
+#sec-3-8-exercises-3 > li { counter-increment: sec-3-8-exercises-3; }
+#sec-3-8-exercises-3-1-2 { counter-set: sec-3-8-exercises-3-1-2 0; }
+#sec-3-8-exercises-3-1-2 > li::marker { content: "("counter(sec-3-8-exercises-3-1-2,lower-alpha)")"; }
+#sec-3-8-exercises-3-1-2 > li { counter-increment: sec-3-8-exercises-3-1-2; }
+#sec-3-8-exercises-3-2-2 { counter-set: sec-3-8-exercises-3-2-2 0; }
+#sec-3-8-exercises-3-2-2 > li::marker { content: "("counter(sec-3-8-exercises-3-2-2,lower-alpha)")"; }
+#sec-3-8-exercises-3-2-2 > li { counter-increment: sec-3-8-exercises-3-2-2; }
+#sec-3-8-exercises-3-3-2 { counter-set: sec-3-8-exercises-3-3-2 0; }
+#sec-3-8-exercises-3-3-2 > li::marker { content: "("counter(sec-3-8-exercises-3-3-2,lower-alpha)")"; }
+#sec-3-8-exercises-3-3-2 > li { counter-increment: sec-3-8-exercises-3-3-2; }
+#sec-3-8-exercises-5 { counter-set: sec-3-8-exercises-5 0; }
+#sec-3-8-exercises-5 > li::marker { content: ""counter(sec-3-8-exercises-5,decimal)"."; }
+#sec-3-8-exercises-5 > li { counter-increment: sec-3-8-exercises-5; }
+#sec-3-8-exercises-7 { counter-set: sec-3-8-exercises-7 0; }
+#sec-3-8-exercises-7 > li::marker { content: ""counter(sec-3-8-exercises-7,decimal)"."; }
+#sec-3-8-exercises-7 > li { counter-increment: sec-3-8-exercises-7; }
+#defn-gcd-3-1-7 { counter-set: defn-gcd-3-1-7 0; }
+#defn-gcd-3-1-7 > li::marker { content: ""counter(defn-gcd-3-1-7,decimal)"."; }
+#defn-gcd-3-1-7 > li { counter-increment: defn-gcd-3-1-7; }
+#sec-4-7-ch04-exercises-2 { counter-set: sec-4-7-ch04-exercises-2 0; }
+#sec-4-7-ch04-exercises-2 > li::marker { content: ""counter(sec-4-7-ch04-exercises-2,decimal)"."; }
+#sec-4-7-ch04-exercises-2 > li { counter-increment: sec-4-7-ch04-exercises-2; }
+#sec-4-7-ch04-exercises-2-1-2 { counter-set: sec-4-7-ch04-exercises-2-1-2 0; }
+#sec-4-7-ch04-exercises-2-1-2 > li::marker { content: "("counter(sec-4-7-ch04-exercises-2-1-2,lower-alpha)")"; }
+#sec-4-7-ch04-exercises-2-1-2 > li { counter-increment: sec-4-7-ch04-exercises-2-1-2; }
+#sec-4-7-ch04-exercises-2-2-2 { counter-set: sec-4-7-ch04-exercises-2-2-2 0; }
+#sec-4-7-ch04-exercises-2-2-2 > li::marker { content: "("counter(sec-4-7-ch04-exercises-2-2-2,lower-alpha)")"; }
+#sec-4-7-ch04-exercises-2-2-2 > li { counter-increment: sec-4-7-ch04-exercises-2-2-2; }
+#sec-4-7-ch04-exercises-2-3-2 { counter-set: sec-4-7-ch04-exercises-2-3-2 0; }
+#sec-4-7-ch04-exercises-2-3-2 > li::marker { content: "("counter(sec-4-7-ch04-exercises-2-3-2,lower-alpha)")"; }
+#sec-4-7-ch04-exercises-2-3-2 > li { counter-increment: sec-4-7-ch04-exercises-2-3-2; }
+#sec-4-7-ch04-exercises-2-4-2 { counter-set: sec-4-7-ch04-exercises-2-4-2 0; }
+#sec-4-7-ch04-exercises-2-4-2 > li::marker { content: "("counter(sec-4-7-ch04-exercises-2-4-2,lower-alpha)")"; }
+#sec-4-7-ch04-exercises-2-4-2 > li { counter-increment: sec-4-7-ch04-exercises-2-4-2; }
+#sec-4-7-ch04-exercises-2-5-2 { counter-set: sec-4-7-ch04-exercises-2-5-2 0; }
+#sec-4-7-ch04-exercises-2-5-2 > li::marker { content: "("counter(sec-4-7-ch04-exercises-2-5-2,lower-alpha)")"; }
+#sec-4-7-ch04-exercises-2-5-2 > li { counter-increment: sec-4-7-ch04-exercises-2-5-2; }
+#ex-set-builder-1-1 { counter-set: ex-set-builder-1-1 0; }
+#ex-set-builder-1-1 > li::marker { content: "("counter(ex-set-builder-1-1,upper-alpha)")"; }
+#ex-set-builder-1-1 > li { counter-increment: ex-set-builder-1-1; }
+#prop-a-subset-a-1-1-4 { counter-set: prop-a-subset-a-1-1-4 0; }
+#prop-a-subset-a-1-1-4 > li::marker { content: "("counter(prop-a-subset-a-1-1-4,lower-alpha)")"; }
+#prop-a-subset-a-1-1-4 > li { counter-increment: prop-a-subset-a-1-1-4; }
+#prop-set-laws-1-2 { counter-set: prop-set-laws-1-2 0; }
+#prop-set-laws-1-2 > li::marker { content: "("counter(prop-set-laws-1-2,lower-alpha)")"; }
+#prop-set-laws-1-2 > li { counter-increment: prop-set-laws-1-2; }
+#prop-more-set-laws-1-1-1 { counter-set: prop-more-set-laws-1-1-1 0; }
+#prop-more-set-laws-1-1-1 > li::marker { content: "("counter(prop-more-set-laws-1-1-1,lower-alpha)")"; }
+#prop-more-set-laws-1-1-1 > li { counter-increment: prop-more-set-laws-1-1-1; }
+#prop-even-more-set-laws-1-1-1 { counter-set: prop-even-more-set-laws-1-1-1 0; }
+#prop-even-more-set-laws-1-1-1 > li::marker { content: "("counter(prop-even-more-set-laws-1-1-1,lower-alpha)")"; }
+#prop-even-more-set-laws-1-1-1 > li { counter-increment: prop-even-more-set-laws-1-1-1; }
+#sec-5-8-ch05-exercises-2-1 { counter-set: sec-5-8-ch05-exercises-2-1 0; }
+#sec-5-8-ch05-exercises-2-1 > li::marker { content: ""counter(sec-5-8-ch05-exercises-2-1,decimal)"."; }
+#sec-5-8-ch05-exercises-2-1 > li { counter-increment: sec-5-8-ch05-exercises-2-1; }
+#sec-5-8-ch05-exercises-2-1-1-1-4 { counter-set: sec-5-8-ch05-exercises-2-1-1-1-4 0; }
+#sec-5-8-ch05-exercises-2-1-1-1-4 > li::marker { content: "("counter(sec-5-8-ch05-exercises-2-1-1-1-4,lower-alpha)")"; }
+#sec-5-8-ch05-exercises-2-1-1-1-4 > li { counter-increment: sec-5-8-ch05-exercises-2-1-1-1-4; }
+#sec-5-8-ch05-exercises-2-1-2-1-2 { counter-set: sec-5-8-ch05-exercises-2-1-2-1-2 0; }
+#sec-5-8-ch05-exercises-2-1-2-1-2 > li::marker { content: "("counter(sec-5-8-ch05-exercises-2-1-2-1-2,lower-alpha)")"; }
+#sec-5-8-ch05-exercises-2-1-2-1-2 > li { counter-increment: sec-5-8-ch05-exercises-2-1-2-1-2; }
+#sec-5-8-ch05-exercises-2-1-3-2 { counter-set: sec-5-8-ch05-exercises-2-1-3-2 0; }
+#sec-5-8-ch05-exercises-2-1-3-2 > li::marker { content: "("counter(sec-5-8-ch05-exercises-2-1-3-2,lower-alpha)")"; }
+#sec-5-8-ch05-exercises-2-1-3-2 > li { counter-increment: sec-5-8-ch05-exercises-2-1-3-2; }
+#def-pmi-5-1-3 { counter-set: def-pmi-5-1-3 0; }
+#def-pmi-5-1-3 > li::marker { content: "("counter(def-pmi-5-1-3,lower-roman)")"; }
+#def-pmi-5-1-3 > li { counter-increment: def-pmi-5-1-3; }
+#sec-6-2-intro-to-pmi-13-5-1 { counter-set: sec-6-2-intro-to-pmi-13-5-1 0; }
+#sec-6-2-intro-to-pmi-13-5-1 > li::marker { content: "("counter(sec-6-2-intro-to-pmi-13-5-1,lower-roman)")"; }
+#sec-6-2-intro-to-pmi-13-5-1 > li { counter-increment: sec-6-2-intro-to-pmi-13-5-1; }
+#sec-6-4-fib-11-4-1 { counter-set: sec-6-4-fib-11-4-1 0; }
+#sec-6-4-fib-11-4-1 > li::marker { content: "("counter(sec-6-4-fib-11-4-1,lower-roman)")"; }
+#sec-6-4-fib-11-4-1 > li { counter-increment: sec-6-4-fib-11-4-1; }
+#sec-6-6-exercises-2-1 { counter-set: sec-6-6-exercises-2-1 0; }
+#sec-6-6-exercises-2-1 > li::marker { content: ""counter(sec-6-6-exercises-2-1,decimal)"."; }
+#sec-6-6-exercises-2-1 > li { counter-increment: sec-6-6-exercises-2-1; }
+#sec-6-6-exercises-2-1-1-1-1 { counter-set: sec-6-6-exercises-2-1-1-1-1 0; }
+#sec-6-6-exercises-2-1-1-1-1 > li::marker { content: "("counter(sec-6-6-exercises-2-1-1-1-1,lower-alpha)")"; }
+#sec-6-6-exercises-2-1-1-1-1 > li { counter-increment: sec-6-6-exercises-2-1-1-1-1; }
+#ex-equals-1-2 { counter-set: ex-equals-1-2 0; }
+#ex-equals-1-2 > li::marker { content: "("counter(ex-equals-1-2,upper-alpha)")"; }
+#ex-equals-1-2 > li { counter-increment: ex-equals-1-2; }
+#prop-dom-inverse-1-1-4 { counter-set: prop-dom-inverse-1-1-4 0; }
+#prop-dom-inverse-1-1-4 > li::marker { content: "("counter(prop-dom-inverse-1-1-4,lower-alpha)")"; }
+#prop-dom-inverse-1-1-4 > li { counter-increment: prop-dom-inverse-1-1-4; }
+#prop-comp-inv-1-1-14 { counter-set: prop-comp-inv-1-1-14 0; }
+#prop-comp-inv-1-1-14 > li::marker { content: "("counter(prop-comp-inv-1-1-14,lower-alpha)")"; }
+#prop-comp-inv-1-1-14 > li { counter-increment: prop-comp-inv-1-1-14; }
+#prop-equiv-1-2 { counter-set: prop-equiv-1-2 0; }
+#prop-equiv-1-2 > li::marker { content: ""counter(prop-equiv-1-2,lower-alpha)".)"; }
+#prop-equiv-1-2 > li { counter-increment: prop-equiv-1-2; }
+#def-partition-3-2 { counter-set: def-partition-3-2 0; }
+#def-partition-3-2 > li::marker { content: "("counter(def-partition-3-2,lower-roman)")"; }
+#def-partition-3-2 > li { counter-increment: def-partition-3-2; }
+#def-function-9-2 { counter-set: def-function-9-2 0; }
+#def-function-9-2 > li::marker { content: "("counter(def-function-9-2,lower-roman)")"; }
+#def-function-9-2 > li { counter-increment: def-function-9-2; }
+#prop-image-1-2 { counter-set: prop-image-1-2 0; }
+#prop-image-1-2 > li::marker { content: "("counter(prop-image-1-2,lower-alpha)")"; }
+#prop-image-1-2 > li { counter-increment: prop-image-1-2; }
+#sec-7-8-ch08-exercies-2-1 { counter-set: sec-7-8-ch08-exercies-2-1 0; }
+#sec-7-8-ch08-exercies-2-1 > li::marker { content: ""counter(sec-7-8-ch08-exercies-2-1,decimal)")"; }
+#sec-7-8-ch08-exercies-2-1 > li { counter-increment: sec-7-8-ch08-exercies-2-1; }
+</style>
+</head>
+<body id="A Beginning, A Muddle, and An End: Introduction to Proofs" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/images/Book-cover.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">A Beginning, a Muddle, and an End:</span> <span class="subtitle">An Introduction to Proofs</span></a></h1>
+<p class="byline">Robert Vandermolen, Faith Molnar</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-7-2-first-properties-of-relations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-07.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-7-5-patitions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="teacher_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-01-what-is-a-proof.html" class="internal"><span class="codenumber">0</span> <span class="title">What is a Proof?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-axioms.html" class="internal"><span class="codenumber">0.1</span> <span class="title">In the Beginning We Had Shapes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-1-axioms.html#subsec-0-1-1-undefined-terms" class="internal"><span class="codenumber">0.1.1</span> <span class="title">Undefined Terms</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-1-axioms.html#subsec-1-1-2-axioms" class="internal"><span class="codenumber">0.1.2</span> <span class="title">Axioms</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-1-axioms.html#subsec-0-1-3-defns" class="internal"><span class="codenumber">0.1.3</span> <span class="title">Definitions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-1-axioms.html#subsec-0-1-4-proofs" class="internal"><span class="codenumber">0.1.4</span> <span class="title">Proofs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-2-checking.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Just Check a Bunch</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-3-obvioulsy.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Obviously</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-02-logic.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1-propositions.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositions and Connectives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1-propositions.html#sec-2-1-1-props-and-neg" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Propositions and Negation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1-propositions.html#sec-2-1-2-connect" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Connectives and Compound Propositions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-2-conditionals.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditionals and Biconditionals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-2-conditionals.html#sec-2-2-1-conditional" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Conditionals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-2-conditionals.html#sec-2-2-2-biconditional" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Biconditionals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-3-truth-tables.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-3-truth-tables.html#subsec-2-3-1-easy-tables" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Basic Tables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-3-truth-tables.html#subsec-2-3-2-hard-tables" class="internal"><span class="codenumber">1.3.2</span> <span class="title">More Complicated Tables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-3-truth-tables.html#subsec-2-3-3-taut" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Tautologies and Contradictions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Logical Equivalences</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-3.html#subsec-2-4-1-what-equiv" class="internal"><span class="codenumber">1.4.1</span> <span class="title">What is an equivalence?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-3.html#subsec-2-4-2-important-equiv" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Some Important Equivalences</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-3.html#subsec-2-4-3-logic-algebra" class="internal"><span class="codenumber">1.4.3</span> <span class="title">The Algebra of Logic</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Quantifiers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-1-basic-sets" class="internal"><span class="codenumber">1.5.1</span> <span class="title">The Universe of Discourse</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-2-basic-uni" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Common Universes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-2-truth-sets" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Truth Sets and Predicate Forms</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-4-existential" class="internal"><span class="codenumber">1.5.4</span> <span class="title">The Existential Quantifier</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-5-universal" class="internal"><span class="codenumber">1.5.5</span> <span class="title">The Universal Quantifier</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-6-neg-quant" class="internal"><span class="codenumber">1.5.6</span> <span class="title">Negating Quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-7-unique" class="internal"><span class="codenumber">1.5.7</span> <span class="title">Unique Existence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2-1.html#subsec-2-5-8-unique" class="internal"><span class="codenumber">1.5.8</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-1-4.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-03-how-to-argue.html" class="internal"><span class="codenumber">2</span> <span class="title">How to Argue</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-1-arguments.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Arguments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-1-arguments.html#subsec-3-1-1-arguments" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Validness</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-2-prop-forms.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Arguments with Propositional Forms</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-3-fallacy.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The Bad and the Ugly</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-4-arguments-with-quant.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Arguments with Quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-5-ch-03-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-03-basic-proofs.html" class="internal"><span class="codenumber">3</span> <span class="title">Direct Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-where-we-start.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Where We Start</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-1-where-we-start.html#sec-4-1-1-what-we-assume" class="internal"><span class="codenumber">3.1.1</span> <span class="title">What We Can Assume</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-1-where-we-start.html#subsec-4-1-2-terms" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Our Terms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-direct-proof.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Direct Proof</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-direct-proof.html#subsec-4-2-1-what-is-a-direct-proof" class="internal"><span class="codenumber">3.2.1</span> <span class="title">What is a Direct Proof?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-direct-proof.html#subsec-4-2-2-does-it-work" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Does it Work?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-first-examples.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Our First Proof</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-first-examples.html#sec-4-3-1-begin" class="internal"><span class="codenumber">3.3.1</span> <span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-first-examples.html#sec-4-3-2-muddle" class="internal"><span class="codenumber">3.3.2</span> <span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-first-examples.html#sec-4-3-3-end" class="internal"><span class="codenumber">3.3.3</span> <span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html" class="internal"><span class="codenumber">3.4</span> <span class="title">More Direct Proof Examples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-1-dir-example-two" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Direct Proof Example 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-1-dir-example-two-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-1-dir-example-two-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-1-dir-example-two-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-2-dir-example-three" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Direct Proof Example 3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-2-dir-example-three-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-2-dir-example-three-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-2-dir-example-three-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-3-dir-example-four" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Direct Proof Example 4</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-3-dir-example-four-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-3-dir-example-four-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-3-dir-example-four-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-4-dir-example-five" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Direct Proof Example 5</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-4-dir-example-five-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-4-dir-example-five-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-4-more-dir-examples.html#sec-4-4-4-dir-example-five-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subsec-3-5-proofs-of-or.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Proofs with Conjunctions and Disjunctions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-6-more-examp.html" class="internal"><span class="codenumber">3.6</span> <span class="title">More Examples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-3-8-exercises.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-04-indirect-proofs.html" class="internal"><span class="codenumber">4</span> <span class="title">Indirect Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-1-what-we-assume-ch-04.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Our Assumptions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-contrapositive.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Contrapositive</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-contrapositive.html#subsec-4-5-1-what-is-contrapositive" class="internal"><span class="codenumber">4.2.1</span> <span class="title">What is a Proof by Contraposition?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-contrapositive.html#sec-4-2-2-first-contrapositive" class="internal"><span class="codenumber">4.2.2</span> <span class="title">First Example of Contrapositive</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-contrapositive.html#sec-3-5-2-example-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-contrapositive.html#sec-3-5-2-example-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-2-contrapositive.html#sec-3-5-2-example-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-contradiction.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Contradiction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-1-what-is-a-contradiction" class="internal"><span class="codenumber">4.3.1</span> <span class="title">What is a contradiction?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-2-first-contra-example" class="internal"><span class="codenumber">4.3.2</span> <span class="title">First Example of Proof by Contradiction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-2-example-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-2-example-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-2-example-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-4-3-3-root-two" class="internal"><span class="codenumber">4.3.3</span> <span class="title"><span class="process-math">\(\sqrt{2}\)</span> is Irrational</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-3-7-2-example-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-3-7-2-example-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-3-contradiction.html#sec-3-7-2-example-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subsec-3-7-biconditional.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Biconditional Proofs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="subsec-4-5-proof-by-cases.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Proof by Exhaustion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subsec-4-5-proof-by-cases.html#subsec-3-5-1-what-are-cases" class="internal"><span class="codenumber">4.5.1</span> <span class="title">What are Cases?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subsec-4-5-proof-by-cases.html#subsec-3-5-2-cases-examples" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Exhaustive Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-6-existential-proofs.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Existential Proofs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-4-7-ch04-exercises.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-05.html" class="internal"><span class="codenumber">5</span> <span class="title">Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-1-what-is-a-set.html" class="internal"><span class="codenumber">5.1</span> <span class="title">What is a Set?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-1-what-is-a-set.html#sec-5-1-1-set-builder" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Set Builder Notation</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-2-comparing-sets.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Comparing and Combining Sets</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-3-venn-diagrams.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Venn Diagrams and Logic of Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-3-venn-diagrams.html#subsec-5-3-1-venn-diagrams" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-3-venn-diagrams.html#subsec-5-3-2-algebra-of-sets" class="internal"><span class="codenumber">5.3.2</span> <span class="title">The Logic of Sets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html" class="internal"><span class="codenumber">5.4</span> <span class="title">First Proofs with Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html#sec-5-4-1-first-set-proofs-first-proof" class="internal"><span class="codenumber">5.4.1</span> <span class="title">The First Proof</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html#sec-5-4-2-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html#sec-5-4-3-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html#sec-5-4-4-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-first-set-proofs.html#subsec-5-4-3-more-subsets" class="internal"><span class="codenumber">5.4.2</span> <span class="title">More Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-power-set.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Power Set</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-power-set.html#subsec-5-5-1-power-set-first-example" class="internal"><span class="codenumber">5.5.1</span> <span class="title">First Proof</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-power-set.html#subsec-5-5-1-power-set-first-example-first-direction" class="internal"><span class="title">Proof of: <span class="process-math">\(A \subseteq B\)</span> <span class="process-math">\(\implies\)</span> <span class="process-math">\(\mathscr{P}(A) \subseteq \mathscr{P}(B)\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-power-set.html#subsec-5-5-1-power-set-first-example-second-direction" class="internal"><span class="title">Proof of: <span class="process-math">\(\mathscr{P}(A) \subseteq \mathscr{P}(B)\)</span> <span class="process-math">\(\implies\)</span>  <span class="process-math">\(A \subseteq B\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-begin-2" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-muddle-2" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#sec-5-5-2-end-2" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-5-power-set.html#subsec-5-5-2-power-set-counting" class="internal"><span class="codenumber">5.5.2</span> <span class="title">The Natural Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="subsec-5-6-cross.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Cross Product</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-7-family.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Families</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-8-ch05-exercises.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-06-pmi.html" class="internal"><span class="codenumber">6</span> <span class="title">Principle of Mathematical Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-1-what-we-assume.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What We Will Use</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-1-what-we-assume.html#subsec-6-1-1-sum" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Summation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-1-what-we-assume.html#subsec-6-1-2-times" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Product</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-1-what-we-assume.html#subsec-6-1-3-factorial" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Factorial</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-2-intro-to-pmi.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Introduction to Induction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-2-intro-to-pmi.html#sec-6-2-3-intro-to-pmi-first-proof" class="internal"><span class="codenumber">6.2.1</span> <span class="title">First Proof with Induction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-2-intro-to-pmi.html#sec-6-2-3-1-begin" class="internal"><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-2-intro-to-pmi.html#sec-6-2-3-2-muddle" class="internal"><span class="title"><span class="process-math">\({\color{green}{\text{The Muddle}}}\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-2-intro-to-pmi.html#sec-6-2-3-3-end" class="internal"><span class="title"><span class="process-math">\({\color{blue}{\text{The End}}}\)</span></span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-3-basic-pmi-examples.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Basic Induciton Examples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-4-fib.html" class="internal"><span class="codenumber">6.4</span> <span class="title">The Fibonacci Sequence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-5-big-ones.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Well-Ordering Principle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-6-6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-07.html" class="internal"><span class="codenumber">7</span> <span class="title">Relations</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">What is a Relation?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-2-first-properties-of-relations.html" class="internal"><span class="codenumber">7.2</span> <span class="title">New Relations From Old</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-7-3-equiv-relations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Equivalence Relations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-5-patitions.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Partitions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-6-functions.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-7-bijections.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Bijections</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-7-8-ch08-exercies.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-7-3-equiv-relations"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.3</span><span class="space"> </span><span class="title">Equivalence Relations</span>
+</h2>
+<div class="para" id="sec-7-3-equiv-relations-2">Equivalence relations show up a lot in your future math courses especially in algebra and number theory. Yet, before we dive into an equivalence realtion lets look at the three properties which make it up. First up is the reflexive property.</div>
+<article class="definition definition-like" id="def-reflexive"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Reflexive.</span>
+</h3>
+<div class="para logical" id="def-reflexive-4">
+<div class="para">We say that a relation <span class="process-math">\(R\)</span> on a set <span class="process-math">\(A\)</span> is <dfn class="terminology">reflexive</dfn> on <span class="process-math">\(A\)</span> whenever</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x\in A,\text{ } xRx
+\end{equation*}
+</div>
+</div></article><div class="para" id="sec-7-3-equiv-relations-4">For our first example in this section we will return to our cartoons.</div>
+<article class="example example-like" id="sec-7-3-equiv-relations-5"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-7-3-equiv-relations-5-1">Consider the following set <span class="process-math">\(A\)</span>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external//images/a_reflex.jpeg" class="contained"></div>
+<div class="para" id="sec-7-3-equiv-relations-5-3">and consider the relation <span class="process-math">\(R\)</span> on <span class="process-math">\(A\)</span> defined as</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external//images/reflex_egg.jpeg" class="contained"></div>
+<div class="para" id="sec-7-3-equiv-relations-5-5">or as a set</div>
+<div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external//images/reflex_def.jpeg" class="contained"></div>
+<div class="para" id="sec-7-3-equiv-relations-5-7">notice that for every element of <span class="process-math">\(A\)</span> it is in an ordered pair with itself, and hence <span class="process-math">\(R\)</span> is reflexive.</div></article><div class="para" id="sec-7-3-equiv-relations-6">Let see a couple of examples of proof involving reflexive.</div>
+<article class="example example-like" id="sec-7-3-equiv-relations-7"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-7-1">
+<div class="para">Consider the relation <span class="process-math">\(S\)</span> on <span class="process-math">\(\Z\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S=\{(a,b)\in\Z\times\Z\text{ }|\text{ }3|(a+2b)\}
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Prove:</em> <span class="process-math">\(S\)</span> is reflexive</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-7-2"><details id="sec-7-3-equiv-relations-7-2-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-7-2-1-1">To prove this we let <span class="process-math">\(a\in\Z\text{,}\)</span> to show <span class="process-math">\(a\)</span> is included in an order pair with membership to <span class="process-math">\(S\)</span> amounts to proving an existential.</div>
+<div class="para" id="sec-7-3-equiv-relations-7-2-1-2">That is we will need to produce an integer to create an ordered pair with <span class="process-math">\(a\text{.}\)</span> Well, that integer is <span class="process-math">\(a\text{.}\)</span>
+</div>
+<div class="para logical" id="sec-7-3-equiv-relations-7-2-1-3">
+<div class="para">To see this simply note that</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-7-2-1-3-1">
+\begin{align*}
+a+2a \amp=3\cdot(a) 
+\end{align*}
+</div>
+<div class="para">and since <span class="process-math">\(a\)</span> is an integer by defintion of divides <span class="process-math">\(3\)</span> divides <span class="process-math">\(a+2a\text{,}\)</span> and hence <span class="process-math">\((a,a)\in S\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-7-2-1-4">Since we have chosen <span class="process-math">\(a\)</span> arbitrary we can conclude that <span class="process-math">\(S\)</span> is reflexive as desired.</div></article></details></div></article><article class="example example-like" id="sec-7-3-equiv-relations-8"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.4</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-7-3-equiv-relations-8-1">Let <span class="process-math">\(A\)</span> be a set, and let <span class="process-math">\(R\)</span> be a relation on <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-8-2">
+<em class="alert">Prove:</em> if <span class="process-math">\(R\)</span> is reflexive then <span class="process-math">\(\text{Dom}(R)=A\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-8-3"><details id="sec-7-3-equiv-relations-8-3-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-8-3-1-1">Assume <span class="process-math">\(R\)</span> is reflexive on <span class="process-math">\(A\text{.}\)</span> As usual to show equality of sets (don’t forget relations are sets!) we will need to break our proof into two parts.</div>
+<div class="para" id="sec-7-3-equiv-relations-8-3-1-2"><span class="process-math">\(\mathbf{\text{Proof of }\text{Dom}(R)\subseteq A}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-8-3-1-3">As usual, let <span class="process-math">\(a\in\text{Dom}(R)\text{,}\)</span> hence by definition we can find a <span class="process-math">\(b\in A\)</span> such that <span class="process-math">\((a,b)\in R\text{,}\)</span> since <span class="process-math">\(R\)</span> is a relation on <span class="process-math">\(A\)</span> we have that <span class="process-math">\(a\in A\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-8-3-1-4"><span class="process-math">\(\mathbf{\text{Proof of }\text{Dom}(R)\supseteq A}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-8-3-1-5">This time, let <span class="process-math">\(x\in A\text{,}\)</span> since we have assumed <span class="process-math">\(R\)</span> is reflexive, by definition <span class="process-math">\((x,x)\in R\)</span> and hence by definition of domain <span class="process-math">\(x\in\text{Dom}(R)\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-8-3-1-6">Since we have shown both <span class="process-math">\(\text{Dom}(R)\supseteq A\)</span> and <span class="process-math">\(\text{Dom}(R)\subseteq A\)</span> we have that <span class="process-math">\(\text{Dom}(R)= A\)</span> as desired.</div></article></details></div></article><div class="para" id="sec-7-3-equiv-relations-9">The next property that defines an equivalence relation is symmetric.</div>
+<article class="definition definition-like" id="def-symmetric"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Symmetric.</span>
+</h3>
+<div class="para logical" id="def-symmetric-4">
+<div class="para">We say that a realtion <span class="process-math">\(R\)</span> on a set <span class="process-math">\(A\)</span> is <dfn class="terminology">symmetric</dfn> on <span class="process-math">\(A\)</span> whenever</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x,y\in A,\text{ if } xRy\text{ then } yRx
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="sec-7-3-equiv-relations-11"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.6</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-11-1">
+<div class="para">Consider the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\{1,2,3,4,5,6\}
+\end{equation*}
+</div>
+<div class="para">and the relation <span class="process-math">\(T\)</span> on <span class="process-math">\(B\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T=\{(1,2),(1,5),(6,5),(2,1),(5,1),(5,6)\}
+\end{equation*}
+</div>
+<div class="para">This relation is symmetric to see this unlike with reflexive we need not check every element of <span class="process-math">\(B\)</span> we instead check every element of <span class="process-math">\(T\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Since }(1,2)\in T\text{ we need (and have) }(2,1)\in T
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Since }(1,5)\in T\text{ we need (and have) }(5,1)\in T
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Since }(6,5)\in T\text{ we need (and have) }(5,6)\in T
+\end{equation*}
+</div>
+<div class="para">now we have exhausted all the elements of <span class="process-math">\(T\)</span> and thus <span class="process-math">\(T\)</span> is indeed symmetric.</div>
+</div></article><div class="para" id="sec-7-3-equiv-relations-12">Lets explore an example of a proof involving the symmetric property next.</div>
+<article class="example example-like" id="sec-7-3-equiv-relations-13"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.7</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-13-1">
+<div class="para">Consider the relation <span class="process-math">\(R\)</span> on <span class="process-math">\(\Z\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\{(a,b)\in\Z\times\Z\text{ }|\text{ }3|(a+b)\}
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Prove:</em> <span class="process-math">\(R\)</span> is symmetric</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-13-2"><details id="sec-7-3-equiv-relations-13-2-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-13-2-1-1">To prove that <span class="process-math">\(R\)</span> is symmetric we must choose an arbitrary <span class="process-math">\((a,b)\in R\text{.}\)</span> By definition of <span class="process-math">\(R\)</span> <span class="process-math">\(3|(a+b)\text{,}\)</span> by definition of divides we can find an integer <span class="process-math">\(k\)</span> such that <span class="process-math">\(a+b=3k\)</span> yet since <span class="process-math">\(a+b=b+a\)</span> we have that <span class="process-math">\(b+a=3k\)</span> and hence <span class="process-math">\(3|(b+a)\)</span> and thus <span class="process-math">\((b,a)\in R\text{.}\)</span> Hence <span class="process-math">\(R\)</span> is symmetric.</div></article></details></div></article><article class="example example-like" id="sec-7-3-equiv-relations-14"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.8</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-7-3-equiv-relations-14-1">
+<em class="alert">Prove:</em> If <span class="process-math">\(S\)</span> is a symmetric relation on <span class="process-math">\(A\text{,}\)</span> and <span class="process-math">\(R\subseteq S\text{,}\)</span> then <span class="process-math">\(R^{-1} \subseteq S\)</span>
+</div>
+<details id="sec-7-3-equiv-relations-14-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-14-2-1">Let <span class="process-math">\(R\)</span> be a relation on the set <span class="process-math">\(A\text{.}\)</span> Assume <span class="process-math">\(S\)</span> is a symmetric relation on <span class="process-math">\(A\)</span> and <span class="process-math">\(R\subseteq S\text{.}\)</span> Let <span class="process-math">\(x\in R^{-1}\text{.}\)</span> Thus by definition of relation, and definition of inverse, we can find <span class="process-math">\((p,j)\in A\)</span> such that <span class="process-math">\(x=(p,j)\text{.}\)</span> Thus, by definition of inverse, <span class="process-math">\((j,p)\in R\text{.}\)</span> Thus by our assumption and the definition of subset, <span class="process-math">\((j,p)\in S\text{.}\)</span> And, since <span class="process-math">\(S\)</span> is symmetric, <span class="process-math">\((p,j)\in S\text{.}\)</span> Since <span class="process-math">\((p,j) = x\text{,}\)</span> <span class="process-math">\(x\in S\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-14-2-2">Since <span class="process-math">\(x\in R^{-1}\)</span> and <span class="process-math">\(x\in S\text{,}\)</span> by definition of subset, <span class="process-math">\(R^{-1} \subseteq S\)</span>
+</div></article></details></article><div class="para" id="sec-7-3-equiv-relations-15">The final property which makes an equivalence relation is transitive.</div>
+<article class="definition definition-like" id="def-transitive"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Transitive.</span>
+</h3>
+<div class="para logical" id="def-transitive-4">
+<div class="para">We say that a relation <span class="process-math">\(R\)</span> on a set <span class="process-math">\(A\)</span> is <dfn class="terminology">transitive</dfn> on <span class="process-math">\(A\)</span> whenever</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\forall x, y, z \in A, \text{ if } xRy \text{ and } yRz, \text{ then } xRz
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="sec-7-3-equiv-relations-17"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.10</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-17-1">
+<div class="para">Consider the relation <span class="process-math">\(T\)</span> on <span class="process-math">\(\Z\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T=\{(a,b)\in\Z\times\Z\text{ }|\text{ }6|(a-b)\}
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Prove:</em> <span class="process-math">\(T\)</span> is transitive on <span class="process-math">\(\Z\)</span>
+</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-17-2"><details id="sec-7-3-equiv-relations-17-2-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-17-2-1-1">To prove that <span class="process-math">\(T\)</span> is transitive we must choose two elements <span class="process-math">\((a,b)\in T\)</span> and <span class="process-math">\((b,c)\in T\text{.}\)</span>
+</div>
+<div class="para logical" id="sec-7-3-equiv-relations-17-2-1-2">
+<div class="para">By definition of <span class="process-math">\(T\)</span> both <span class="process-math">\(6|(a-b)\)</span> and <span class="process-math">\(6|(b-c)\text{.}\)</span> Hence by the definition of divides we can find <span class="process-math">\(s\in\Z\)</span> and <span class="process-math">\(t\in\Z\)</span> such that <span class="process-math">\(a-b=6s\)</span> and <span class="process-math">\(b-c=6t\text{.}\)</span> Calculate:</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-17-2-1-2-8">
+\begin{align*}
+a-c=(a-b)+(b-c) \amp=6s+6t \\
+\amp=6(s+t) 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(s+t\)</span> is an integer we can conclude that <span class="process-math">\(6|(a-c)\)</span> and hence <span class="process-math">\((a,c)\in T\text{.}\)</span> Therefore by the definition of transitive <span class="process-math">\(T\)</span> is transitive.</div>
+</div></article></details></div></article><article class="example example-like" id="sec-7-3-equiv-relations-18"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.11</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-7-3-equiv-relations-18-1">
+<em class="alert">Prove:</em> <span class="process-math">\(R\)</span> is transitive if and only if <span class="process-math">\(R\circ R \subseteq R\)</span>
+</div>
+<details id="sec-7-3-equiv-relations-18-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-18-2-1">Let <span class="process-math">\(R\)</span> be a relation on a non-empty set <span class="process-math">\(A\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-2"><span class="process-math">\(\mathbf{\text{Proof of }R\text{ is transitive}\implies R\circR\subseteq R}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-3">Assume <span class="process-math">\(R\)</span> is transitive. Let <span class="process-math">\((x,y)\in R\circ R\text{.}\)</span> By definition of composition, we can find <span class="process-math">\(z\in A\)</span> such that <span class="process-math">\((x,z)\in R\)</span> and <span class="process-math">\((z,y) \in R\text{.}\)</span> Since <span class="process-math">\(R\)</span> is transitive, <span class="process-math">\((x,y)\in R\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-4">Since <span class="process-math">\((x,y)\in R\circ R\)</span> and <span class="process-math">\((x,y) \in R\text{,}\)</span> by definition of subset, <span class="process-math">\(R\circ R \subset R\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-5"><span class="process-math">\(\mathbf{\text{Proof of }R\text{ is transitive}\impliedby R\circ R\subseteq R}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-6">Assume <span class="process-math">\(R\circ R \subseteq R\text{.}\)</span> Let <span class="process-math">\((x,y) \in R\)</span> and <span class="process-math">\((y,z)\in R\text{.}\)</span> Since <span class="process-math">\((x,y)\in R\)</span> and <span class="process-math">\((y,z)\in R\text{,}\)</span> by definition of composition, <span class="process-math">\((x,z)\in R\circ R\text{.}\)</span> Hence by our assumption that <span class="process-math">\(R\circ R \subseteq R\text{,}\)</span> and definition of subset, <span class="process-math">\((x,z)\in R\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-18-2-7">Thus, by definition of transitive, <span class="process-math">\(R\)</span> is transitive.</div></article></details></article><article class="proposition theorem-like" id="prop-subset"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.3.12</span><span class="period">.</span>
+</h3>
+<div class="para" id="prop-subset-1">Let <span class="process-math">\(A\)</span> be a non-empty set. For the power set <span class="process-math">\(\mathscr{P}(A)\text{,}\)</span> the relation "is a subset of" is reflexive on <span class="process-math">\(\mathscr{P}(A)\text{,}\)</span> and transitive, but not symmetric.</div></article><details id="sec-7-3-equiv-relations-20" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="title">Proof of Proposition 7.3.12.</span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-20-2"><em class="alert">[Reflexive]</em></div>
+<div class="para" id="sec-7-3-equiv-relations-20-3">Let <span class="process-math">\(X\in \mathscr{P}(A)\text{.}\)</span> (Need To Show: <span class="process-math">\(X\subset X\)</span>) Assume <span class="process-math">\(a\in X\text{.}\)</span> Hence, <span class="process-math">\(a\in X\text{,}\)</span> thus by definition of subset, <span class="process-math">\(X\subset X\)</span> and hence "subset of" is reflexive.</div>
+<div class="para" id="sec-7-3-equiv-relations-20-4"><em class="alert">[Transitive]</em></div>
+<div class="para" id="sec-7-3-equiv-relations-20-5">Let <span class="process-math">\(X, Y, Z \in \mathscr{P}(A)\)</span> such that <span class="process-math">\(X\subset Y\)</span> and <span class="process-math">\(Y\subset Z\text{.}\)</span> Let <span class="process-math">\(a\in X\text{.}\)</span> Thus by definition of subset, since <span class="process-math">\(X\subset Y\text{,}\)</span> <span class="process-math">\(a\in Y\text{.}\)</span> Since <span class="process-math">\(Y\subset Z\text{,}\)</span> and <span class="process-math">\(a\in Y\text{,}\)</span> <span class="process-math">\(a\in Z\)</span> Thus, by definition of subset, since <span class="process-math">\(a\in X\)</span> and <span class="process-math">\(a\in Z\text{,}\)</span> <span class="process-math">\(x\subset Z\text{.}\)</span> Hence "subset of" is transitive.</div>
+<div class="para" id="sec-7-3-equiv-relations-20-6"><em class="alert">[NOT Symmetric]</em></div>
+<div class="para" id="sec-7-3-equiv-relations-20-7">notice <span class="process-math">\(\emptyset \subset A\)</span> but  <span class="process-math">\(A \not\subset \emptyset\)</span> as we assumed that <span class="process-math">\(A\)</span> was not empty hence "subset of" is not symmetric.</div></article></details><div class="para" id="sec-7-3-equiv-relations-21">Now we have collected all of the properties which make an equivalence relation, the definition is almost self evident.</div>
+<article class="definition definition-like" id="def-equivalence-relation"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalence Relation.</span>
+</h3>
+<div class="para" id="def-equivalence-relation-4-1">A relation <span class="process-math">\(R\)</span> on a set <span class="process-math">\(A\)</span> is an <dfn class="terminology">equivalence relation</dfn> on <span class="process-math">\(A\)</span> if <span class="process-math">\(R\)</span> is reflexive, symmetric, and trasitive on <span class="process-math">\(A\text{.}\)</span>
+</div></article><article class="example example-like" id="sec-7-3-equiv-relations-23"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.14</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-23-1">
+<div class="para">Consider the relation <span class="process-math">\(E\)</span> on <span class="process-math">\(\Z\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E=\{(a,b)\in\Z\times\Z\text{ }|\text{ }5|(a-b)\}
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Prove:</em> <span class="process-math">\(E\)</span> is an equivalence relation</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-23-2"><details id="sec-7-3-equiv-relations-23-2-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sec-7-3-equiv-relations-23-2-1-1">
+<div class="para">The definition of equivalence relation has three properties:</div>
+<ul class="disc" id="sec-7-3-equiv-relations-23-2-1-1-1">
+<li id="sec-7-3-equiv-relations-23-2-1-1-1-1"><div class="para" id="sec-7-3-equiv-relations-23-2-1-1-1-1-1">reflexive</div></li>
+<li id="sec-7-3-equiv-relations-23-2-1-1-1-2"><div class="para" id="sec-7-3-equiv-relations-23-2-1-1-1-2-1">symmetric</div></li>
+<li id="sec-7-3-equiv-relations-23-2-1-1-1-3"><div class="para" id="sec-7-3-equiv-relations-23-2-1-1-1-3-1">transitive</div></li>
+</ul>
+<div class="para">thus a proof that a relation is an equivalence relation should be split into three parts.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-23-2-1-2"><em class="alert">Proof of Reflexive:</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-23-2-1-3">
+<div class="para">To see that <span class="process-math">\(E\)</span> is reflexive we start with an arbitrary element <span class="process-math">\(a\in\Z\text{.}\)</span> Now for this relation we can calculate:</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-23-2-1-3-3">
+\begin{align*}
+a-a \amp=0 \\
+\amp=5\cdot 0 
+\end{align*}
+</div>
+<div class="para">since 0 is an integer <span class="process-math">\(a-a\)</span> is thus divisible by <span class="process-math">\(5\text{,}\)</span> and hence <span class="process-math">\((a,a)\in E\)</span> as desired. Therefore <span class="process-math">\(E\)</span> is reflexive.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-23-2-1-4"><em class="alert">Proof of Symmetric:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-23-2-1-5">To show that <span class="process-math">\(E\)</span> is symmetric we begin by choosing a pair <span class="process-math">\((b,c)\in\Z\times\Z\)</span> such that <span class="process-math">\((b,c)\in E\text{.}\)</span> By the definition of <span class="process-math">\(E\)</span> <span class="process-math">\(5|(b-c)\)</span> thus by definition of divides we can find an integer <span class="process-math">\(k\)</span> so that <span class="process-math">\(b-c=5k\)</span> and hence <span class="process-math">\(c-b=-5k\)</span> and since <span class="process-math">\(-k\)</span> is an integer by definition of divides 5 divides <span class="process-math">\(c-b\)</span> thus <span class="process-math">\((c,b)\in E\text{;}\)</span> therefore <span class="process-math">\(E\)</span> is symmetric.</div>
+<div class="para" id="sec-7-3-equiv-relations-23-2-1-6"><em class="alert">Proof of Transitive:</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-23-2-1-7">
+<div class="para">To prove <span class="process-math">\(E\)</span> is transitive we begin with two arbitrary elements of <span class="process-math">\(E\text{,}\)</span> namely <span class="process-math">\((d,e)\in E\)</span> and <span class="process-math">\((e,f)\in E\text{.}\)</span> By definition of <span class="process-math">\(E\)</span> 5 divides both <span class="process-math">\(d-e\)</span> and <span class="process-math">\(e-f\text{,}\)</span> thus by definition of divides we can find integers <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> such that <span class="process-math">\(d-e=5r\)</span> and <span class="process-math">\(e-f=5s\text{.}\)</span> Now calculate:</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-23-2-1-7-12">
+\begin{align*}
+d-f=(d-e)+(e-f) \amp =5r+5s \\
+\amp=5(r+s) 
+\end{align*}
+</div>
+<div class="para">siince <span class="process-math">\(r+s\)</span> is an integer we have that <span class="process-math">\(d-f\)</span> is divisible by <span class="process-math">\(5\)</span> and thus <span class="process-math">\((d,f)\in E\)</span> and hence <span class="process-math">\(E\)</span> is transitive.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-23-2-1-8">As we have shown that <span class="process-math">\(E\)</span> is reflexive, symmetric and transitive we have have verified that <span class="process-math">\(E\)</span> is an equivalence relation as desired!</div></article></details></div></article><div class="para" id="sec-7-3-equiv-relations-24">For the next example we will find the following defintion and lemma helpful.</div>
+<article class="definition definition-like" id="def-partiy"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.15</span><span class="period">.</span><span class="space"> </span><span class="title">Parity.</span>
+</h3>
+<div class="para" id="def-partiy-3-1">We say that two integers have the same <dfn class="terminology">parity</dfn> when either both are even or both are odd.</div></article><article class="lemma theorem-like" id="lem-oddplusodd"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.3.16</span><span class="period">.</span>
+</h3>
+<div class="para" id="lem-oddplusodd-1-1">For any integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> if <span class="process-math">\(a+b\)</span> is divisible by 2 then <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have the same parity.</div></article><div class="para" id="sec-7-3-equiv-relations-27"><details id="sec-7-3-equiv-relations-27-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="title">Proof of Lemma 7.3.16.</span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-27-1-2">We will approach this proof exahustive, using <a href="sec-4-2-contrapositive.html#lem-odd-not-even" class="xref" data-knowl="./knowl/xref/lem-odd-not-even.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.2.1">Lemma 4.2.1</a> to break us into cases.</div>
+<div class="para" id="sec-7-3-equiv-relations-27-1-3"><em class="alert">Case 1: <span class="process-math">\(\mathbf{a}\)</span> is even and <span class="process-math">\(\mathbf{b}\)</span> is even</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-27-1-4">
+<div class="para">In this case we assume that we can find integers <span class="process-math">\(k\)</span> and  <span class="process-math">\(\ell\)</span> so that <span class="process-math">\(a=2k\)</span> and <span class="process-math">\(b=2\ell\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-27-1-4-5">
+\begin{align*}
+a+b \amp=2k+2\ell \\
+\amp=2(k+\ell) 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(k+\ell\)</span> is an integer we have that <span class="process-math">\(a+b\)</span> is even, hence when <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are both even that <span class="process-math">\(a+b\)</span> is even.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-27-1-5"><em class="alert">Case 2: <span class="process-math">\(\mathbf{a}\)</span> is odd and <span class="process-math">\(\mathbf{b}\)</span> is even</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-27-1-6">
+<div class="para">In this case we assume that we can find integers <span class="process-math">\(s\)</span> and <span class="process-math">\(t\)</span> so that <span class="process-math">\(a=2s+1\)</span> and <span class="process-math">\(b=2t\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-27-1-6-5">
+\begin{align*}
+a+b \amp= (2s+1)+2t\\
+\amp=2(s+t)+1 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(s+t\)</span> is an integer we have that <span class="process-math">\(a+b\)</span> is odd. Hence when <span class="process-math">\(a\)</span> is odd and <span class="process-math">\(b\)</span> is even then <span class="process-math">\(a+b\)</span> is odd.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-27-1-7"><em class="alert">Case 3: <span class="process-math">\(\mathbf{a}\)</span> is even and <span class="process-math">\(\mathbf{b}\)</span> is odd</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-27-1-8">
+<div class="para">In this case we assume we can find integers <span class="process-math">\(r\)</span> and <span class="process-math">\(v\)</span> so that <span class="process-math">\(a=2r\)</span> and <span class="process-math">\(b=2v+1\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-27-1-8-5">
+\begin{align*}
+a+b \amp=2r+(2v+1) \\
+\amp=2(r+v)+1 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(r+v\)</span> is an integer we have that <span class="process-math">\(a+b\)</span> is odd. Hence with <span class="process-math">\(a\)</span> is even and <span class="process-math">\(b\)</span> is odd <span class="process-math">\(a+b\)</span> is odd</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-27-1-9"><em class="alert">Case 1: <span class="process-math">\(\mathbf{a}\)</span> is odd and <span class="process-math">\(\mathbf{b}\)</span> is odd</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-27-1-10">
+<div class="para">In this final case we assue we can find integes <span class="process-math">\(n\)</span> and <span class="process-math">\(m\)</span> so that <span class="process-math">\(a=2n+1\)</span> and <span class="process-math">\(b=2m+1\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-27-1-10-5">
+\begin{align*}
+a+b \amp= (2n+1)+(2m+1)\\
+\amp=2n+2m+1+1=2n+2m+2 \\
+\amp=2(n+m+1) 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(n+m+1\)</span> is an integer we conclude that <span class="process-math">\(a+b\)</span> is even. Therefore when <span class="process-math">\(a\)</span> is odd and <span class="process-math">\(b\)</span> is odd we have that <span class="process-math">\(a+b\)</span> is even.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-27-1-11">Therefore we see that the only time that <span class="process-math">\(a+b\)</span> is even is exactly when <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have the same parity.</div></article></details></div>
+<article class="example example-like" id="sec-7-3-equiv-relations-28"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.17</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-28-1">
+<div class="para">Consider the relation <span class="process-math">\(R\)</span> on <span class="process-math">\(\Z\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\{(a,b)\in\Z\times\Z\text{ }|\text{ }2|(a+b)\}
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Prove:</em> <span class="process-math">\(R\)</span> is an equivalence relation</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2"><details id="sec-7-3-equiv-relations-28-2-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-28-2-1-1">As we are proving that <span class="process-math">\(R\)</span> is an equivalence relation we should split it into three parts.</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-2"><em class="alert">Proof of Reflexive:</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-28-2-1-3">
+<div class="para">To show relexive we start with an arbitrary element <span class="process-math">\(a\in\Z\text{,}\)</span> then calculate</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-28-2-1-3-2">
+\begin{align*}
+a+a \amp=2a 
+\end{align*}
+</div>
+<div class="para">and since <span class="process-math">\(a\)</span> is an integer we have that <span class="process-math">\(a+a\)</span> divisible by 2 and hence <span class="process-math">\((a,a)\in R\)</span> and thus <span class="process-math">\(R\)</span> is reflexive.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-4"><em class="alert">Proof of Symmetric:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-5">To prove that <span class="process-math">\(R\)</span> is symmetric choose an arbitrary element <span class="process-math">\((x,y)\in R\text{,}\)</span> thus by definition of <span class="process-math">\(R\)</span> we have that <span class="process-math">\(2|(x+y)\)</span> hence we can find an integher <span class="process-math">\(k\)</span> such that <span class="process-math">\(x+y=2k\text{,}\)</span> yet note that <span class="process-math">\(y+x=x+y=2k\)</span> hence <span class="process-math">\(y+x\)</span> is divisible by 2 and therefore <span class="process-math">\((y,x)\in R\)</span> and hence <span class="process-math">\(R\)</span> is symmetric.</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-6"><em class="alert">Proof of Transitive:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-7">To prove transitive we choose elements of <span class="process-math">\(R\text{,}\)</span> namely <span class="process-math">\((b,c)\in R\)</span> and <span class="process-math">\((c,d)\in R\text{.}\)</span> By definition of membership to <span class="process-math">\(R\)</span> we have that <span class="process-math">\(2|(b+c)\)</span> and <span class="process-math">\(2|(c+d)\text{,}\)</span> that is that both <span class="process-math">\(b+c\)</span> and <span class="process-math">\(c+d\)</span> are even.</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-8">By <a href="sec-7-3-equiv-relations.html#lem-oddplusodd" class="xref" data-knowl="./knowl/xref/lem-oddplusodd.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 7.3.16">Lemma 7.3.16</a> and <a href="sec-4-2-contrapositive.html#lem-odd-not-even" class="xref" data-knowl="./knowl/xref/lem-odd-not-even.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.2.1">Lemma 4.2.1</a> we can break the rest of our proof in to a couple of cases.</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-9"><em class="alert">Case 1: <span class="process-math">\(\mathbf{c}\)</span> is even</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-28-2-1-10">
+<div class="para">Assume that <span class="process-math">\(c\)</span> is even, by <a href="sec-7-3-equiv-relations.html#lem-oddplusodd" class="xref" data-knowl="./knowl/xref/lem-oddplusodd.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 7.3.16">Lemma 7.3.16</a> since we have that both <span class="process-math">\(b+c\)</span> is even and <span class="process-math">\(c+d\)</span> is even we can conclude that both <span class="process-math">\(c\)</span> and <span class="process-math">\(d\)</span> are even. Hence by the definition of even we can find integers <span class="process-math">\(n\)</span> and <span class="process-math">\(m\)</span> such that <span class="process-math">\(c=2n\)</span> and <span class="process-math">\(d=2m\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/lem-oddplusodd.html" id="sec-7-3-equiv-relations-28-2-1-10-11">
+\begin{align*}
+b+d \amp=2n+2m \\
+\amp=2(n+m) 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(n+m\)</span> is an integer we have that <span class="process-math">\(2|(b+d)\)</span> thus <span class="process-math">\((b,d)\in R\)</span> as desired.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-11"><em class="alert">Case 1: <span class="process-math">\(\mathbf{c}\)</span> is odd</em></div>
+<div class="para logical" id="sec-7-3-equiv-relations-28-2-1-12">
+<div class="para">Assume that <span class="process-math">\(c\)</span> is odd, by <a href="sec-7-3-equiv-relations.html#lem-oddplusodd" class="xref" data-knowl="./knowl/xref/lem-oddplusodd.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 7.3.16">Lemma 7.3.16</a> then both <span class="process-math">\(b\)</span> and <span class="process-math">\(d\)</span> are odd as we have that both <span class="process-math">\(b+c\)</span> and <span class="process-math">\(c+d\)</span> are even. By definition of even we can find two integers <span class="process-math">\(s\)</span> and <span class="process-math">\(t\)</span> such that <span class="process-math">\(b=2s+1\)</span> and <span class="process-math">\(d=2t+1\text{.}\)</span> Calculate</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/lem-oddplusodd.html" id="sec-7-3-equiv-relations-28-2-1-12-11">
+\begin{align*}
+b+d \amp=(2s+1)+(2t+1) \\
+\amp=2s+2t+2 \\
+\amp=2(s+t+1) 
+\end{align*}
+</div>
+<div class="para">since <span class="process-math">\(s+t+1\)</span> is an integer we have that <span class="process-math">\(2|(b+d)\)</span> and thus <span class="process-math">\((b,d)\in R\)</span> as desired.</div>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-13">Hence in both cases we have that <span class="process-math">\(R\)</span> is transitive.</div>
+<div class="para" id="sec-7-3-equiv-relations-28-2-1-14">As we have shown that <span class="process-math">\(R\)</span> is reflexive, symmetric and transitive we have have verified that <span class="process-math">\(R\)</span> is an equivalence relation as desired!</div></article></details></div></article><article class="example example-like" id="sec-7-3-equiv-relations-29"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.18</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-7-3-equiv-relations-29-1">Let <span class="process-math">\(A\)</span> be a set and let both <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> be relations on <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-29-2">
+<em class="alert">Prove:</em> if <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are equivalence relations then <span class="process-math">\(R\cap S\)</span> is an equivalence relation.</div>
+<div class="para" id="sec-7-3-equiv-relations-29-3"><details id="sec-7-3-equiv-relations-29-3-1" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-29-3-1-1">Let <span class="process-math">\(A\)</span> be a set and let both <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> be relations on <span class="process-math">\(A\)</span> and assume both <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are equivalence relations. To prove that <span class="process-math">\(R\cap S\)</span> is an equivalence relation we should break it down into the three conditions.</div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-2"><em class="alert">Proof of Reflexive:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-3">To prove reflexive, we begin with an arbitray element <span class="process-math">\(a\in A\text{.}\)</span> Since <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are equivalence realtions they are inparticular reflexive we have that <span class="process-math">\((a,a)\in R\)</span> and <span class="process-math">\((a,a)\in S\text{,}\)</span> hence by definition of intersection <span class="process-math">\((a,a)\in R\cap S\)</span> thus <span class="process-math">\(R\cap S\)</span> is reflexive.</div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-4"><em class="alert">Proof of Symmetric:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-5">To prove symmetric, we choose an element <span class="process-math">\((x,y)\in R\cap S\text{.}\)</span> By definition of intersection both <span class="process-math">\((x,y)\in R\)</span> and <span class="process-math">\((x,y)\in S\text{.}\)</span> Since both <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are equivalence relations in particular they are both symmetric and hence <span class="process-math">\((y,x)\in R\)</span> and <span class="process-math">\((y,x)\in S\text{,}\)</span> thus by the definition of intersection <span class="process-math">\((y,x)\in R\cap S\text{.}\)</span> Therefore <span class="process-math">\(R\cap S\)</span> is symmetric.</div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-6"><em class="alert">Proof of Transitive:</em></div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-7">To prove transitive we start with elements <span class="process-math">\((r,s)\in R\cap S\)</span> and <span class="process-math">\((s,t)\in R\cap S\text{,}\)</span> by definition of intersection we have that <span class="process-math">\((r,s)\in R\text{,}\)</span> <span class="process-math">\((r,s)\in S\text{,}\)</span> <span class="process-math">\((s,t)\in R\)</span> and <span class="process-math">\((s,t)\in S\text{.}\)</span> Since both <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> are equivalence relations, in particular they are transitive we have that <span class="process-math">\((r,t)\in R\)</span> and <span class="process-math">\((r,t)\in S\text{,}\)</span> hence by definition of intersection <span class="process-math">\((r,t)\in R\cap S\text{.}\)</span> Therefore <span class="process-math">\(R\cap S\)</span> is transitive.</div>
+<div class="para" id="sec-7-3-equiv-relations-29-3-1-8">Hence since we have shown that <span class="process-math">\(R\cap S\)</span> is reflexive, symmetric, and transitive we have that <span class="process-math">\(R\cap S\)</span> is an equivalence relation.</div></article></details></div></article><div class="para" id="sec-7-3-equiv-relations-30">An equivalence relation has a natural subdivision on the set it is on.</div>
+<article class="definition definition-like" id="def-equivalence-class"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.19</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalence Class.</span>
+</h3>
+<div class="para logical" id="def-equivalence-class-5-1">
+<div class="para">Let <span class="process-math">\(R\)</span> be an equivalence relation on a set <span class="process-math">\(A\text{.}\)</span> For <span class="process-math">\(x \in A\)</span> the <dfn class="terminology">equivalence class</dfn> of <span class="process-math">\(x\)</span> modulo <span class="process-math">\(R\)</span> is the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{x} := \{y\in A \text{ }|\text{ } xRy\}
+\end{equation*}
+</div>
+</div> <div class="para" id="def-equivalence-class-5-2">Each element of <span class="process-math">\(\bar{x}\)</span> is called a <dfn class="terminology">representative</dfn> of this class.</div></article><article class="definition definition-like" id="def-modulo"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.3.20</span><span class="period">.</span><span class="space"> </span><span class="title">Modulo.</span>
+</h3>
+<div class="para logical" id="def-modulo-3-1">
+<div class="para">The set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A/R = \{\bar{x} \text{ }|\text{ } x\in A\}
+\end{equation*}
+</div>
+<div class="para">of all equivalence classes is called <span class="process-math">\(A\)</span> <dfn class="terminology">modulo</dfn> <span class="process-math">\(R\)</span> (<span class="process-math">\(A\)</span> mod <span class="process-math">\(R\)</span>)</div>
+</div></article><article class="example example-like" id="sec-7-3-equiv-relations-33"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.21</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-7-3-equiv-relations-33-1">
+<div class="para">Consider the set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\{0,1,2,3,4\}
+\end{equation*}
+</div>
+<div class="para">and define the relation <span class="process-math">\(R\)</span> on <span class="process-math">\(A\)</span> as follows</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\{(a,b)\in A\times A\text{ }|\text{ }3|(a+2b)\}
+\end{equation*}
+</div>
+<div class="para">We claim that this is an equivalence relation of <span class="process-math">\(A\text{,}\)</span> yet since we just have a finite set lets just go through and find all the relations, nameley</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\{(0,0),(1,1),(2,2),(3,3),(4,4),(0,3),(3,0),(1,4),(4,1)\}
+\end{equation*}
+</div>
+<div class="para">We can then go through and check that all the properties of an equivalence relation, notice for example that the following are all memebers of <span class="process-math">\(R\)</span> (0,0), (1,1), (2,2), (3,3), (4,4) and hence <span class="process-math">\(R\)</span> is reflexive.</div>
+</div>
+<div class="para logical" id="sec-7-3-equiv-relations-33-2">
+<div class="para">To continue note the follwoing are all members of <span class="process-math">\(R\)</span>
+</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-33-2-2">
+\begin{align*}
+(0,0) \amp\text{ and }(0,0) \\
+(1,1) \amp\text{ and }(1,1) \\
+(2,2) \amp\text{ and }(2,2) \\
+(3,3) \amp\text{ and }(3,3) \\
+(4,4) \amp\text{ and }(4,4) \\
+(0,3) \amp\text{ and }(3,0) \\
+(1,4) \amp\text{ and }(4,1) 
+\end{align*}
+</div>
+<div class="para">and hence <span class="process-math">\(R\)</span> is symmetric. For transitive we check them all again that all of the  following are members of <span class="process-math">\(R\)</span>
+</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-33-2-5">
+\begin{align*}
+(0,0)\text{, }(0,3) \amp\text{ and }(0,3) \\
+(0,3)\text{, }(3,0) \amp\text{ and }(0,0) \\
+(3,3)\text{, }(3,0) \amp\text{ and }(3,0) \\
+(0,3)\text{, }(3,3) \amp\text{ and }(0,3) \\
+(1,1)\text{, }(1,4) \amp\text{ and }(1,4) \\
+(4,1)\text{, }(1,1) \amp\text{ and }(4,1) \\
+(4,4)\text{, }(4,1) \amp\text{ and }(4,1) \\
+(4,1)\text{, }(1,1) \amp\text{ and }(4,1) \\
+(1,4)\text{, }(4,4) \amp\text{ and }(1,4) 
+\end{align*}
+</div>
+<div class="para">Now note the following equivalence classes:</div>
+<div class="displaymath process-math" id="sec-7-3-equiv-relations-33-2-6">
+\begin{align*}
+\bar{0}=\bar{3} \amp=\{0,3\} \\
+\bar{1}=\bar{4} \amp=\{1,4\} \\
+\bar{2} \amp=\{2\} 
+\end{align*}
+</div>
+</div></article><article class="proposition theorem-like" id="prop-equiv"><h3 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.3.22</span><span class="period">.</span>
+</h3>
+<div class="para" id="prop-equiv-1-1">Let <span class="process-math">\(R\)</span> be an equivalence relation on a nonempty set <span class="process-math">\(A\text{.}\)</span> For all <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in <span class="process-math">\(A\text{,}\)</span>
+</div> <ol class="lower-alpha" id="prop-equiv-1-2">
+<li id="prop-equiv-1-2-1"><div class="para" id="p-derived-prop-equiv-1-2-1">
+<span class="process-math">\(x\in \bar{x}\)</span> and <span class="process-math">\(\bar{x} \subseteq A\)</span>
+</div></li>
+<li id="prop-equiv-1-2-2"><div class="para" id="p-derived-prop-equiv-1-2-2">
+<span class="process-math">\(xRy\)</span> if and only if <span class="process-math">\(\bar{x} = \bar{y}\)</span>
+</div></li>
+<li id="prop-equiv-1-2-3"><div class="para" id="p-derived-prop-equiv-1-2-3">
+<span class="process-math">\(x\)</span> is not related to <span class="process-math">\(y\)</span> if and only if <span class="process-math">\(\bar{x}\cap \bar{y} = \emptyset\)</span>
+</div></li>
+</ol></article><details id="sec-7-3-equiv-relations-35" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="title">Proof of Proposition 7.3.22.</span></h3></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-7-3-equiv-relations-35-2">We prove part (a) and part (b), leaving part (c) as an exercise.</div>
+<div class="para" id="sec-7-3-equiv-relations-35-3">Proof of part (a)</div>
+<div class="para" id="sec-7-3-equiv-relations-35-4"><span class="process-math">\(\mathbf{\text{Proof of }x\in\bar{x}}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-5">Let <span class="process-math">\(x\in A\text{,}\)</span> since <span class="process-math">\(R\)</span> is an equivalence relation, in particular it is reflexive, thus <span class="process-math">\(xRx\text{,}\)</span> hence by definition of <span class="process-math">\(\bar{x}\text{,}\)</span> <span class="process-math">\(x\in \bar{x}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-6"><span class="process-math">\(\mathbf{\text{Proof of }\bar{x} \subseteq A}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-7">Let <span class="process-math">\(\ell\in \bar{x}\text{.}\)</span> Thus by definition of <span class="process-math">\(\bar{x}\text{,}\)</span> <span class="process-math">\(xR\ell\text{.}\)</span> Hence, <span class="process-math">\((x,l)\in R\text{.}\)</span> Since <span class="process-math">\(R\)</span> is a relation on <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(R\subseteq A\times A\text{.}\)</span> Hence by definition of cross product, <span class="process-math">\(\ell\in A\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-8">Proof of (b) <span class="process-math">\(xRy\)</span> if and only if <span class="process-math">\(\bar{x} = \bar{y}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-9">Let <span class="process-math">\(R\)</span> be a relation on a non-empty set <span class="process-math">\(A\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-10"><span class="process-math">\(\mathbf{\text{Proof of }xRy\implies\bar{x}=\bar{y}}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-11">Let <span class="process-math">\((x, y) \in R\text{,}\)</span> as our objective is to prove equality of sets we should break it into two parts.</div>
+<div class="para" id="sec-7-3-equiv-relations-35-12"><span class="process-math">\(\mathbf{\text{Proof of }\bar{x}\subseteq\bar{y}}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-13">Let <span class="process-math">\(a \in \bar{x}\text{.}\)</span> Thus by definition of equivalence class <span class="process-math">\(xRa\text{.}\)</span> Since <span class="process-math">\(R\)</span> is an equivalence relation, it is symmetric, and as we assumed <span class="process-math">\((x,y)\in R\text{,}\)</span> we can thus conclude <span class="process-math">\((y,x) \in R\text{.}\)</span> Since <span class="process-math">\(R\)</span> is an equivalence relation, it is also transitive. And since we already concluded <span class="process-math">\((y,x)\in R\)</span> and <span class="process-math">\((x,a) \in R\)</span> we can now conclude <span class="process-math">\((y,a)\in R\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-14">Thus by definition of equivalence class, <span class="process-math">\(a\in \bar{y}\text{.}\)</span> Thus by definition of subset, <span class="process-math">\(\bar{x} \subseteq \bar{y}\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-15"><span class="process-math">\(\mathbf{\text{Proof of }\bar{x}\supseteq\bar{y}}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-16">let <span class="process-math">\(a\in \bar{y}\text{.}\)</span> Thus by definition of equivalence class <span class="process-math">\(yRa\text{.}\)</span> Since <span class="process-math">\(R\)</span> is an equivalence relation, it is transitive. And since we already concluded <span class="process-math">\((x,y)\in R\)</span> and <span class="process-math">\((y,a) \in R\text{,}\)</span> we can now conclude <span class="process-math">\((x,a) \in R\text{.}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-17">Thus by definition of equivalence class, <span class="process-math">\(a\in \bar{y}\text{.}\)</span> Thus by definition of subset, <span class="process-math">\(\bar{x} = \bar{y}\)</span>
+</div>
+<div class="para" id="sec-7-3-equiv-relations-35-18"><span class="process-math">\(\mathbf{\text{Proof of }xRy\impliedby\bar{x}=\bar{y}}\)</span></div>
+<div class="para" id="sec-7-3-equiv-relations-35-19">Let <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(y\in A\)</span> such that <span class="process-math">\(\bar{x} = \bar{y}\text{.}\)</span> Since <span class="process-math">\(R\)</span> is an equivalence relation, it is reflexive. Hence, <span class="process-math">\(xRx\text{.}\)</span> Thus by definition of <span class="process-math">\(\bar{x}\text{,}\)</span> <span class="process-math">\(x\in \bar{x}\text{.}\)</span> Since we assumed <span class="process-math">\(\bar{x} = \bar{y}\text{,}\)</span> in particular <span class="process-math">\(\bar{x} \subseteq \bar{y}\text{,}\)</span> <span class="process-math">\(x\in \bar{y}\text{.}\)</span> By definition of <span class="process-math">\(\bar{y}\text{,}\)</span> <span class="process-math">\(yRx\text{.}\)</span> Since <span class="process-math">\(R\)</span> is an equivalence relation, it is symmetric. Since we concluded <span class="process-math">\((y,x)\in R\text{,}\)</span> we can conclude <span class="process-math">\((x,y)\in R\)</span>
+</div></article></details></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-7-2-first-properties-of-relations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-7-5-patitions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
