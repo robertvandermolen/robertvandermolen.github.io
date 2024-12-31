@@ -1,318 +1,147 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<link rel="shortcut icon" type="image/png" href="img/Fav2.png"/>
-<link rel="shortcut icon" type="image/png" href="img/Fav2.png"/>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166666236-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166666236-1');
-</script>
-
-
-	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-
-		
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-</script>
-
-
-
-
-	
-<style>
-
-html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-	
-.column {
-  float: left;
-  width: 50%;
-}
-	
-.columnb {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-	
-<title>Robert Vandermolen PhD</title>
-	
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Beginning, a Muddle, and an End</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: #0d2c6c;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .left-section {
+            flex: 1;
+            text-align: center;
+        }
+        .left-section img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .left-section button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #61aee1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .left-section button:hover {
+            background-color: #0d2c6c;
+        }
+        .right-section {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .about-author img {
+            max-width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .about-author p {
+            flex: 1;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
-
-
-
-
-
 <body>
+    <div class="top-bar">A Beginning, a Muddle, and an End: Proof Anyone can Prove</div>
 
+    <div class="container">
+        <div class="left-section">
+            <a href="./book/web/index.html"><img src="Book-cover.png" alt="Book Cover"></a>
+            <button onclick="window.location.href='./book/web/index.html'">Read Online</button>
+            <button onclick="window.location.href='./book/a_beginning_a_muddle_and_an_end.pdf'">Download PDF</button>
+        </div>
+        <div class="right-section">
+            <p><em>A Beginning, a Muddle, and an End: Proof Anyone can Prove</em> is a free, open source textbook intended for second year math majors. It's purpose is to bridge the divide between the calculative courses like calculus and those with proofs like algebra and analysis. </p>
 
 
-	
-<div align='center' id='holder'></div>
 
+			<p>Please contact the author with feedback and suggestions, or if you are decide to use the book in a course you are teaching.  You can also easily submit feedback about an error or typo by creating a <a href="https://github.com/robertvandermolen/MA203">GitHub issue</a>.</p>
+			
+			<h3>Get the book</h3>
+			
+			<p>The entire book is available for free as an <a href="./book/web/index.html">interactive online ebook</a>. This should work well on all screen sizes, including smart phones, and work will with screen readers for visually impaired students. </p>
+			
+			<p>For offline use, a <a href="./book/a_beginning_a_muddle_and_an_end.pdf">free pdf version</a>, suitable for reading on a tablet or computer, is available for download. This should be searchable and easy to navigate using embedded links. I do warn you that I have taken very little time formatting it so it looks good as a pdf and I highly recommend that you .</p>
+			
+			<h4>PreTeXt (and LaTeX) source</h4>
 
+			<p>The source files for this book are available on <a href="https://github.com/robertvandermolen/MA203" target="_blank">GitHub</a>.</p>
 
-<div align='center' id='tool bar'></div>
 
+			<h4>Instructor and student resources</h4>
 
-<div id='main' style='overflow:auto'>
+			<p>I have collected slides for each chapter, note the proofs are not included on the slides, as I prefer to write the proofs on the chalk board. The slides are provided as powerpoint files to make it the easiest for the broadest audience to be able to use and edit to their hearts desire.</p>
+			<ul>
+			<li><a href="blah" target="_blank">Chapter 1 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 2 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 3 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 4 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 5 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 6 Slides</a>.</li>
+			<li><a href="blah" target="_blank">Chapter 7 Slides</a>.</li>
+			</ul>
 
+			</p>
 
 
-<!-- BOOKS -->
-<div id='books'>
 
-<div id='bookPic'>
-<a href=''> <img src='img/Books.png' style="width: 85%; padding-left:20px;"></a>
-</div>
+			<h3>About the book</h3>
 
-<div id='bookDescription' style="padding-right:50px; padding-left:5px;" align='center'>
-<h1>Children Books</h1>
+			<p>The text is an extended set of lecture notes from an introduction to proofs course at Saint Mary-of-the-Woods College. This course serves as an introduction to proofs course for math majors. Most students that would venture this far into the mathematics major have been enjoying these calculative classes, enjoying the comfort of an algorithm. Perhaps they were the student that loved Calculus III where they picutred three dimensional shapes and loved the visualiztation. Whatever it was I have seen far too many students then reach the more "rigorous" classes and then loose interest, changing majors or just stop enjoying mathematics. In my opinion this is just a shame! And this text tries to give students an algorithm to hold on to as they move deeper and deeper into the muddle. It is this transition from calculative to proving to why I choose instead of a combintorial based course, such a discrete mathematics, we take our trip in the the calculus student's favorite past time of numbers. So the student can rest assured that numbers are at the forefront of this course, even though we are exploring new and exciting paths where numbers may not take a leading role.</p>
 
-<p>Bob the Bear and Friends</p>
+			<p>This text covers: propositional logic, arguments, basic proof methods, and naive set theory, relations and functions. The basic methods of proofs includ proofs by contradiction, contrapositive, proofs by induction, and of course direct proofs. In lieu of an introductory chapter with back ground this text insteads introduces everything that is needed when it is needed. Except the only assumed prerequisite and that is <em>College Algebra</em></p>
 
-<div align='justify'>
-<p>I am working on a series of books centered around a bear Bob and his friends. The first in the series gives a friendly introduction for children to set theory made with my friend, mathematician and illustrator <a href="http://www2.math.ou.edu/~jrandich/">Joey Randich</a>. The second in the series "Bob and the Impossible Zoo" where Bob visits a zoo full of fun paradoxes. </p>
-</div>
+			<p>It is not the purpose of this text is not to be a refrence it is meant to be read and worked through. The end of each chapter has suitable exercises. The exercises will be the first thing that the author works on for future editions and please send any suggestions!</p>
 
-		
-<p></p>
-<br/>
-to see more click the picture or: <a href=''>See the Books!</a>
-          
-<br></br>
- 
-</div>
 
-</div>
+			<p><h3>About the Author</h3></p>
+			
+			<div class="about-author">
+				
+                <img src="me_new.png" alt="Author Picture">
+                <p><a href="https://robertvandermolen.github.io/" target="_blank">Rob Vandermolen</a> is an assistant professor at Saint Mary-of-the-Woods College. He has taught mathematics at the college level for over 5 years and received multiple teaching awards. He received his Ph.D. in algebraic geometry from the University of South Carolina in 2020.</p>
+            </div>
 
+			
 
+			<h3>License</h3>
 
-<!-- SOFTWARE -->
-<div id='software'>
+			<p><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="border-width:0" /></a><br />
+			<span href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type" xmlns:dct="http://purl.org/dc/terms/">A Beginning, a Muddle, and an End: Proof Anyone can Prove</span> by <span property="cc:attributionName" xmlns:cc="http://creativecommons.org/ns#">Rob Vandermolen</span> is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are free to download, use, print, and even sell this work as you wish to. You can also modify the text as much as you like (create a custom edition for your students, for example), as long as you attribute the parts of the text you use to the author.</p>
 
-<div id='softPic'>
-<a href=''> <img src='img/Software.png' style="width: 85%; padding-left:20px;"></a>
-</div>
-
-<div id='softDescription' style="padding-right:50px; padding-left:5px;" align='center'>
-<h1>Software and Games</h1>
-
-<p>Math Software and Games for all Ages</p>
-
-<div align='justify'>
-<p>I been developing a variety of games for the mathematics classrooms and homes. The games and activities are desinged for Pre-K up to AP Calculus.</p>
-</div>
-
-		
-<p></p>
-<br/>
-to try the game out just click the picture or: <a href=''>See the Games!</a>
-          
-<br></br>
- 
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-	
-	
-<script type='text/javascript' src='scripts/windowSize.js'></script>
-
-<script type='text/javascript' src='scripts/menu.js'></script>
-
-
-
-
-
-<script>
-where='rs';
-
-
-
-var main=document.getElementById('main');
-
-
-var books=document.getElementById('books');
-var bookPic=document.getElementById('bookPic');
-var bookDescription=document.getElementById('bookDescription');
-
-
-var soft=document.getElementById('software');
-var softPic=document.getElementById('softPic');
-var softDescription=document.getElementById('softDescription');
-
-
-var mainStyle=document.createAttribute('style');
-
-
-var bookStyle=document.createAttribute('style');
-
-var bookClass=document.createAttribute('class');
-
-var bookPicClass=document.createAttribute('class');
-
-var bookDClass=document.createAttribute('class');
-
-var bookDStyle=document.createAttribute('style');
-
-var softClass=document.createAttribute('class');
-
-var softPicClass=document.createAttribute('class');
-
-var softDClass=document.createAttribute('class');
-
-
-var softDStyle=document.createAttribute('style');
-
-
-
-
-DrawBanner();
-
-
-DrawWindow();
-
-
-//RESIZE
-window.addEventListener("resize", resizer);
-
-
-function DrawWindow(){
-
-	var theMainSize='';
-		
-	var offset=main.offsetTop;
-	var p=h-offset;
-	
-	
-	mainStyle.value='height:'+p+'px; overflow-y:auto; overflow-x:hidden';
-	
-	main.setAttributeNode(mainStyle);
-	
-	
-	
-	//FULL SCREEN ON DESKTOP
-	if (w>=1058 && phoneNo()){
-		bookClass.value='row';
-		bookPicClass.value='column';
-		bookDClass.value='column';
-		
-		bookStyle.value='padding-top:25px';
-		
-		bookDStyle.value='padding-top:100px; padding-right:50px';
-		
-		softClass.value='row';
-		softPicClass.value='column';
-		softDClass.value='column';
-		
-		softDStyle.value='padding-top:100px; padding-right:50px';
-		
-		
-		books.setAttributeNode(bookClass);
-		books.setAttributeNode(bookStyle);
-		bookPic.setAttributeNode(bookPicClass);
-		bookDescription.setAttributeNode(bookDClass);
-		
-		bookDescription.setAttributeNode(bookDStyle);
-		
-		soft.setAttributeNode(softClass);
-		softPic.setAttributeNode(softPicClass);
-		softDescription.setAttributeNode(softDClass);
-		
-		softDescription.setAttributeNode(softDStyle);
-		
-	
-	}
-	
-	
-	
-	
-	
-	
-	//NOT FULL SCREEN 
-	if (w<1058){
-	
-	
-		bookClass.value='';
-		bookPicClass.value='';
-		bookDClass.value='';
-		
-		bookStyle.value='';
-		
-		bookDStyle.value='padding-left:50px; padding-right:50px';
-		
-		softClass.value='';
-		softPicClass.value='';
-		softDClass.value='';
-		
-		softDStyle.value='padding-left:50px; padding-right:50px';
-		
-		
-		books.setAttributeNode(bookClass);
-		books.setAttributeNode(bookStyle);
-		bookPic.setAttributeNode(bookPicClass);
-		bookDescription.setAttributeNode(bookDClass);
-		
-		bookDescription.setAttributeNode(bookDStyle);
-		
-		soft.setAttributeNode(softClass);
-		softPic.setAttributeNode(softPicClass);
-		softDescription.setAttributeNode(softDClass);
-		
-		softDescription.setAttributeNode(softDStyle);
-	
-		
-	
-	}
-	
-	
-
-
-}
-  
- 
-	
-</script>
-	
+        </div>
+    </div>
 </body>
-
 </html>
