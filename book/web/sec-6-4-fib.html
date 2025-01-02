@@ -317,7 +317,7 @@ window.MathJax = {
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="teacher_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
@@ -646,11 +646,11 @@ window.MathJax = {
 <div class="para">Later on Day 5, Fibonacci returns to his home and comes up with perhaps the greatest mathematical assumption in all of history,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathbf{\text{ Assume that Rabbits never die! }}
+\mathbf{\text{ Assume that rabbits never die! }}
 \end{equation*}
 </div>
 <div class="para">Then asked himself how many rabbits would be there on day 6, or 7, or 8, or even 1000...</div>
-</div></article><div class="para" id="sec-6-4-fib-4">To create a formal defintion of the fibonacci we use the concept of inductive definitons. An inductive defintion is one which takes the form of PMI, specifically where we first define a base case and then we define the inductive step</div>
+</div></article><div class="para" id="sec-6-4-fib-4">To create a formal definition of the fibonacci we use the concept of inductive definitions. An inductive definition is one which takes the form of PMI, specifically where we first define a base case and then we define the inductive step</div>
 <article class="definition definition-like" id="def-fibonacci"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Fibonacci Numbers.</span>
 </h3>
@@ -665,7 +665,7 @@ f_1=1 \text{ and } f_2=1
 f_n = f_{n-1} + f_{n-2}
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-6-4-fib-6">For fun lets count some more rabbits.</div>
+</div></article><div class="para" id="sec-6-4-fib-6">For fun let’s count some more rabbits.</div>
 <article class="example example-like" id="ex-count-fib"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.2</span><span class="period">.</span>
 </h3>
@@ -689,7 +689,7 @@ f_8 \amp=f_7+f_6=13+8=21
 \end{align*}
 </div>
 <div class="para">so many bunnies...</div>
-</div></article><div class="para" id="sec-6-4-fib-8">The awake student, usually sitting somemwhere right off the front row, will notice that when we defined the Fibonacci numbers we didn’t just have a singular base case, and we diddn’t define the <span class="process-math">\(n+1\)</span> case, which is slightly different from the procedure of induction. To this student I applaud you, that is correct we instead used a slightly different version of indcution, known commonly as complete induction.</div>
+</div></article><div class="para" id="sec-6-4-fib-8">The awake student, usually sitting somewhere right off the front row, will notice that when we defined the Fibonacci numbers we didn’t just have a singular base case, and we didn’t define the <span class="process-math">\(n+1\)</span> case, which is slightly different from the procedure of induction. To this student I applaud you, that is correct; we instead used a slightly different version of induction, known commonly as complete induction.</div>
 <article class="definition definition-like" id="def-pci"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Principle of Complete Induction.</span>
 </h3>
@@ -711,12 +711,12 @@ f_8 \amp=f_7+f_6=13+8=21
 <em class="alert"><span class="process-math">\(\mathbf{\left(\text{Prove: }P(n)\right)}\)</span></em> ... thus <span class="process-math">\(P(n)\)</span> is true</div></li>
 </ol>
 <div class="para">Therefore <span class="process-math">\(\forall m\in\N\)</span> such that <span class="process-math">\(m\geq k\)</span> then <span class="process-math">\(P(m)\)</span> is true.</div>
-</div></article><div class="para" id="sec-6-4-fib-12">The astute student will note we are really doing nothing different here... as in PMI we said <em class="emphasis">for any</em> <span class="process-math">\(n\)</span> so why not up to any <span class="process-math">\(n-1\text{.}\)</span> But, this really allows us to do exactly what we have been doing its just that in step (iii) it becomes quite cumbersome to balance <span class="process-math">\(n+1\)</span> everywhere, so this way just lets us use <span class="process-math">\(n\)</span> as well sometimes we can just get some number less than <span class="process-math">\(n\)</span> and it is there we would like to invoke the induction assumption not hitting exactly one number. This range version is much more versitile and it is the method that I personally just always default to.</div>
+</div></article><div class="para" id="sec-6-4-fib-12">The astute student will note we are really doing nothing different here... as in PMI we said <em class="emphasis">for any</em> <span class="process-math">\(n\)</span> so why not up to any <span class="process-math">\(n-1\text{.}\)</span> But, this really allows us to do exactly what we have been doing its just that in step (iii) it becomes quite cumbersome to balance <span class="process-math">\(n+1\)</span> everywhere, so this way just lets us use <span class="process-math">\(n\)</span> as well sometimes we can just get some number less than <span class="process-math">\(n\)</span> and it is there we would like to invoke the induction assumption not hitting exactly one number. This range version is much more versatile and it is the method that I personally just always default to.</div>
 <article class="example example-like" id="sec-6-4-fib-13"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.4</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-6-4-fib-13-1">
-<em class="alert">Prove:</em> For any <span class="process-math">\(m\in\N\)</span> such that <span class="process-math">\(m\geq 1\)</span> we have <span class="process-math">\(f_{3m}\)</span> is even (every third fibonacci number is even)</div>
+<em class="alert">Prove:</em> For any <span class="process-math">\(m\in\N\)</span> such that <span class="process-math">\(m\geq 1\)</span> we have <span class="process-math">\(f_{3m}\)</span> is even (every third Fibonacci number is even)</div>
 <details id="sec-6-4-fib-13-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sec-6-4-fib-13-2-1"><em class="alert">(i) (Base Cases):</em></div>
 <div class="para logical" id="sec-6-4-fib-13-2-2">
 <div class="para">As we are to show this result for any <span class="process-math">\(m\geq 1\text{,}\)</span> our first base case will be 1!</div>

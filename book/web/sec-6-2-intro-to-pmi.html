@@ -317,7 +317,7 @@ window.MathJax = {
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="teacher_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
@@ -635,7 +635,7 @@ window.MathJax = {
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Successor.</span>
 </h3>
 <div class="para" id="def-successor-3-1">Let <span class="process-math">\(n\in\N\)</span> we call <span class="process-math">\((n+1)\in\N\)</span> the successor of <span class="process-math">\(n\text{.}\)</span>
-</div></article><div class="para" id="sec-6-2-intro-to-pmi-4">In the late 1800’s an Italian mathematician Giuseppe Peano deveoloped five axioms which can create all of the basic ordering and arithmetic properties we all know and love of the natural numbers, using an undefined term of <em class="emphasis">successor</em>, our definition of course captures the heart of his construction. Let it be said, Peano did not consider 0 a natural number, but we will forgive him. It is through these axioms which one verifies induction, this is out side the scope of this text but, such a fun exercise for the dedicated reader!</div>
+</div></article><div class="para" id="sec-6-2-intro-to-pmi-4">In the late 1800’s an Italian mathematician Giuseppe Peano developed five axioms which can create all of the basic ordering and arithmetic properties we all know and love of the natural numbers, using an undefined term of <em class="emphasis">successor</em>, our definition of course captures the heart of his construction. Let it be said, Peano did not consider 0 a natural number, but we will forgive him. It is through these axioms which one verifies induction, this is out side the scope of this text but, such a fun exercise for the dedicated reader!</div>
 <article class="definition definition-like" id="def-indcutive-set"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Inductive Set.</span>
 </h3>
@@ -646,7 +646,7 @@ window.MathJax = {
 n\in S\implies (n+1)\in S
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-6-2-intro-to-pmi-6">This says that a set <span class="process-math">\(S\)</span> is an indcutive set whenever it contains all of its successors.</div>
+</div></article><div class="para" id="sec-6-2-intro-to-pmi-6">This says that a set <span class="process-math">\(S\)</span> is an inductive set whenever it contains all of its successors.</div>
 <div class="para" id="sec-6-2-intro-to-pmi-7">It is inductive sets that are the underpinning of mathematical induction.</div>
 <article class="definition definition-like" id="def-pmi"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Principle of Mathematical Induction.</span>
@@ -669,7 +669,7 @@ S=\{n\in\N\text{ }|\text{ }n\geq k\}
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-6-2-intro-to-pmi-10-1">Let <span class="process-math">\(S\subseteq\N\)</span> and assume that both <span class="process-math">\(0\in S\)</span> and <span class="process-math">\(S\)</span> is an inductive set. By the Principle of Mathematical Induction (PMI) we can conclude that <span class="process-math">\(S=\N\text{.}\)</span>
-</div></article><div class="para" id="sec-6-2-intro-to-pmi-11">It has now been my experience that students have clocked out at this point in the lecture, no matter how much I have promised them that their algorithmic tendencies will be returning. So lets let the rubber hit the road and actual do some proofs!</div>
+</div></article><div class="para" id="sec-6-2-intro-to-pmi-11">It has now been my experience that students have clocked out at this point in the lecture, no matter how much I have promised them that their algorithmic tendencies will be returning. So let’s let the rubber hit the road and actual do some proofs!</div>
 <div class="para" id="sec-6-2-intro-to-pmi-12">The basic idea of PMI is to prove that the truth set, <span class="process-math">\(S\subset\N\text{,}\)</span> of a predicate <span class="process-math">\(P(x)\)</span> is equal to an inductive set. Or to hopefully make this sound less like a riddle,</div>
 <article class="assemblage assemblage-like" id="sec-6-2-intro-to-pmi-13"><h3 class="heading"><span class="title">Proof of <span class="process-math">\(\forall m\geq k\)</span> <span class="process-math">\(P(m)\)</span> Using PMI.</span></h3>
 <div class="para logical" id="sec-6-2-intro-to-pmi-13-5">
@@ -683,11 +683,11 @@ S=\{n\in\N\text{ }|\text{ }n\geq k\}
 <em class="alert"><span class="process-math">\(\mathbf{\left(\text{Prove: }P(n+1)\right)}\)</span></em> ... thus <span class="process-math">\(P(n+1)\)</span> is true</div></li>
 </ol>
 <div class="para">Therefore <span class="process-math">\(\forall m\in\N\)</span> such that <span class="process-math">\(m\geq k\)</span> then <span class="process-math">\(P(m)\)</span> is true.</div>
-</div></article><div class="para" id="sec-6-2-intro-to-pmi-14">Hopefully you can atleast start to see the algorithm forming, there are 3 steps, and we take these steps every time!</div>
+</div></article><div class="para" id="sec-6-2-intro-to-pmi-14">Hopefully you can at least start to see the algorithm forming, there are 3 steps, and we take these steps every time!</div>
 <section class="section" id="sec-6-2-3-intro-to-pmi-first-proof"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="space"> </span><span class="title">First Proof with Induction</span>
 </h3>
-<div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-2">For our first example of indcution we will use a summation (<a href="sec-6-1-what-we-assume.html#subsec-6-1-1-sum" class="internal" title="Section 6.1.1: Summation">Section 6.1.1</a>)</div>
+<div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-2">For our first example of induction we will use a summation (<a href="sec-6-1-what-we-assume.html#subsec-6-1-1-sum" class="internal" title="Section 6.1.1: Summation">Section 6.1.1</a>)</div>
 <div class="para logical" id="sec-6-2-3-intro-to-pmi-first-proof-3">
 <div class="para">
 <em class="alert">Prove:</em> For any <span class="process-math">\(m\in\N\)</span> with <span class="process-math">\(m\geq 1\)</span>
@@ -698,7 +698,7 @@ S=\{n\in\N\text{ }|\text{ }n\geq k\}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-4">Before we begin this proof we sing a slighlty different song for indcution (play-along):</div>
+<div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-4">Before we begin this proof we sing a slightly different song for induction (play-along):</div>
 <div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-5">"What’s the <span class="process-math">\({\color{red}{\text{Base Case}}}\text{?}\)</span>"</div>
 <details id="sec-6-2-3-intro-to-pmi-first-proof-6" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-6-1"><span class="process-math">\(m=1\)</span></div></div></details><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-7">"What’s the <span class="process-math">\({\color{blue}{P(m)}}\text{?}\)</span>"</div>
 <details id="sec-6-2-3-intro-to-pmi-first-proof-8" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-6-2-3-intro-to-pmi-first-proof-8-1"><div class="displaymath process-math">
@@ -707,7 +707,7 @@ P(m):\sum_{i=1}^m (2i-1)=m^2
 \end{equation*}
 </div></div></div></details><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-9">"What’re the definitions?"</div>
 <details id="sec-6-2-3-intro-to-pmi-first-proof-10" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-10-1">summation (<a href="sec-6-1-what-we-assume.html#subsec-6-1-1-sum" class="internal" title="Section 6.1.1: Summation">Section 6.1.1</a>)!</div></div></details><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-11">"Now, what to do?"</div>
-<details id="sec-6-2-3-intro-to-pmi-first-proof-12" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-12-1">Principle of Mathematical Induction! (it is the point the chapter, also we usually just call it <em class="emphasis">induction</em>)</div></div></details><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-13"></div>
+<details id="sec-6-2-3-intro-to-pmi-first-proof-12" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-12-1">Principle of Mathematical Induction! (it is the point of the chapter, also we usually just call it <em class="emphasis">induction</em>)</div></div></details><div class="para" id="sec-6-2-3-intro-to-pmi-first-proof-13"></div>
 <section class="section" id="sec-6-2-3-1-begin"><h4 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title"><span class="process-math">\({\color{red}{\text{The Beginning}}}\)</span></span>
 </h4>
@@ -739,7 +739,7 @@ P(m):\sum_{i=1}^m (2i-1)=m^2
 <div class="para" id="sec-6-2-3-2-muddle-2">The muddle for an induction always has the same purpose an often is done with a calculation. The purpose of the muddle is to satisfy the last part of an induction proof, the <span class="process-math">\(n+1\)</span> case.</div>
 <div class="para" id="sec-6-2-3-2-muddle-3"><em class="alert">(iii) <span class="process-math">\(\mathbf{\left(\text{Prove: }P(n+1)\right)}\)</span></em></div>
 <div class="para logical" id="sec-6-2-3-2-muddle-4">
-<div class="para">Now we (the student’s favorite word...) <em class="emphasis">calculate</em>
+<div class="para">Now we (use the student’s favorite word...) <em class="emphasis">calculate</em>
 </div>
 <div class="displaymath process-math" id="sec-6-2-3-2-muddle-4-2">
 \begin{align*}
@@ -760,7 +760,7 @@ P(m):\sum_{i=1}^m (2i-1)=m^2
 P(n+1): \sum_{i=1}^{n+1} (2i-1)=(n+1)^2
 \end{equation*}
 </div>
-<div class="para">therefore by proof by indcution we have shown for any <span class="process-math">\(m\in\N\)</span> with <span class="process-math">\(n\geq 1\)</span> that</div>
+<div class="para">therefore by proof by induction we have shown for any <span class="process-math">\(m\in\N\)</span> with <span class="process-math">\(n\geq 1\)</span> that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{i=1}^{m} (2i-1)=m^2

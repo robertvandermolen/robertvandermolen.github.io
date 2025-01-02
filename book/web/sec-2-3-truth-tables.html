@@ -317,7 +317,7 @@ window.MathJax = {
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="teacher_preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
@@ -631,12 +631,12 @@ window.MathJax = {
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Truth Tables</span>
 </h2>
 <section class="introduction" id="sec-2-3-truth-tables-2"><div class="para" id="sec-2-3-truth-tables-2-1">So far we have always looked at actual sentences, even when a letter like <span class="process-math">\(P\)</span> was introduced it was immediately followed by an actual statement.</div>
-<div class="para" id="sec-2-3-truth-tables-2-2">To recall our journey is to show/find the truth of statements, most often refferred to as proofs. In this journey we will need to combine propositons which we already know their truth value to arrive at new propositions which we want to be true. To be able to do this we need to be able to know how combining different propositons with our connectives effect their truth value (truthiness). To keep track of this we now introduce truth tables.</div></section><section class="section" id="subsec-2-3-1-easy-tables"><h3 class="heading hide-type">
+<div class="para" id="sec-2-3-truth-tables-2-2">To recall our journey is to show/find the truth of statements, most often referred to as proofs. In this journey we will need to combine propositions which we already know their truth value to arrive at new propositions which we want to be true. To be able to do this we need to be able to know how combining different propositions with our connectives effect their truth value (truthiness). To keep track of this we now introduce truth tables.</div></section><section class="section" id="subsec-2-3-1-easy-tables"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="space"> </span><span class="title">Basic Tables</span>
 </h3>
-<div class="para" id="subsec-2-3-1-easy-tables-2"> In a <dfn class="terminology">truth table</dfn> we take arbitirary propositions indicated by letters, such as <span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(Q\text{,}\)</span> <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(T\text{,}\)</span> and consider all the cases of each being either True (T) or False (F). We then explore how comining them with connectives changes the truth value of the compound propositions.</div>
-<div class="para" id="subsec-2-3-1-easy-tables-3"> We will call these arbitrary propositions/compound propostions,  <dfn class="terminology">propositional forms</dfn>. These propositoinal forms do not have a truth value. Instead, each form has a list of truth values that depend on the values assigned to its components. This list is displayed by presenting all possible combinations for the truth values of its components in a truth table.</div>
-<div class="para" id="subsec-2-3-1-easy-tables-4">To do this we will need to first be able to collect all the combinations of truth values of the basic components of a compound proposition. So for example, if the compound proposition has to components, lets name them <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> then all combinations are:</div>
+<div class="para" id="subsec-2-3-1-easy-tables-2"> In a <dfn class="terminology">truth table</dfn> we take arbitrary propositions indicated by letters, such as <span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(Q\text{,}\)</span> <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(S\text{,}\)</span> and <span class="process-math">\(T\text{,}\)</span> and consider all the cases of each being either True (T) or False (F). We then explore how coming them with connectives changes the truth value of the compound propositions.</div>
+<div class="para" id="subsec-2-3-1-easy-tables-3"> We will call these arbitrary propositions/compound propositions,  <dfn class="terminology">propositional forms</dfn>. These propositional forms do not have a truth value. Instead, each form has a list of truth values that depend on the values assigned to its components. This list is displayed by presenting all possible combinations for the truth values of its components in a truth table.</div>
+<div class="para" id="subsec-2-3-1-easy-tables-4">To do this we will need to first be able to collect all the combinations of truth values of the basic components of a compound proposition. So for example, if the compound proposition has two components, lets name them <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> then all combinations are:</div>
 <figure class="figure figure-like" id="table-truths"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
@@ -659,7 +659,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">F</td>
 </tr>
 </table></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-6">Now to see everything together we will begin with a couple of simple ones, first the conjunciton (<span class="process-math">\(P\wedge Q\)</span>). Since the conjunction involves two components (<span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span>) their truth tables must include all combinations of their two truth values, just as collected above in figure <a href="sec-2-3-truth-tables.html#table-truths" class="xref" data-knowl="./knowl/xref/table-truths.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.3.1">Figure 1.3.1</a>.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-6">Now to see everything together we will begin with a couple of simple ones, first the conjunction (<span class="process-math">\(P\wedge Q\)</span>). Since the conjunction involves two components (<span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span>) their truth tables must include all combinations of their two truth values, just as collected above in figure <a href="sec-2-3-truth-tables.html#table-truths" class="xref" data-knowl="./knowl/xref/table-truths.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.3.1">Figure 1.3.1</a>.</div>
 <figure class="figure figure-like" id="subsec-2-3-1-easy-tables-7"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
@@ -715,7 +715,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">F</td>
 </tr>
 </table></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-10">Next, we will see the truth table for the negation, <span class="process-math">\(\sim P\text{.}\)</span> Since the negation only invovles one component (<span class="process-math">\(P\)</span>) we simply need the two truth values that <span class="process-math">\(P\)</span> can obtain.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-10">Next, we will see the truth table for the negation, <span class="process-math">\(\sim P\text{.}\)</span> Since the negation only involves one component (<span class="process-math">\(P\)</span>) we simply need the two truth values that <span class="process-math">\(P\)</span> can obtain.</div>
 <figure class="figure figure-like" id="subsec-2-3-1-easy-tables-11"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
@@ -791,7 +791,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">F</td>
 </tr>
 </table></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-15">An importatant one is that of the biconditional, which we use as the word equivalent, this table shows us that this is a apt word use.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-1-easy-tables-15">An important one is that of the biconditional, which we use as the word equivalent, this table shows us that this is an apt word use.</div>
 <figure class="figure figure-like" id="subsec-2-3-1-easy-tables-16"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
@@ -823,13 +823,13 @@ window.MathJax = {
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="space"> </span><span class="title">More Complicated Tables</span>
 </h3>
 <div class="para logical" id="subsec-2-3-2-hard-tables-2">
-<div class="para">Now lets dive into more complicated examples. As our examples get more complicated, I suggest that the student take time to break-it-down. That is to create extra columns that are themseleves components of compoud propositions. A simple example of this is the compound proposition:</div>
+<div class="para">Now let’s dive into more complicated examples. As our examples get more complicated, I suggest that the student take time to break-it-down. That is to create extra columns that are themselves components of compound propositions. A simple example of this is the compound proposition:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (\sim P)\implies Q
 \end{equation*}
 </div>
-<div class="para">This example has only two <em class="emphasis">basic</em> compounants, namely <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\text{.}\)</span> Yet, notice that the antecedent is <span class="process-math">\(\sim P\text{,}\)</span> this is what I suggest you create a new column for namely after you make your <span class="process-math">\(P\)</span> column and you <span class="process-math">\(Q\)</span> column, then before you make your final column add a <span class="process-math">\(\sim P\)</span> column</div>
+<div class="para">This example has only two <em class="emphasis">basic</em> components, namely <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\text{.}\)</span> Yet, notice that the antecedent is <span class="process-math">\(\sim P\text{,}\)</span> this is what I suggest you create a new column for namely after you make your <span class="process-math">\(P\)</span> column and you <span class="process-math">\(Q\)</span> column, then before you make your final column add a <span class="process-math">\(\sim P\)</span> column</div>
 </div>
 <figure class="figure figure-like" id="subsec-2-3-2-hard-tables-3"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
@@ -863,7 +863,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 </table></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-2-hard-tables-4">Next, you can complete you table only looking at the <span class="process-math">\(\sim P\)</span> and <span class="process-math">\(Q\)</span> columns as they are the only ones now involved in the compound proposition <span class="process-math">\((\sim P)\implies Q\)</span>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-2-hard-tables-4">Next, you can complete the table by only looking at the <span class="process-math">\(\sim P\)</span> and <span class="process-math">\(Q\)</span> columns as they are the only ones now involved in the compound proposition <span class="process-math">\((\sim P)\implies Q\)</span>
 </div>
 <figure class="figure figure-like" id="subsec-2-3-2-hard-tables-5"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
@@ -1036,7 +1036,7 @@ window.MathJax = {
 </tr>
 </table></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="subsec-2-3-2-hard-tables-12">From now on we will only show the finished tables.</div>
-<div class="para" id="subsec-2-3-2-hard-tables-13">Another way of making a more complicated table is to have a compound proposition which invovlves three atomic propositions: <span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(Q\text{,}\)</span> and <span class="process-math">\(R\text{.}\)</span> In this case all of the possible combinations of true and false are the following:</div>
+<div class="para" id="subsec-2-3-2-hard-tables-13">Another way of making a more complicated table is to have a compound proposition which involves three atomic propositions: <span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(Q\text{,}\)</span> and <span class="process-math">\(R\text{.}\)</span> In this case all of the possible combinations of true and false are the following:</div>
 <figure class="figure figure-like" id="subsec-2-3-2-hard-tables-14"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
@@ -1160,7 +1160,7 @@ window.MathJax = {
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section><section class="section" id="subsec-2-3-3-taut"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="space"> </span><span class="title">Tautologies and Contradictions</span>
 </h3>
-<div class="para" id="subsec-2-3-3-taut-2">One of the strongest tools in proving are propositonal statements that are either always true or always false.</div>
+<div class="para" id="subsec-2-3-3-taut-2">One of the strongest tools in proving are propositional statements that are either always true or always false.</div>
 <article class="definition definition-like" id="def-tautology"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Tautology.</span>
 </h4>
@@ -1240,7 +1240,7 @@ window.MathJax = {
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.3.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><article class="definition definition-like" id="def-contradiction"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Contradiction.</span>
 </h4>
-<div class="para" id="def-contradiction-3-1">A <dfn class="terminology">contradiction</dfn> is a propositional form that is false for any assignment of truth value to its components</div></article><div class="para" id="subsec-2-3-3-taut-9">For an example of a contradition is the famous <span class="process-math">\(P\wedge (\sim P)\text{,}\)</span> this is the classic "I go to bed early and I will not go to bed early".</div>
+<div class="para" id="def-contradiction-3-1">A <dfn class="terminology">contradiction</dfn> is a propositional form that is false for any assignment of truth value to its components</div></article><div class="para" id="subsec-2-3-3-taut-9">For an example of a contradiction is the famous <span class="process-math">\(P\wedge (\sim P)\text{,}\)</span> this is the classic "I will go to bed early and I will not go to bed early".</div>
 <figure class="figure figure-like" id="subsec-2-3-3-taut-10"><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(P\)</span></th>
