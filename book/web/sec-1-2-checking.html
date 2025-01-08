@@ -181,24 +181,18 @@ window.MathJax = {
 #sec-4-1-1-what-we-assume-6 { counter-set: sec-4-1-1-what-we-assume-6 0; }
 #sec-4-1-1-what-we-assume-6 > li::marker { content: ""counter(sec-4-1-1-what-we-assume-6,decimal)"."; }
 #sec-4-1-1-what-we-assume-6 > li { counter-increment: sec-4-1-1-what-we-assume-6; }
-#sec-3-8-exercises-3 { counter-set: sec-3-8-exercises-3 0; }
-#sec-3-8-exercises-3 > li::marker { content: ""counter(sec-3-8-exercises-3,decimal)"."; }
-#sec-3-8-exercises-3 > li { counter-increment: sec-3-8-exercises-3; }
-#sec-3-8-exercises-3-1-2 { counter-set: sec-3-8-exercises-3-1-2 0; }
-#sec-3-8-exercises-3-1-2 > li::marker { content: "("counter(sec-3-8-exercises-3-1-2,lower-alpha)")"; }
-#sec-3-8-exercises-3-1-2 > li { counter-increment: sec-3-8-exercises-3-1-2; }
-#sec-3-8-exercises-3-2-2 { counter-set: sec-3-8-exercises-3-2-2 0; }
-#sec-3-8-exercises-3-2-2 > li::marker { content: "("counter(sec-3-8-exercises-3-2-2,lower-alpha)")"; }
-#sec-3-8-exercises-3-2-2 > li { counter-increment: sec-3-8-exercises-3-2-2; }
-#sec-3-8-exercises-3-3-2 { counter-set: sec-3-8-exercises-3-3-2 0; }
-#sec-3-8-exercises-3-3-2 > li::marker { content: "("counter(sec-3-8-exercises-3-3-2,lower-alpha)")"; }
-#sec-3-8-exercises-3-3-2 > li { counter-increment: sec-3-8-exercises-3-3-2; }
-#sec-3-8-exercises-5 { counter-set: sec-3-8-exercises-5 0; }
-#sec-3-8-exercises-5 > li::marker { content: ""counter(sec-3-8-exercises-5,decimal)"."; }
-#sec-3-8-exercises-5 > li { counter-increment: sec-3-8-exercises-5; }
-#sec-3-8-exercises-7 { counter-set: sec-3-8-exercises-7 0; }
-#sec-3-8-exercises-7 > li::marker { content: ""counter(sec-3-8-exercises-7,decimal)"."; }
-#sec-3-8-exercises-7 > li { counter-increment: sec-3-8-exercises-7; }
+#sec-3-8-exercises-2 { counter-set: sec-3-8-exercises-2 0; }
+#sec-3-8-exercises-2 > li::marker { content: ""counter(sec-3-8-exercises-2,decimal)"."; }
+#sec-3-8-exercises-2 > li { counter-increment: sec-3-8-exercises-2; }
+#sec-3-8-exercises-2-1-2 { counter-set: sec-3-8-exercises-2-1-2 0; }
+#sec-3-8-exercises-2-1-2 > li::marker { content: "("counter(sec-3-8-exercises-2-1-2,lower-alpha)")"; }
+#sec-3-8-exercises-2-1-2 > li { counter-increment: sec-3-8-exercises-2-1-2; }
+#sec-3-8-exercises-2-2-2 { counter-set: sec-3-8-exercises-2-2-2 0; }
+#sec-3-8-exercises-2-2-2 > li::marker { content: "("counter(sec-3-8-exercises-2-2-2,lower-alpha)")"; }
+#sec-3-8-exercises-2-2-2 > li { counter-increment: sec-3-8-exercises-2-2-2; }
+#sec-3-8-exercises-2-3-2 { counter-set: sec-3-8-exercises-2-3-2 0; }
+#sec-3-8-exercises-2-3-2 > li::marker { content: "("counter(sec-3-8-exercises-2-3-2,lower-alpha)")"; }
+#sec-3-8-exercises-2-3-2 > li { counter-increment: sec-3-8-exercises-2-3-2; }
 #defn-gcd-3-1-7 { counter-set: defn-gcd-3-1-7 0; }
 #defn-gcd-3-1-7 > li::marker { content: ""counter(defn-gcd-3-1-7,decimal)"."; }
 #defn-gcd-3-1-7 > li { counter-increment: defn-gcd-3-1-7; }
@@ -630,13 +624,13 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-1-2-checking"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">0.2</span><span class="space"> </span><span class="title">Just Check a Bunch</span>
 </h2>
-<div class="para" id="sec-1-2-checking-2">Students are probably most familiar with the natural and social sciences, where theories are tested by comparing what happens in experiments to what was predicted, and checking that the results stay the same when the experiment is repeated. In math, often, the goal is to figure out whether a statement is always true. Even if a statement works for a lot of examples, there’s still the chance that one example we haven’t tested could show it’s false. For example, you might notice that the expression</div>
+<div class="para" id="sec-1-2-checking-2">Students are probably most familiar with the natural and social sciences, where theories are tested by comparing what happens in experiments to what was predicted, and checking that the results stay the same when the experiment is repeated. In math, the goal is often to figure out whether a statement is always true. Even if a statement works for a lot of examples, there’s still the chance that one example we haven’t tested could show it’s false. For example, you might notice that the expression</div>
 <aside class="historical aside-like" id="sec-1-2-checking-3"><div class="para" id="sec-1-2-checking-3-1">This example is inspired by an example that I absolutely fell in love with. I first came across the inspirational example in Smith, Douglas, Maurice Eggen, and Richard St Andre. "A transition to advanced mathematics." (1983).</div></aside><div class="para logical" id="sec-1-2-checking-4"><div class="displaymath process-math">
 \begin{equation*}
 x^2-7x+53
 \end{equation*}
 </div></div>
-<div class="para" id="sec-1-2-checking-5">produces a prime number for <em class="emphasis">many</em> values of <span class="process-math">\(x\text{.}\)</span> The diligent student will check that for the first 10, 20, 30 or even 40 positive integers when we substitute our number for <span class="process-math">\(x\)</span> we arrive at a prime number such as</div>
+<div class="para" id="sec-1-2-checking-5">produces a prime number for <em class="emphasis">many</em> values of <span class="process-math">\(x\text{.}\)</span> The diligent student will check that for the first 10, 20, 30 or even 40 positive integers, when we substitute our number for <span class="process-math">\(x\text{,}\)</span> we arrive at a prime number such as</div>
 <div class="para logical" id="sec-1-2-checking-6"><div class="displaymath process-math">
 \begin{equation*}
 (4)^2-7(4)+53=41
