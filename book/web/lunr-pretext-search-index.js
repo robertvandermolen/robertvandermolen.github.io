@@ -10,6 +10,24 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "frontmatter-4",
+  "level": "1",
+  "url": "frontmatter-4.html",
+  "type": "Dedication",
+  "number": "",
+  "title": "Dedication",
+  "body": " To Tillye, without whose patience this book would not exist.  and  John Davis who's enthusiasm to learn pushed me to actually sit down and write this book!  and  My Students who's questions have shaped this book!  "
+},
+{
+  "id": "frontmatter-5",
+  "level": "1",
+  "url": "frontmatter-5.html",
+  "type": "Acknowledgements",
+  "number": "",
+  "title": "Acknowledgements",
+  "body": " This book has had amazing friends and students edit and they have my eternal thanks:   Benjo    Caitlin     This book has had inspiration of many many many many professors and instructors, I am sure I will miss someone, and I am sorry, I'm getting old...   Annalisa Calini    Oleg Smirnov    Alex Kasman    Bob Mignone    Garrett Mitchener    Kate Owens    Andrew Przeworski    Liz Jurisich    Ben Cox    Stephane Lafortune    George McNulty    Matthew Ballard    Joshua Cooper    Ralph Howard    Anton R. Schep    Sean Yee    Frank Thorne    Alexander Duncan     "
+},
+{
   "id": "teacher_preface",
   "level": "1",
   "url": "teacher_preface.html",
@@ -718,7 +736,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "Exercises",
-  "body": " Exercises    Write truth tables for the following:                Show the remaining laws are from are true, using truth tables.    Use a truth table to show whether the following are or are not equivalent:   ,  ,  ,  ,     Turn the first statement into the second one. Show your steps and state which equivalence rule from 1.3.2 you used to get there.          Consider the statement Which of the following are also ways of saying this statement? (identify all that apply)  There is at least one real number whose cube is 3.  The cube of each real number is 3.  Some real numbers have cube 3.  The number has cube 3, for some real number .  If is a real number, then .  Some real number has cube 3.      Consider the statement Which of the following are also ways of saying this statement? (identify all that apply)  If the sum of an integer and one is even, then that integer is odd.  All integers are even once you add one and are odd.  Given any integer which once adding one is even, that integer must be odd.  For all integers, there are some which you add one then it is even.  Any integer which is even once adding one is odd.  All odd integers are even once adding one.      Translate the following English statements into symbolic sentences with quantifiers. The universe for each is given in the parenthetical.    Not all math students are hardworking. ( all students)    All math students are not hardworking. ( all students)    There is a smallest positive integer ( )    Some people are happy and some people are not happy. ( all people)    No one loves everybody      Rewrite the statement in English without using the symbols or . Express your answer as simply as possible. Then write a negation for the statement. Determine which statement is true, the original or the negation.   .  .      Rewrite the statement formally using quantifiers and variables. Write the negation of the statement.  Everybody believes somebody.  Somebody believes everybody.  Any even integer equals some other integer plus 1.  The number of rows in any truth-table is for some integer .      "
+  "body": " Exercises    Write truth tables for the following:              Show the remaining laws are from are true, using truth tables.    Use a truth table to show whether the following are or are not equivalent:   ,  ,  ,  ,     Turn the first statement into the second one. Show your steps and state which equivalence rule from 1.3.2 you used to get there.          Consider the statement Which of the following are also ways of saying this statement? (identify all that apply)  There is at least one real number whose cube is 3.  The cube of each real number is 3.  Some real numbers have cube 3.  The number has cube 3, for some real number .  If is a real number, then .  Some real number has cube 3.      Consider the statement Which of the following are also ways of saying this statement? (identify all that apply)  If the sum of an integer and one is even, then that integer is odd.  All integers are even once you add one and are odd.  Given any integer which once adding one is even, that integer must be odd.  For all integers, there are some which you add one then it is even.  Any integer which is even once adding one is odd.  All odd integers are even once adding one.      Translate the following English statements into symbolic sentences with quantifiers. The universe for each is given in the parenthetical.    Not all math students are hardworking. ( all students)    All math students are not hardworking. ( all students)    There is a smallest positive integer ( )    Some people are happy and some people are not happy. ( all people)    No one loves everybody      Rewrite the statement in English without using the symbols or . Express your answer as simply as possible. Then write a negation for the statement. Determine which statement is true, the original or the negation.   .  .      Rewrite the statement formally using quantifiers and variables. Write the negation of the statement.  Everybody believes somebody.  Somebody believes everybody.  Any even integer equals some other integer plus 1.  The number of rows in any truth-table is for some integer .      "
 },
 {
   "id": "sec-3-1-arguments",
@@ -3175,7 +3193,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.6",
   "title": "Bijections",
-  "body": " Bijections  The concept of something being the same as something else is ubiquitous in mathematics. In this course we have already seen that equals is not as easy as it may of first seemed when dealing with sets. The bijection is how we go about in our combinatorics, algebra, and many other classes to show two objects we are studying are the same .   Surjection  surjecction  function surjection  onto  function onto   A function is onto  , or is a surjection means . When is a surjection, we write or .     A function that is surjective just needs to hit every element in the codomain. Consider the two sets and and consider the function defined as     Consider the function from defined as  Prove:  is surjective    The definition of surjective involves an equality of sets, so we break our proof into two parts.     Let by definition of range we can find an such that , yet by definition of we have that , since both and are integers we can conclude that is an integer and thus as desired.     Let , by we can find two integers and such that such that . Since we have that or or , splitting our proof into 3 cases   Case 1: Assume   In this case since and 0 is also an integer we have that hence and thus as desired.   Case 2: Assume   For this case note that hence and -1 are integers we have that hence thus as desired.   Case 3: Assume   In this case since and 1 are integers we have that hence , therefore as desired.  Because we have shown no matter what is that we can conclude that   Since we have shown both and we can conclude , therefore we have shown that is surjective.     Before we jump into our next example, lets shed a little light on composing functions.   Composing Functions  Once again functions are just relations, thus we have already defined how to compose them.  For example considering three sets , , and and two functions and we can then consider the composition .  When we were dealing with relations we would have taken a pair to only be a member of when we could find an element such that and , with a function this element is self evident, it is since means . Furthermore, since we know we have such a (another reason that the notation even makes sense).  That is we interpret the composition of functions as     Let and be functions.   Prove: If is surjective then is surjective    Assume that is surjective. To prove that is surjective we need to show an equality of sets, so break it into the usual parts.     Let by definition of range we can find an such that hence by definition of we have that as desired.     Let , since we have assumed that is surjective, in particular we have that thus by definition of range we can find a such that , that is , and by definition of we have that , hence we have that .  Since we have shown both and we can conclude that , hence we have shown that is surjective.      Injection  injection  function injection  function one-to-one  one-to-one   A function is one-to-one , or is an injection , means  whenever then .  We write this as , or .     A function that is injective just needs that no two inputs hit the same output. Consider, again, the two sets and and consider this time the function defined as     Consider the function defined for any as  Prove:  is an injective function.    We leave the task of proving that is indeed a function to the reader, and we prove that is injective.  Let and such that by definition of this means , subtracting five on both sides of the equation gives us as desired.     Notice that the function from is not one-to-one since yet .    Prove: If is one-to-one and is one-to-one, then is one-to-one.   Assume and . Let and such that .  By definition of function we can have that  .  By assumption that , that is . By our assumption that is one-to-one, . Thus, by our assumption that is one-to-one, . Hence is one-to-one       is a function from Rng( ) to if and only if is one-to-one.     Proof of  As we are to prove a biconditional we will split the proof into two parts.     Assume is one-to-one. We have defined the inverse of a relation in , so what we want to show is that is a function. To show a relation is a function we need to show that it satisfies both conditions to being a function.   Proof of Condition (i):   This first condition is the equality of sets, namely this was proven in .   Proof of Condition (ii)   Let , and such that and . By definition of inverse, and . Thus, by our assumption, as desired.     Let and such that . Name this element . By definition of inverse, and . Thus, by our assumption that is a function by condition (i) of being a function we have, as desired.   Now we have set up all the pieces we need to define a bijection.   Bijection  bijection  function bijection  function one-to-one correspondence  one-to-one correspondence   A function is a one-to-one correspondence , or a bijection means   is one-to-one and onto .  We write this as      A function that is bijective needs that no two inputs hit the same output, as well as to reach every element of the codomain. Consider, again, the two sets and and consider this time the function defined as     Consider the function defined for any as  Prove:  is a bijection.    To show this function is a bijection we will need to show it is injective and surjective.   Proof of one-to-one:   Let and be two arbitrary integers, such that by definition of we have that and therefore , adding two to both sides of the equations leaves us with as desired.   Proof of onto:   To show our desired equality of sets we split into two parts.     Let , by definition of range we can find an integer such that by the definition of we have that , since both and 2 are integers we have that is an integer and hence as desired.     Let , note to show that we have membership of we need to produce an integer so that maps this new integer to . This is an existential, and the way we produce this element in unimportant to the proof. Notice that since and 2 are integers we have that is an integer, and notice that and hence by definition of range we have that as desired.  Because we have shown that and we can conclude that , therefore we have that is onto as desired.  Since we have shown that is both one-to-one and onto we have that is a bijection.       If is a bijection, and is a bijection, then is a bijection.     Proof of  Assume is a bijection from to and is a bijection from to .   [Proof of one-to-one]   Let and such that , hence   By our assumption is a bijection, in particular one-to-one, this implies . Since is a bijection, in particular one-to-one, , therefore is one-to-one as desired.   [Proof of Onto]      Let . By definition of range, . Thus, Rng .     Let . Thus by our assumption that is a bijection, specifically surjective, we can find such that , and since is a bijection, specifically surjective.  Thus by assumption that is a bijection, specifically surjective, we can find such that . Thus by definition of composition, . Hence, . Thus .  Since we have shown that both and we can conclude so that we can conclude that is onto as desired.  Thus, is a bijection.   "
+  "body": " Bijections  The concept of something being the same as something else is ubiquitous in mathematics. In this course we have already seen that equals is not as easy as it may of first seemed when dealing with sets. The bijection is how we go about in our combinatorics, algebra, and many other classes to show two objects we are studying are the same .   Surjection  surjecction  function surjection  onto  function onto   A function is onto  , or is a surjection means . When is a surjection, we write or .     To actually prove using this definition it is helpful to eliminate the need to reference the definition of range. Thus we will most often use the definition that a function is a surjection means      A function that is surjective just needs to hit every element in the codomain. Consider the two sets and and consider the function defined as     Consider the function from defined as  Prove:  is surjective    The definition of surjective involves an equality of sets, so we break our proof into two parts.     Let by definition of range we can find an such that , yet by definition of we have that , since both and are integers we can conclude that is an integer and thus as desired.     Let , by we can find two integers and such that such that . Since we have that or or , splitting our proof into 3 cases   Case 1: Assume   In this case since and 0 is also an integer we have that hence and thus as desired.   Case 2: Assume   For this case note that hence and -1 are integers we have that hence thus as desired.   Case 3: Assume   In this case since and 1 are integers we have that hence , therefore as desired.  Because we have shown no matter what is that we can conclude that   Since we have shown both and we can conclude , therefore we have shown that is surjective.     Before we jump into our next example, lets shed a little light on composing functions.   Composing Functions  Once again functions are just relations, thus we have already defined how to compose them.  For example considering three sets , , and and two functions and we can then consider the composition .  When we were dealing with relations we would have taken a pair to only be a member of when we could find an element such that and , with a function this element is self evident, it is since means . Furthermore, since we know we have such a (another reason that the notation even makes sense).  That is we interpret the composition of functions as     Let and be functions.   Prove: If is surjective then is surjective    Assume that is surjective. To prove that is surjective we need to show an equality of sets, so break it into the usual parts.     Let by definition of range we can find an such that hence by definition of we have that as desired.     Let , since we have assumed that is surjective, in particular we have that thus by definition of range we can find a such that , that is , and by definition of we have that , hence we have that .  Since we have shown both and we can conclude that , hence we have shown that is surjective.      Injection  injection  function injection  function one-to-one  one-to-one   A function is one-to-one , or is an injection , means  whenever then .  We write this as , or .     A function that is injective just needs that no two inputs hit the same output. Consider, again, the two sets and and consider this time the function defined as     Consider the function defined for any as  Prove:  is an injective function.    We leave the task of proving that is indeed a function to the reader, and we prove that is injective.  Let and such that by definition of this means , subtracting five on both sides of the equation gives us as desired.     Notice that the function from is not one-to-one since yet .    Prove: If is one-to-one and is one-to-one, then is one-to-one.   Assume and . Let and such that .  By definition of function we can have that  .  By assumption that , that is . By our assumption that is one-to-one, . Thus, by our assumption that is one-to-one, . Hence is one-to-one       is a function from Rng( ) to if and only if is one-to-one.     Proof of  As we are to prove a biconditional we will split the proof into two parts.     Assume is one-to-one. We have defined the inverse of a relation in , so what we want to show is that is a function. To show a relation is a function we need to show that it satisfies both conditions to being a function.   Proof of Condition (i):   This first condition is the equality of sets, namely this was proven in .   Proof of Condition (ii)   Let , and such that and . By definition of inverse, and . Thus, by our assumption, as desired.     Let and such that . Name this element . By definition of inverse, and . Thus, by our assumption that is a function by condition (i) of being a function we have, as desired.   Now we have set up all the pieces we need to define a bijection.   Bijection  bijection  function bijection  function one-to-one correspondence  one-to-one correspondence   A function is a one-to-one correspondence , or a bijection means   is one-to-one and onto .  We write this as      A function that is bijective needs that no two inputs hit the same output, as well as to reach every element of the codomain. Consider, again, the two sets and and consider this time the function defined as     Consider the function defined for any as  Prove:  is a bijection.    To show this function is a bijection we will need to show it is injective and surjective.   Proof of one-to-one:   Let and be two arbitrary integers, such that by definition of we have that and therefore , adding two to both sides of the equations leaves us with as desired.   Proof of onto:   To show our desired equality of sets we split into two parts.     Let , by definition of range we can find an integer such that by the definition of we have that , since both and 2 are integers we have that is an integer and hence as desired.     Let , note to show that we have membership of we need to produce an integer so that maps this new integer to . This is an existential, and the way we produce this element in unimportant to the proof. Notice that since and 2 are integers we have that is an integer, and notice that and hence by definition of range we have that as desired.  Because we have shown that and we can conclude that , therefore we have that is onto as desired.  Since we have shown that is both one-to-one and onto we have that is a bijection.       If is a bijection, and is a bijection, then is a bijection.     Proof of  Assume is a bijection from to and is a bijection from to .   [Proof of one-to-one]   Let and such that , hence   By our assumption is a bijection, in particular one-to-one, this implies . Since is a bijection, in particular one-to-one, , therefore is one-to-one as desired.   [Proof of Onto]      Let . By definition of range, . Thus, Rng .     Let . Thus by our assumption that is a bijection, specifically surjective, we can find such that , and since is a bijection, specifically surjective.  Thus by assumption that is a bijection, specifically surjective, we can find such that . Thus by definition of composition, . Hence, . Thus .  Since we have shown that both and we can conclude so that we can conclude that is onto as desired.  Thus, is a bijection.   "
 },
 {
   "id": "def-surjection",
@@ -3190,8 +3208,17 @@ var ptx_lunr_docs = [
   "id": "sec-7-7-bijections-4",
   "level": "2",
   "url": "sec-7-7-bijections.html#sec-7-7-bijections-4",
-  "type": "Example",
+  "type": "Note",
   "number": "7.6.2",
+  "title": "",
+  "body": " To actually prove using this definition it is helpful to eliminate the need to reference the definition of range. Thus we will most often use the definition that a function is a surjection means    "
+},
+{
+  "id": "sec-7-7-bijections-5",
+  "level": "2",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-5",
+  "type": "Example",
+  "number": "7.6.3",
   "title": "",
   "body": " A function that is surjective just needs to hit every element in the codomain. Consider the two sets and and consider the function defined as   "
 },
@@ -3200,16 +3227,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-7-7-bijections.html#ex-surj-numbers",
   "type": "Example",
-  "number": "7.6.3",
+  "number": "7.6.4",
   "title": "",
   "body": " Consider the function from defined as  Prove:  is surjective    The definition of surjective involves an equality of sets, so we break our proof into two parts.     Let by definition of range we can find an such that , yet by definition of we have that , since both and are integers we can conclude that is an integer and thus as desired.     Let , by we can find two integers and such that such that . Since we have that or or , splitting our proof into 3 cases   Case 1: Assume   In this case since and 0 is also an integer we have that hence and thus as desired.   Case 2: Assume   For this case note that hence and -1 are integers we have that hence thus as desired.   Case 3: Assume   In this case since and 1 are integers we have that hence , therefore as desired.  Because we have shown no matter what is that we can conclude that   Since we have shown both and we can conclude , therefore we have shown that is surjective.    "
 },
 {
-  "id": "sec-7-7-bijections-8",
+  "id": "sec-7-7-bijections-9",
   "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-8",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-9",
   "type": "Example",
-  "number": "7.6.4",
+  "number": "7.6.5",
   "title": "",
   "body": " Let and be functions.   Prove: If is surjective then is surjective    Assume that is surjective. To prove that is surjective we need to show an equality of sets, so break it into the usual parts.     Let by definition of range we can find an such that hence by definition of we have that as desired.     Let , since we have assumed that is surjective, in particular we have that thus by definition of range we can find a such that , that is , and by definition of we have that , hence we have that .  Since we have shown both and we can conclude that , hence we have shown that is surjective.    "
 },
@@ -3218,18 +3245,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-7-7-bijections.html#def-injection",
   "type": "Definition",
-  "number": "7.6.5",
+  "number": "7.6.6",
   "title": "Injection.",
   "body": " Injection  injection  function injection  function one-to-one  one-to-one   A function is one-to-one , or is an injection , means  whenever then .  We write this as , or .   "
-},
-{
-  "id": "sec-7-7-bijections-10",
-  "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-10",
-  "type": "Example",
-  "number": "7.6.6",
-  "title": "",
-  "body": " A function that is injective just needs that no two inputs hit the same output. Consider, again, the two sets and and consider this time the function defined as   "
 },
 {
   "id": "sec-7-7-bijections-11",
@@ -3238,14 +3256,23 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.6.7",
   "title": "",
+  "body": " A function that is injective just needs that no two inputs hit the same output. Consider, again, the two sets and and consider this time the function defined as   "
+},
+{
+  "id": "sec-7-7-bijections-12",
+  "level": "2",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-12",
+  "type": "Example",
+  "number": "7.6.8",
+  "title": "",
   "body": " Consider the function defined for any as  Prove:  is an injective function.    We leave the task of proving that is indeed a function to the reader, and we prove that is injective.  Let and such that by definition of this means , subtracting five on both sides of the equation gives us as desired.    "
 },
 {
-  "id": "sec-7-7-bijections-13",
+  "id": "sec-7-7-bijections-14",
   "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-13",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-14",
   "type": "Example",
-  "number": "7.6.8",
+  "number": "7.6.9",
   "title": "",
   "body": "  Prove: If is one-to-one and is one-to-one, then is one-to-one.   Assume and . Let and such that .  By definition of function we can have that  .  By assumption that , that is . By our assumption that is one-to-one, . Thus, by our assumption that is one-to-one, . Hence is one-to-one   "
 },
@@ -3254,17 +3281,17 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-7-7-bijections.html#prop-inverse",
   "type": "Proposition",
-  "number": "7.6.9",
+  "number": "7.6.10",
   "title": "",
   "body": "   is a function from Rng( ) to if and only if is one-to-one.   "
 },
 {
-  "id": "sec-7-7-bijections-15",
+  "id": "sec-7-7-bijections-16",
   "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-15",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-16",
   "type": "Proof",
   "number": "7.6.1",
-  "title": "Proof of Proposition 7.6.9.",
+  "title": "Proof of Proposition 7.6.10.",
   "body": " Proof of  As we are to prove a biconditional we will split the proof into two parts.     Assume is one-to-one. We have defined the inverse of a relation in , so what we want to show is that is a function. To show a relation is a function we need to show that it satisfies both conditions to being a function.   Proof of Condition (i):   This first condition is the equality of sets, namely this was proven in .   Proof of Condition (ii)   Let , and such that and . By definition of inverse, and . Thus, by our assumption, as desired.     Let and such that . Name this element . By definition of inverse, and . Thus, by our assumption that is a function by condition (i) of being a function we have, as desired.  "
 },
 {
@@ -3272,18 +3299,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-7-7-bijections.html#def-bijection",
   "type": "Definition",
-  "number": "7.6.10",
+  "number": "7.6.11",
   "title": "Bijection.",
   "body": " Bijection  bijection  function bijection  function one-to-one correspondence  one-to-one correspondence   A function is a one-to-one correspondence , or a bijection means   is one-to-one and onto .  We write this as    "
-},
-{
-  "id": "sec-7-7-bijections-18",
-  "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-18",
-  "type": "Example",
-  "number": "7.6.11",
-  "title": "",
-  "body": " A function that is bijective needs that no two inputs hit the same output, as well as to reach every element of the codomain. Consider, again, the two sets and and consider this time the function defined as   "
 },
 {
   "id": "sec-7-7-bijections-19",
@@ -3292,6 +3310,15 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.6.12",
   "title": "",
+  "body": " A function that is bijective needs that no two inputs hit the same output, as well as to reach every element of the codomain. Consider, again, the two sets and and consider this time the function defined as   "
+},
+{
+  "id": "sec-7-7-bijections-20",
+  "level": "2",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-20",
+  "type": "Example",
+  "number": "7.6.13",
+  "title": "",
   "body": " Consider the function defined for any as  Prove:  is a bijection.    To show this function is a bijection we will need to show it is injective and surjective.   Proof of one-to-one:   Let and be two arbitrary integers, such that by definition of we have that and therefore , adding two to both sides of the equations leaves us with as desired.   Proof of onto:   To show our desired equality of sets we split into two parts.     Let , by definition of range we can find an integer such that by the definition of we have that , since both and 2 are integers we have that is an integer and hence as desired.     Let , note to show that we have membership of we need to produce an integer so that maps this new integer to . This is an existential, and the way we produce this element in unimportant to the proof. Notice that since and 2 are integers we have that is an integer, and notice that and hence by definition of range we have that as desired.  Because we have shown that and we can conclude that , therefore we have that is onto as desired.  Since we have shown that is both one-to-one and onto we have that is a bijection.    "
 },
 {
@@ -3299,17 +3326,17 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-7-7-bijections.html#prop-bij-comp",
   "type": "Proposition",
-  "number": "7.6.13",
+  "number": "7.6.14",
   "title": "",
   "body": "  If is a bijection, and is a bijection, then is a bijection.   "
 },
 {
-  "id": "sec-7-7-bijections-21",
+  "id": "sec-7-7-bijections-22",
   "level": "2",
-  "url": "sec-7-7-bijections.html#sec-7-7-bijections-21",
+  "url": "sec-7-7-bijections.html#sec-7-7-bijections-22",
   "type": "Proof",
   "number": "7.6.2",
-  "title": "Proof of Proposition 7.6.13.",
+  "title": "Proof of Proposition 7.6.14.",
   "body": " Proof of  Assume is a bijection from to and is a bijection from to .   [Proof of one-to-one]   Let and such that , hence   By our assumption is a bijection, in particular one-to-one, this implies . Since is a bijection, in particular one-to-one, , therefore is one-to-one as desired.   [Proof of Onto]      Let . By definition of range, . Thus, Rng .     Let . Thus by our assumption that is a bijection, specifically surjective, we can find such that , and since is a bijection, specifically surjective.  Thus by assumption that is a bijection, specifically surjective, we can find such that . Thus by definition of composition, . Hence, . Thus .  Since we have shown that both and we can conclude so that we can conclude that is onto as desired.  Thus, is a bijection.  "
 },
 {
