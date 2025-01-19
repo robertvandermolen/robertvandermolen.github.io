@@ -626,8 +626,8 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-5-1-what-is-a-set"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.1</span><span class="space"> </span><span class="title">What is a Set?</span>
 </h2>
-<section class="introduction" id="sec-5-1-what-is-a-set-2"><div class="para" id="sec-5-1-what-is-a-set-2-1">While set theory has been rigorously defined axiomatically, in this course we choose to only skim the surface using a whole lot of intuition and the propositional logic that we developed in <a href="ch-02-logic.html" class="internal" title="Chapter 1: Introduction to Logic">Chapter 1</a>. The main object of study in set theory is the <em class="emphasis">set</em>. Intuitively a set is a magic bag filled with stuff... or nothing... Georg Cantor the russian mathematician, credited as the father of set theory, first defined the set as:</div>
-<div class="para" id="sec-5-1-what-is-a-set-2-2">A set is a gathering together into a whole of definite, distinct objects of our perception or of our thought—which are called elements of the set.</div>
+<section class="introduction" id="sec-5-1-what-is-a-set-2"><div class="para" id="sec-5-1-what-is-a-set-2-1">While set theory has been rigorously defined axiomatically, in this course we choose to only skim the surface using a whole lot of intuition and the propositional logic that we developed in <a href="ch-02-logic.html" class="internal" title="Chapter 1: Introduction to Logic">Chapter 1</a>. The main object of study in set theory is the <em class="emphasis">set</em>. Intuitively, a set is a magic bag filled with stuff... or nothing... Georg Cantor, the Russian mathematician credited as the father of set theory, first defined the set as:</div>
+<div class="para" id="sec-5-1-what-is-a-set-2-2">"A set is a gathering together into a whole of definite, distinct objects of our perception or of our thought—which are called elements of the set."</div>
 <div class="para" id="sec-5-1-what-is-a-set-2-3">We include a much more boring description.</div>
 <article class="definition definition-like" id="def-naive-set"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Set.</span>
@@ -635,7 +635,7 @@ window.MathJax = {
 <div class="para" id="def-naive-set-3-1">A <dfn class="terminology">set</dfn> is a well defined collection of objects.</div></article><article class="definition definition-like" id="def-element-of-a-set"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Element.</span>
 </h3>
-<div class="para" id="def-element-of-a-set-6-1">The objects in a set are called <dfn class="terminology">elements</dfn> or <em class="emphasis">members</em>.</div></article><div class="para" id="sec-5-1-what-is-a-set-2-6">We will most often denote sets with capital letters like: <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\)</span> etc. Furthermore we will denote elements with lowercase letters like <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> etc.</div>
+<div class="para" id="def-element-of-a-set-6-1">The objects in a set are called <dfn class="terminology">elements</dfn> or <em class="emphasis">members</em>.</div></article><div class="para" id="sec-5-1-what-is-a-set-2-6">We will most often denote sets with capital letters like: <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> etc. Furthermore we will denote elements with lowercase letters like <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> etc.</div>
 <article class="assemblage assemblage-like" id="sec-5-1-what-is-a-set-2-7"><h3 class="heading"><span class="title"><span class="process-math">\(\in\)</span> Notation.</span></h3>
 <div class="para logical" id="sec-5-1-what-is-a-set-2-7-2">
 <div class="para">To indicate that <span class="process-math">\(x\)</span> is an element of a set <span class="process-math">\(A\)</span> we will write:</div>
@@ -650,8 +650,8 @@ x\in A
 x\not\in A
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-5-1-what-is-a-set-2-8">Membership to a set is a <em class="alert">proposition</em> as it is either true or false.</div>
-<div class="para" id="sec-5-1-what-is-a-set-2-9">To define a specific set we can simply list all of it’s elements. To do so we encompass the elements we wish to include between braces: <span class="process-math">\(\{\)</span> and <span class="process-math">\(\}\)</span> and separate the elements with a comma.</div>
+</div></article><div class="para" id="sec-5-1-what-is-a-set-2-8">Membership of a set is a <em class="alert">proposition</em>, as it is either true or false.</div>
+<div class="para" id="sec-5-1-what-is-a-set-2-9">To define a specific set we can simply list all of its elements. To do so, we encompass the elements we wish to include between braces: <span class="process-math">\(\{\)</span> and <span class="process-math">\(\}\)</span> and separate the elements with a comma.</div>
 <article class="example example-like" id="sec-5-1-what-is-a-set-2-10"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="period">.</span>
 </h3>
@@ -668,36 +668,36 @@ x\not\in A
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Cardinality.</span>
 </h3>
 <div class="para logical" id="def-cardinality-2-1">
-<div class="para">For a set <span class="process-math">\(A\)</span> we call the <dfn class="terminology">cardinality</dfn> or <dfn class="terminology">order</dfn> of <span class="process-math">\(A\)</span> is the number of elements in the set <span class="process-math">\(A\text{,}\)</span> denoted as</div>
+<div class="para">For a set <span class="process-math">\(A\)</span> the <dfn class="terminology">cardinality</dfn> or <dfn class="terminology">order</dfn> of <span class="process-math">\(A\)</span> is the number of elements in the set <span class="process-math">\(A\text{,}\)</span> denoted as</div>
 <div class="displaymath process-math">
 \begin{equation*}
 |A|
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-5-1-what-is-a-set-2-13">In this course we will only mention this concept when the sets are finite, when sets are infinite the cardinality of a set flourishes a beautiful theory, one which we will not dive into in this text but is quite amazing.</div>
+</div></article><div class="para" id="sec-5-1-what-is-a-set-2-13">In this course we will only mention this concept when the sets are finite, when sets are infinite the cardinality of a set furnishes a beautiful theory, one which we will not dive into in this text but that is quite amazing.</div>
 <article class="example example-like" id="sec-5-1-what-is-a-set-2-14"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.6</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-5-1-what-is-a-set-2-14-1">Consider the following set</div>
 <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external//images/first_set.jpeg" class="contained"></div>
-<div class="para" id="sec-5-1-what-is-a-set-2-14-3">We see that the number of elements in the set <span class="process-math">\(A\)</span> is 4 hence, <span class="process-math">\(|A|=4\text{.}\)</span>
-</div></article><div class="para" id="sec-5-1-what-is-a-set-2-15">Sets come in many different shapes and flavors and throughout your mathematical career you will need to become extremely comfortable with sets, and depending on the discipline you will either love or hate the following set, but you will never deny that it is perhaps one of the most important sets.</div>
+<div class="para" id="sec-5-1-what-is-a-set-2-14-3">We see that the number of elements in the set <span class="process-math">\(A\)</span> is 4. Hence, <span class="process-math">\(|A|=4\text{.}\)</span>
+</div></article><div class="para" id="sec-5-1-what-is-a-set-2-15">Sets come in many different shapes and flavors, and throughout your mathematical career you will need to become extremely comfortable with sets. Depending on the discipline, you will either love or hate the following set, but you will never deny that it is perhaps one of the most important sets.</div>
 <article class="definition definition-like" id="def-empty-set"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Empty Set.</span>
 </h3>
 <div class="para logical" id="def-empty-set-3-1">
-<div class="para">We will call the set containing no elements the <dfn class="terminology">empty set</dfn>, we denote the empty set as <span class="process-math">\(\emptyset\text{,}\)</span> that is</div>
+<div class="para">We will call the set containing no elements the <dfn class="terminology">empty set</dfn>. We denote the empty set as <span class="process-math">\(\emptyset\text{.}\)</span> That is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \emptyset=\{\}
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-5-1-what-is-a-set-2-17">As there are no elements in <span class="process-math">\(\emptyset\text{,}\)</span> therefore <span class="process-math">\(|\emptyset|=0\text{,}\)</span> as well, to the the disjoy of all combinatorists, the statement <span class="process-math">\(x\in\emptyset\)</span> is a contradiction (that is always false).</div></section><section class="subsection" id="sec-5-1-1-set-builder"><h3 class="heading hide-type">
+</div></article><div class="para" id="sec-5-1-what-is-a-set-2-17">There are no elements in <span class="process-math">\(\emptyset\text{,}\)</span> therefore <span class="process-math">\(|\emptyset|=0\text{.}\)</span> Also, to the the disjoy of all combinatorists, the statement <span class="process-math">\(x\in\emptyset\)</span> is a contradiction (that is, always false).</div></section><section class="subsection" id="sec-5-1-1-set-builder"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="space"> </span><span class="title">Set Builder Notation</span>
 </h3>
 <div class="para" id="sec-5-1-1-set-builder-3">Membership is the defining characteristic of a set, thus it is helpful to define a set by conditions for membership. One way to do that we call <dfn class="terminology">set-builder notation</dfn>.</div>
 <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//images/set-build-p.jpeg" class="contained"></div>
-<div class="para" id="sec-5-1-1-set-builder-5">This is our way of defining membership <span class="process-math">\(a\in\{x\text{ }|\text{ }P(x)\}\)</span> if and only if <span class="process-math">\(P(a)\)</span> is true.</div>
+<div class="para" id="sec-5-1-1-set-builder-5">This is our way of defining membership. <span class="process-math">\(a\in\{x\text{ }|\text{ }P(x)\}\)</span> if and only if <span class="process-math">\(P(a)\)</span> is true.</div>
 <article class="example example-like" id="ex-set-builder"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.8</span><span class="period">.</span>
 </h4>
@@ -709,23 +709,23 @@ x\not\in A
 <li id="ex-set-builder-1-1-3"><div class="para" id="ex-set-builder-1-1-3-1"><span class="process-math">\(\displaystyle \{z\in\Q\text{ }|\text{ }|z|\lt\sqrt{7}\}\)</span></div></li>
 </ol>
 </div></article><div class="para logical" id="sec-5-1-1-set-builder-7">
-<div class="para">In <a href="sec-5-1-what-is-a-set.html#ex-set-builder" class="xref" data-knowl="./knowl/xref/ex-set-builder.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.1.8">Example 5.1.8</a> (B) we defined the condition with a quantifier, specifically <span class="process-math">\(\exists a\in\Z\text{.}\)</span> This is an extremely common use-case in mathematics. I bring this up here to <span class="process-math">\({\color{red}{\text{warn}}}\)</span> the student that this is perhaps the most common quantifier to be <em class="emphasis">hidden</em>. That is, we would most likely see it presented as:</div>
+<div class="para">In <a href="sec-5-1-what-is-a-set.html#ex-set-builder" class="xref" data-knowl="./knowl/xref/ex-set-builder.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.1.8">Example 5.1.8</a> (B), we defined the condition with a quantifier, specifically <span class="process-math">\(\exists a\in\Z\text{.}\)</span> This is an extremely common use-case in mathematics. I bring this up here to <span class="process-math">\({\color{red}{\text{warn}}}\)</span> the student that this is perhaps the most common quantifier to be <em class="emphasis">hidden</em>. That is, we would most likely see it presented as:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-set-builder.html">
 \begin{equation*}
 \{y\in\Z\text{ }|\text{ }y=3a+1,\text{ }a\in\Z\}
 \end{equation*}
 </div>
-<div class="para">To defend the mathematician which chooses to present it in this manner, we mostly study objects with a well defined and unique multiplication, that is there is only one unique integer <span class="process-math">\(a\)</span> that satisfies <span class="process-math">\(y=3a+1\)</span> for a given <span class="process-math">\(y\text{.}\)</span>
+<div class="para">To defend the mathematician who chooses to present it in this manner, we mostly study objects with a well defined and unique multiplication. That is, there is only one unique integer <span class="process-math">\(a\)</span> that satisfies <span class="process-math">\(y=3a+1\)</span> for a given <span class="process-math">\(y\text{.}\)</span>
 </div>
 </div>
 <div class="para logical" id="sec-5-1-1-set-builder-8">
-<div class="para">Adding to the possible confusion yet important to understand, for this <em class="emphasis">same</em> set it is true that</div>
+<div class="para">Adding to the possible confusion, yet important to understand, for this <em class="emphasis">same</em> set it is true that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \forall k\in\Z\text{ }(3k+1)\in\{y\in\Z\text{ }|\text{ }y=3a+1,\text{ }a\in\Z\}
 \end{equation*}
 </div>
-<div class="para">that is, by defining a set with an existential condition we are actually defining a universal relationship. To top it off we often do not even mention the universal relationship and <em class="emphasis">hide</em> the existential one, all in the sake of brevity and the word <em class="emphasis">obvious</em>.</div>
+<div class="para">that is, by defining a set with an existential condition we are actually defining a universal relationship. To top it off, we often do not even mention the universal relationship and <em class="emphasis">hide</em> the existential one, all for the sake of brevity and the word <em class="emphasis">obvious</em>.</div>
 </div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-05.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-5-2-comparing-sets.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

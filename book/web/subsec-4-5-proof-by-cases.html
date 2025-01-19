@@ -626,10 +626,10 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="subsec-4-5-proof-by-cases"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">Proof by Exhaustion</span>
 </h2>
-<section class="introduction" id="subsec-4-5-proof-by-cases-2"><div class="para" id="subsec-4-5-proof-by-cases-2-1">Our next proof method is not really a standalone method; other methods will need to accompany it. We will introduce it using the direct proof as the accompaniment. Proof by cases can also be viewed as specific example of <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a>.</div></section><section class="subsection" id="subsec-3-5-1-what-are-cases"><h3 class="heading hide-type">
+<section class="introduction" id="subsec-4-5-proof-by-cases-2"><div class="para" id="subsec-4-5-proof-by-cases-2-1">Our next proof method is not really a standalone method; other methods will need to accompany it. We will introduce it using the direct proof as the accompaniment. Proof by cases can also be viewed as a specific example of <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a>.</div></section><section class="subsection" id="subsec-3-5-1-what-are-cases"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="space"> </span><span class="title">What are Cases?</span>
 </h3>
-<div class="para" id="subsec-3-5-1-what-are-cases-2">Unlike the example in <a href="sec-1-2-checking.html" class="internal" title="Section 0.2: Just Check a Bunch">Section 0.2</a> where the are an unlimited amount of integers to choose from, sometimes we have a finite and more tenable collection of possibilities than we could actually check or prove in each of these situations.</div>
+<div class="para" id="subsec-3-5-1-what-are-cases-2">Unlike the example in <a href="sec-1-2-checking.html" class="internal" title="Section 0.2: Just Check a Bunch">Section 0.2</a> where there are an unlimited amount of integers to choose from, sometimes we have a finite and more tenable collection of possibilities than we could actually check or prove in each of these situations.</div>
 <div class="para" id="subsec-3-5-1-what-are-cases-3">The following is the basic <em class="emphasis">shape</em> of a proof by cases.</div>
 <article class="assemblage assemblage-like" id="subsec-3-5-1-what-are-cases-4"><h4 class="heading"><span class="title">Proof by Cases.</span></h4>
 <div class="para" id="subsec-3-5-1-what-are-cases-4-3">
@@ -638,15 +638,15 @@ window.MathJax = {
 <em class="alert">Case 2:</em> a proof of the second case</div>
 <div class="para" id="subsec-3-5-1-what-are-cases-4-5"><span class="process-math">\(\vdots\)</span></div>
 <div class="para" id="subsec-3-5-1-what-are-cases-4-6">
-<em class="alert">Case n:</em> a proof of the <span class="process-math">\(n^{\text{th}}\)</span> case</div></article><div class="para" id="subsec-3-5-1-what-are-cases-5">At its most basic a proof by cases is an instance of proofs "Assuming an Or" from <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a> where one is tasked to prove <span class="process-math">\((P\vee R)\implies Q\text{,}\)</span> then we would split the problem into proving <span class="process-math">\(P\implies Q\)</span> as our <em class="emphasis">first case</em> and then <span class="process-math">\(R\implies Q\)</span> as our <span class="process-math">\(second case\text{.}\)</span> For examples of this the reader is reffered to <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a>.</div>
+<em class="alert">Case n:</em> a proof of the <span class="process-math">\(n^{\text{th}}\)</span> case</div></article><div class="para" id="subsec-3-5-1-what-are-cases-5">At its most basic, a proof by cases is an instance of "Assuming an Or" from <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a> where one is tasked to prove <span class="process-math">\((P\vee R)\implies Q\text{.}\)</span> We would split the problem into proving <span class="process-math">\(P\implies Q\)</span> as our <em class="emphasis">first case</em> and then <span class="process-math">\(R\implies Q\)</span> as our <em class="emphasis">second case</em>. For examples of this, the reader is referred to <a href="subsec-3-5-proofs-of-or.html" class="internal" title="Section 3.5: Proofs with Conjunctions and Disjunctions">Section 3.5</a>.</div>
 <div class="para logical" id="subsec-3-5-1-what-are-cases-6">
-<div class="para">Another common place proof by cases comes up are when we are trying to prove propositions in the form of:</div>
+<div class="para">Another common place proof by cases comes up is when we are trying to prove propositions in the form of:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \forall x\text{ }P(x)
 \end{equation*}
 </div>
-<div class="para">for some predicate <span class="process-math">\(P(x)\text{.}\)</span> There are many common places that proof by cases in the previous form come up, for example the following:</div>
+<div class="para">for some predicate <span class="process-math">\(P(x)\text{.}\)</span> There are many common places that proof by cases in the previous form come up, for example:</div>
 <ul class="disc" id="subsec-3-5-1-what-are-cases-6-3">
 <li id="subsec-3-5-1-what-are-cases-6-3-1"><div class="para" id="subsec-3-5-1-what-are-cases-6-3-1-1">
 <span class="process-math">\(\forall x\in\Z\)</span> we have either <span class="process-math">\(x\)</span> is even or <span class="process-math">\(x\)</span> is odd.</div></li>
@@ -663,12 +663,12 @@ window.MathJax = {
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
 </h4>
 <div class="para" id="lem-remainders-1-1">For any two integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> there exists an <span class="process-math">\(r\in\Z\)</span> such that <span class="process-math">\(0\leq r\lt |x|\)</span> and <span class="process-math">\(x|(y-r)\)</span>
-</div></article><details id="subsec-3-5-1-what-are-cases-9" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="subsec-3-5-1-what-are-cases-9-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be integers. By the division algorithm from <a href="sec-4-1-where-we-start.html#sec-4-1-1-what-we-assume" class="internal" title="Subsection 3.1.1: What We Can Assume">Subsection 3.1.1</a> we can find a <span class="process-math">\(q,r\in\Z\)</span> such that <span class="process-math">\(0\leq r\lt |x|\)</span> and <span class="process-math">\(y=qx+r\text{.}\)</span> Hence subtracting both sides by <span class="process-math">\(r\)</span> we get <span class="process-math">\(y-r=qx\)</span> since <span class="process-math">\(q\)</span> is an integer by the definition of divides (<a href="sec-4-1-where-we-start.html#defn-divides" class="xref" data-knowl="./knowl/xref/defn-divides.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 3.1.3: Divides">Definition 3.1.3</a>) we have that <span class="process-math">\(x|(y-r)\text{.}\)</span>
+</div></article><details id="subsec-3-5-1-what-are-cases-9" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="subsec-3-5-1-what-are-cases-9-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be integers. By the division algorithm from <a href="sec-4-1-where-we-start.html#sec-4-1-1-what-we-assume" class="internal" title="Subsection 3.1.1: What We Can Assume">Subsection 3.1.1</a> we can find <span class="process-math">\(q,r\in\Z\)</span> such that <span class="process-math">\(0\leq r\lt |x|\)</span> and <span class="process-math">\(y=qx+r\text{.}\)</span> Hence subtracting both sides by <span class="process-math">\(r\)</span> we get <span class="process-math">\(y-r=qx\text{.}\)</span> Since <span class="process-math">\(q\)</span> is an integer by the definition of divides (<a href="sec-4-1-where-we-start.html#defn-divides" class="xref" data-knowl="./knowl/xref/defn-divides.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 3.1.3: Divides">Definition 3.1.3</a>) we have that <span class="process-math">\(x|(y-r)\text{.}\)</span>
 </div></article></details><div class="para" id="subsec-3-5-1-what-are-cases-10"></div>
 <div class="para" id="subsec-3-5-1-what-are-cases-11"></div></section><section class="subsection" id="subsec-3-5-2-cases-examples"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="space"> </span><span class="title">Exhaustive Examples</span>
 </h3>
-<div class="para" id="subsec-3-5-2-cases-examples-2">We now include some examples, the first one is an example of breaking into the cases of even and odd.</div>
+<div class="para" id="subsec-3-5-2-cases-examples-2">We now include some examples, the first one is an example of breaking the proof down into the cases of even and odd.</div>
 <article class="example example-like" id="subsec-3-5-2-cases-examples-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
 </h4>
@@ -691,7 +691,7 @@ a(a+1)\amp=2k(2k+1)\\
 <div class="para" id="subsec-3-5-2-cases-examples-3-2-7">
 <em class="alert">Case 2:</em> Assume <span class="process-math">\(a\)</span> is odd. Thus by definition of odd, we can find an integer <span class="process-math">\(m\)</span> such that <span class="process-math">\(a=2m+1\)</span>
 </div>
-<div class="para" id="subsec-3-5-2-cases-examples-3-2-8">Calculate</div>
+<div class="para" id="subsec-3-5-2-cases-examples-3-2-8">Calculate:</div>
 <div class="displaymath process-math" id="subsec-3-5-2-cases-examples-3-2-9">
 \begin{align*}
 a(a+1)\amp=(2m+1)(2m+1+1)\\
@@ -721,7 +721,7 @@ n\amp=2m+1\\
 </div>
 <div class="para" id="subsec-3-5-2-cases-examples-4-2-4">Hence case 1 holds by direct proof.</div>
 <div class="para" id="subsec-3-5-2-cases-examples-4-2-5">
-<em class="alert">Case 2:</em> Assume <span class="process-math">\(m\)</span> is odd. Thus by definition of odd we can find an integer <span class="process-math">\(k\)</span> so taht <span class="process-math">\(m=2k+1\)</span>
+<em class="alert">Case 2:</em> Assume <span class="process-math">\(m\)</span> is odd. Thus by definition of odd we can find an integer <span class="process-math">\(k\)</span> so that <span class="process-math">\(m=2k+1\)</span>
 </div>
 <div class="para" id="subsec-3-5-2-cases-examples-4-2-6">Calculate:</div>
 <div class="displaymath process-math" id="subsec-3-5-2-cases-examples-4-2-7">
@@ -741,13 +741,13 @@ n\amp=2n+1\\
 <div class="para" id="subsec-3-5-2-cases-examples-5-1">
 <em class="alert">Prove:</em> For every integer <span class="process-math">\(a\text{,}\)</span> if <span class="process-math">\(3|a^2\)</span> then <span class="process-math">\(3|a\text{.}\)</span>
 </div>
-<details id="subsec-3-5-2-cases-examples-5-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="subsec-3-5-2-cases-examples-5-2-1">Let <span class="process-math">\(a\)</span> be an arbitrary integer. For the sake of contrapositive assume that 3 does not divide <span class="process-math">\(a\text{.}\)</span> By <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> since the only numbers greater than zero and strictly less than 3 are 1 and 2 either <span class="process-math">\(3|(a-1)\)</span> or <span class="process-math">\(3|(a-2)\)</span>
+<details id="subsec-3-5-2-cases-examples-5-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="subsec-3-5-2-cases-examples-5-2-1">Let <span class="process-math">\(a\)</span> be an arbitrary integer. For the sake of contrapositive, assume that 3 does not divide <span class="process-math">\(a\text{.}\)</span> By <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> since the only numbers greater than zero and strictly less than 3 are 1 and 2 either <span class="process-math">\(3|(a-1)\)</span> or <span class="process-math">\(3|(a-2)\)</span>
 </div>
 <div class="para" id="subsec-3-5-2-cases-examples-5-2-2">
 <em class="alert">Case 1:</em> Assume <span class="process-math">\(3|(a-1)\text{.}\)</span>
 </div>
 <div class="para logical" id="subsec-3-5-2-cases-examples-5-2-3">
-<div class="para">By definition of divides we can find an integer <span class="process-math">\(k\)</span> so that <span class="process-math">\(a-1=3k\text{,}\)</span> hence by adding 1 to both sides of the equation we get <span class="process-math">\(a=3k+1\text{.}\)</span> Now calculate:</div>
+<div class="para">By definition of divides we can find an integer <span class="process-math">\(k\)</span> so that <span class="process-math">\(a-1=3k\text{.}\)</span> Hence by adding 1 to both sides of the equation we get <span class="process-math">\(a=3k+1\text{.}\)</span> Now calculate:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/lem-remainders.html" id="subsec-3-5-2-cases-examples-5-2-3-4">
 \begin{align*}
 a^2 \amp =(3k+1)^2 \\
@@ -755,14 +755,14 @@ a^2 \amp =(3k+1)^2 \\
 \amp = 3(3k^2+2k)+1 
 \end{align*}
 </div>
-<div class="para">Hence <span class="process-math">\(a^2-1=3(3k^2+2k)\text{.}\)</span> Since <span class="process-math">\(3k^2+2k\)</span> is an integer by definition of divides <span class="process-math">\(3|(a^2-1)\)</span> thus by <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> we have that 3 does not divide <span class="process-math">\(a^2\)</span>
+<div class="para">Hence <span class="process-math">\(a^2-1=3(3k^2+2k)\text{.}\)</span> Since <span class="process-math">\(3k^2+2k\)</span> is an integer by definition of divides <span class="process-math">\(3|(a^2-1)\text{.}\)</span> Thus by <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> we have that 3 does not divide <span class="process-math">\(a^2\)</span>
 </div>
 </div>
 <div class="para" id="subsec-3-5-2-cases-examples-5-2-4">
 <em class="alert">Case 2:</em> Assume <span class="process-math">\(3|(a-2)\text{.}\)</span>
 </div>
 <div class="para logical" id="subsec-3-5-2-cases-examples-5-2-5">
-<div class="para">By definition of divides we can find an integer <span class="process-math">\(t\)</span> so that <span class="process-math">\(a-2=3t\text{,}\)</span> hence by adding 2 to both sides of the equation we get <span class="process-math">\(a=3t+2\text{.}\)</span> Now calculate:</div>
+<div class="para">By definition of divides we can find an integer <span class="process-math">\(t\)</span> so that <span class="process-math">\(a-2=3t\text{.}\)</span> Hence by adding 2 to both sides of the equation we get <span class="process-math">\(a=3t+2\text{.}\)</span> Now calculate:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/lem-remainders.html" id="subsec-3-5-2-cases-examples-5-2-5-4">
 \begin{align*}
 a^2 \amp =(3t+2)^2 \\
@@ -771,10 +771,10 @@ a^2 \amp =(3t+2)^2 \\
 \amp = 3(3t^2+4t+1)+1 
 \end{align*}
 </div>
-<div class="para">Hence <span class="process-math">\(a^2-1=3(3t^2+4t+1)\text{.}\)</span> Since <span class="process-math">\(3t^2+4t+1\)</span> is an integer by definition of divides <span class="process-math">\(3|(a^2-1)\)</span> thus by <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> we have that 3 does not divide <span class="process-math">\(a^2\)</span>
+<div class="para">Hence <span class="process-math">\(a^2-1=3(3t^2+4t+1)\text{.}\)</span> Since <span class="process-math">\(3t^2+4t+1\)</span> is an integer by definition of divides <span class="process-math">\(3|(a^2-1)\text{.}\)</span> Thus by <a href="subsec-4-5-proof-by-cases.html#lem-remainders" class="xref" data-knowl="./knowl/xref/lem-remainders.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 4.5.1">Lemma 4.5.1</a> we have that 3 does not divide <span class="process-math">\(a^2\)</span>
 </div>
 </div>
-<div class="para" id="subsec-3-5-2-cases-examples-5-2-6">Therefore by proof by cases 3 does not divide <span class="process-math">\(a^2\text{,}\)</span> and hence by proof by contraposition if <span class="process-math">\(3|a^2\)</span> then <span class="process-math">\(3|a\text{.}\)</span> <span class="process-math">\(\square\)</span>
+<div class="para" id="subsec-3-5-2-cases-examples-5-2-6">Therefore by proof by cases, 3 does not divide <span class="process-math">\(a^2\text{,}\)</span> and hence by proof by contraposition if <span class="process-math">\(3|a^2\)</span> then <span class="process-math">\(3|a\text{.}\)</span> <span class="process-math">\(\square\)</span>
 </div></article></details></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="subsec-3-7-biconditional.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-4-6-existential-proofs.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
