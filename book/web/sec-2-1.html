@@ -646,7 +646,7 @@ window.MathJax = {
 <div class="para" id="subsec-2-5-1-basic-sets-9">The symbol <span class="process-math">\(\in \)</span> can be read as "in" or "is an element of" or "is a member of."</div>
 <div class="para" id="subsec-2-5-1-basic-sets-10">For example, "<span class="process-math">\(x \in A\)</span>" would be read as "<span class="process-math">\(x\)</span> is in <span class="process-math">\(A\text{,}\)</span>" or, "<span class="process-math">\(x\)</span> is an element of the set <span class="process-math">\(A\)</span>", or "<span class="process-math">\(x\)</span> is a member of the set <span class="process-math">\(A\text{.}\)</span>"</div>
 <div class="para logical" id="subsec-2-5-1-basic-sets-11">
-<div class="para">Besides just arbitrarily naming a set in an attempt to define a set we can also describe what the set is by capturing all the elements in the set between the symbols <span class="process-math">\(\{\)</span> and <span class="process-math">\(\}\text{,}\)</span> then listing the elements separated by commas. For example, if we just wanted to collect the following numbers in a set:</div>
+<div class="para">Besides just arbitrarily naming a set to <em class="emphasis">define</em> a set we can also describe what the set by capturing all the elements in the set between the symbols <span class="process-math">\(\{\)</span> and <span class="process-math">\(\}\text{,}\)</span> then separating the elements by commas. For example, if we just wanted to collect the following numbers in a set:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 A=\{3,7,8,9\}
@@ -660,7 +660,8 @@ A=\{3,7,8,9\}
 </div>
 <div class="para">We could also use what is known as set builder notation:</div>
 </div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//images/set-builder-notation.png" class="contained"></div></section><section class="subsection" id="subsec-2-5-2-basic-uni"><h3 class="heading hide-type">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//images/set-builder-notation.png" class="contained"></div>
+<div class="para" id="subsec-2-5-1-basic-sets-13">Additionally, in this section we will speak of a set being <em class="emphasis">empty</em> a good bit, this means there are no elements in the set, we often denote such a set as <span class="process-math">\(\emptyset\)</span> and call it <em class="emphasis">the</em> empty set. This as well as other concepts will be made more concise in a latter chapter.</div></section><section class="subsection" id="subsec-2-5-2-basic-uni"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="space"> </span><span class="title">Common Universes</span>
 </h3>
 <div class="para" id="subsec-2-5-2-basic-uni-2">Throughout the text we will use a lot of common universes in our text, but also to really drive home the wide application of these theories we will use some less common universes as well. The most common universes we will deal with are the numbers, of which we will mostly discuss the following:</div>
@@ -670,7 +671,7 @@ A=\{3,7,8,9\}
 <div class="sbspanel middle" style="width:47.3684210526316%;"><div class="para" id="subsec-2-5-2-basic-uni-3-1-7-2">The Natural Numbers</div></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel middle" style="width:47.3684210526316%;"><div class="para" id="subsec-2-5-2-basic-uni-3-1-8-1"><span class="process-math">\(\mathbb{Z}=\{...,-3,-2,-2,0,1,2,3,...\}\)</span></div></div>
+<div class="sbspanel middle" style="width:47.3684210526316%;"><div class="para" id="subsec-2-5-2-basic-uni-3-1-8-1"><span class="process-math">\(\mathbb{Z}=\{...,-3,-2,-1,0,1,2,3,...\}\)</span></div></div>
 <div class="sbspanel middle" style="width:47.3684210526316%;"><div class="para" id="subsec-2-5-2-basic-uni-3-1-8-2">The Integers</div></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
@@ -707,12 +708,16 @@ A=\{3,7,8,9\}
 <article class="example example-like" id="subsec-2-5-2-truth-sets-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-2-5-2-truth-sets-7-3">The predicates <span class="process-math">\(P(x): x^2+2x=-1\)</span> and <span class="process-math">\(Q(x):x\leq 1\)</span> are equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}^+\text{.}\)</span> They are not equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}\text{.}\)</span>
-</div></article><div class="para" id="subsec-2-5-2-truth-sets-8">This next example should work the way you expected.</div>
+<div class="para" id="subsec-2-5-2-truth-sets-7-3">The predicates <span class="process-math">\(P(x): x^2+2x=-1\)</span> and <span class="process-math">\(Q(x):x\lt 1\)</span> are equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}^+\text{.}\)</span> They are not equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}\text{.}\)</span>
+</div>
+<div class="para" id="subsec-2-5-2-truth-sets-7-4">To see this is true notice that with the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}^+\)</span> both <span class="process-math">\(P(x)\)</span> and <span class="process-math">\(Q(x)\)</span> have no elements which make it true, that is both of their truth sets are empty.</div>
+<div class="para" id="subsec-2-5-2-truth-sets-7-5">On the other hand for the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}\text{,}\)</span> <span class="process-math">\(P(x)\)</span> has the truth set of <span class="process-math">\(\{-1\}\)</span> yet <span class="process-math">\(Q(x)\)</span> has the truth set of <span class="process-math">\(\{..., -3,-2,-1,0\}\)</span> and these two sets are clearly not the same.</div></article><div class="para" id="subsec-2-5-2-truth-sets-8">This next example should work the way you expected.</div>
 <article class="example example-like" id="subsec-2-5-2-truth-sets-9"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-2-5-2-truth-sets-9-1">The open statements <span class="process-math">\(R(x):x^2=9\)</span> and <span class="process-math">\(S(x):x=3\)</span> are equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{N}\)</span> but they again are not equivalent in the universe <span class="process-math">\(\mathcal{U}=\mathbb{Z}\)</span>
+</div>
+<div class="para" id="subsec-2-5-2-truth-sets-9-2">For both of these universes the truth set for both <span class="process-math">\(R(x)\)</span> and <span class="process-math">\(S(x)\)</span> is <span class="process-math">\(\{3\}\)</span>
 </div></article></section><section class="subsection" id="subsec-2-5-4-existential"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="space"> </span><span class="title">The Existential Quantifier</span>
 </h3>
@@ -886,8 +891,7 @@ A=\{3,7,8,9\}
 <span class="process-math">\(\sim (\exists n \in \mathbb{Z}\)</span>  <span class="process-math">\(n^2 =5)\equiv[\forall n \in \mathbb{Z}\)</span>  <span class="process-math">\(n^2 \neq 5]\)</span>
 </div>
 <ul class="disc" id="subsec-2-5-6-neg-quant-6-6-2-2">
-<li id="subsec-2-5-6-neg-quant-6-6-2-2-1"><div class="para" id="p-derived-subsec-2-5-6-neg-quant-6-6-2-2-1">*NOT*(There exists an integer <span class="process-math">\(n\)</span> such that <span class="process-math">\(n^2 =5\)</span>
-</div></li>
+<li id="subsec-2-5-6-neg-quant-6-6-2-2-1"><div class="para" id="p-derived-subsec-2-5-6-neg-quant-6-6-2-2-1">*NOT*(There exists an integer <span class="process-math">\(n\)</span> such that <span class="process-math">\(n^2 =5\)</span>)</div></li>
 <li id="subsec-2-5-6-neg-quant-6-6-2-2-2"><div class="para" id="p-derived-subsec-2-5-6-neg-quant-6-6-2-2-2">For all integers <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(n^2\)</span> does not equal <span class="process-math">\(5\text{.}\)</span>
 </div></li>
 </ul>
