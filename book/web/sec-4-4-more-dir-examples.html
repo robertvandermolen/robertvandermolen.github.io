@@ -172,9 +172,9 @@ window.MathJax = {
 #sec-1-4-2-9-1-1 { counter-set: sec-1-4-2-9-1-1 0; }
 #sec-1-4-2-9-1-1 > li::marker { content: "("counter(sec-1-4-2-9-1-1,lower-alpha)")"; }
 #sec-1-4-2-9-1-1 > li { counter-increment: sec-1-4-2-9-1-1; }
-#sec-3-2-prop-forms-13-5-1 { counter-set: sec-3-2-prop-forms-13-5-1 0; }
-#sec-3-2-prop-forms-13-5-1 > li::marker { content: "("counter(sec-3-2-prop-forms-13-5-1,upper-alpha)")"; }
-#sec-3-2-prop-forms-13-5-1 > li { counter-increment: sec-3-2-prop-forms-13-5-1; }
+#sec-3-2-prop-forms-16-5-1 { counter-set: sec-3-2-prop-forms-16-5-1 0; }
+#sec-3-2-prop-forms-16-5-1 > li::marker { content: "("counter(sec-3-2-prop-forms-16-5-1,upper-alpha)")"; }
+#sec-3-2-prop-forms-16-5-1 > li { counter-increment: sec-3-2-prop-forms-16-5-1; }
 #sec-3-5-ch-03-exercises-2 { counter-set: sec-3-5-ch-03-exercises-2 0; }
 #sec-3-5-ch-03-exercises-2 > li::marker { content: ""counter(sec-3-5-ch-03-exercises-2,decimal)"."; }
 #sec-3-5-ch-03-exercises-2 > li { counter-increment: sec-3-5-ch-03-exercises-2; }
@@ -754,7 +754,7 @@ x+y=2{\color{purple}{(s+t+1)}}
 <div class="para logical" id="sec-4-4-2-dir-example-three-2-15"><div class="displaymath process-math">
 \begin{equation*}
 {\color{orange}{\forall x,y\in\Z}}\text{ if }{\color{red}{x \text{ and }y\text{ are both odd}}}
-\text{ then }{\color{blue}{x+y \text{ is odd.}}}
+\text{ then }{\color{blue}{x\cdot y \text{ is odd.}}}
 \end{equation*}
 </div></div>
 <div class="para" id="sec-4-4-2-dir-example-three-2-16"></div></section><section class="subsection" id="sec-4-4-2-dir-example-three-begin"><h4 class="heading hide-type">
@@ -783,12 +783,12 @@ x+y=2{\color{purple}{(s+t+1)}}
 <div class="para" id="sec-4-4-2-dir-example-three-muddle-5">"We can find an <span class="process-math">\(a\in\Z\)</span> so that <span class="process-math">\(x=2a+1\text{.}\)</span>"</div>
 <div class="para" id="sec-4-4-2-dir-example-three-muddle-6">To use the definition of odd for our <span class="process-math">\(y\)</span> we can use language like:</div>
 <div class="para" id="sec-4-4-2-dir-example-three-muddle-7">"We can also find a <span class="process-math">\(b\in\Z\)</span> so that <span class="process-math">\(y=2b+1\text{.}\)</span>"</div>
-<div class="para" id="sec-4-4-2-dir-example-three-muddle-8">Now that we have used our definitions we can move to our usual <span class="process-math">\({\color{green}{\text{muddle}}}\)</span> where we use some good ol’ <em class="emphasis">college algebra</em>. In a more general look at proofs as a whole, you should keep in mind what we are trying to conclude, i.e. the <span class="process-math">\({\color{blue}{Q}}\text{,}\)</span> namely that <span class="process-math">\({\color{blue}{x+y\text{ is odd}}}\text{.}\)</span> So we should calculate <span class="process-math">\({\color{blue}{x+y}}\text{.}\)</span>
+<div class="para" id="sec-4-4-2-dir-example-three-muddle-8">Now that we have used our definitions we can move to our usual <span class="process-math">\({\color{green}{\text{muddle}}}\)</span> where we use some good ol’ <em class="emphasis">college algebra</em>. In a more general look at proofs as a whole, you should keep in mind what we are trying to conclude, i.e. the <span class="process-math">\({\color{blue}{Q}}\text{,}\)</span> namely that <span class="process-math">\({\color{blue}{x\cdot y\text{ is odd}}}\text{.}\)</span> So we should calculate <span class="process-math">\({\color{blue}{x\cdot y}}\text{.}\)</span>
 </div>
 <div class="para" id="sec-4-4-2-dir-example-three-muddle-9">Calculate:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-4-1-2-terms.html ./knowl/xref/how-to-quantifiers.html ./knowl/xref/defn-odd.html" id="sec-4-4-2-dir-example-three-muddle-10">
 \begin{align*}
-{\color{blue}{x+y}}\amp=(2a+1)\cdot(2b+1)\\
+{\color{blue}{x\cdot y}}\amp=(2a+1)\cdot(2b+1)\\
 \amp=4ab+2a+2b+1\\
 \amp=2(2ab+a+b)+1
 \end{align*}
@@ -799,10 +799,10 @@ x+y=2{\color{purple}{(s+t+1)}}
 <div class="para">From the <span class="process-math">\({\color{green}{\text{muddle}}}\)</span> we now have:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/defn-odd.html ./knowl/xref/how-to-quantifiers.html">
 \begin{equation*}
-x+y=2{\color{purple}{(2ab+a+b)}}+1
+x\cdot y=2{\color{purple}{(2ab+a+b)}}+1
 \end{equation*}
 </div>
-<div class="para">Now, using the definition of odd (<a href="sec-4-1-where-we-start.html#defn-odd" class="xref" data-knowl="./knowl/xref/defn-odd.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 3.1.2: Odd">Definition 3.1.2</a>) and of course <a href="sec-3-4-arguments-with-quant.html#how-to-quantifiers" class="xref" data-knowl="./knowl/xref/how-to-quantifiers.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.1">Figure 2.4.1</a> we can conclude from the <span class="process-math">\({\color{green}{\text{muddle}}}\)</span> that <span class="process-math">\(x+y\)</span> is odd, as <span class="process-math">\(2ab\)</span> is an integer and thus <span class="process-math">\({\color{purple}{(2ab+a+b)}}\)</span> is an integer, and hence we have that <span class="process-math">\(x+y\)</span> is an integer times 2 then plus one.</div>
+<div class="para">Now, using the definition of odd (<a href="sec-4-1-where-we-start.html#defn-odd" class="xref" data-knowl="./knowl/xref/defn-odd.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 3.1.2: Odd">Definition 3.1.2</a>) and of course <a href="sec-3-4-arguments-with-quant.html#how-to-quantifiers" class="xref" data-knowl="./knowl/xref/how-to-quantifiers.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.1">Figure 2.4.1</a> we can conclude from the <span class="process-math">\({\color{green}{\text{muddle}}}\)</span> that <span class="process-math">\(x\cdot y\)</span> is odd, as <span class="process-math">\(2ab\)</span> is an integer and thus <span class="process-math">\({\color{purple}{(2ab+a+b)}}\)</span> is an integer, and hence we have that <span class="process-math">\(x\cdot y\)</span> is an integer times 2 then plus one.</div>
 </div>
 <div class="para" id="sec-4-4-2-dir-example-three-end-3">Now let’s see everything written together in a single spot, with a proper wrap-up.</div>
 <article class="example example-like" id="sec-4-4-2-dir-example-three-end-4"><h5 class="heading">
@@ -810,16 +810,16 @@ x+y=2{\color{purple}{(2ab+a+b)}}+1
 </h5>
 <div class="para" id="sec-4-4-2-dir-example-three-end-4-1">
 <em class="alert">Prove:</em> For all integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> if <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are both odd then <span class="process-math">\(x\cdot y\)</span> is odd.</div>
-<div class="para" id="sec-4-4-2-dir-example-three-end-4-2">Select two random integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Assume that <span class="process-math">\(x\)</span> is even and <span class="process-math">\(y\)</span> is odd. By definition of even we can find an integer <span class="process-math">\(a\)</span> so that <span class="process-math">\(x=2a+1\text{.}\)</span> Also, by the definition of odd we can find an integer <span class="process-math">\(b\)</span> so that <span class="process-math">\(y=2b+1\text{.}\)</span> Now we calculate:</div>
+<div class="para" id="sec-4-4-2-dir-example-three-end-4-2">Select two random integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Assume that <span class="process-math">\(x\)</span> is odd and <span class="process-math">\(y\)</span> is also odd. By definition of even we can find an integer <span class="process-math">\(a\)</span> so that <span class="process-math">\(x=2a+1\text{.}\)</span> Also, by the definition of odd we can find an integer <span class="process-math">\(b\)</span> so that <span class="process-math">\(y=2b+1\text{.}\)</span> Now we calculate:</div>
 <div class="displaymath process-math" id="sec-4-4-2-dir-example-three-end-4-3">
 \begin{align*}
-x+y\amp=(2a+1)\cdot(2b+1)\\
+x\cdot y\amp=(2a+1)\cdot(2b+1)\\
 \amp=4ab+2a+2b+1\\
 \amp=2(2ab+a+b)+1
 \end{align*}
 </div>
-<div class="para" id="sec-4-4-2-dir-example-three-end-4-4">Now since <span class="process-math">\(2ab+a+b\)</span> is an integer, we see that <span class="process-math">\(x+y\)</span> is odd.</div>
-<div class="para" id="sec-4-4-2-dir-example-three-end-4-5">To summarize, since we chose arbitrary integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> which we assumed were even and odd, respectively, by direct proof we proved that for all integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> if <span class="process-math">\(x\)</span> is even and <span class="process-math">\(y\)</span> is odd, then <span class="process-math">\(x+y\)</span> is odd. <span class="process-math">\(\square\)</span>
+<div class="para" id="sec-4-4-2-dir-example-three-end-4-4">Now since <span class="process-math">\(2ab+a+b\)</span> is an integer, we see that <span class="process-math">\(x\cdot y\)</span> is odd.</div>
+<div class="para" id="sec-4-4-2-dir-example-three-end-4-5">To summarize, since we chose arbitrary integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> which we assumed were both odd, respectively, by direct proof we proved that for all integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> if <span class="process-math">\(x\)</span> is odd and <span class="process-math">\(y\)</span> is odd, then <span class="process-math">\(x\cdot y\)</span> is odd. <span class="process-math">\(\square\)</span>
 </div></article></section></section><section class="subsection" id="sec-4-4-3-dir-example-four"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="space"> </span><span class="title">Direct Proof Example 4</span>
 </h3>
@@ -839,7 +839,7 @@ x+y\amp=(2a+1)\cdot(2b+1)\\
 <div class="para" id="sec-4-4-3-dir-example-four-2-14">The Breakdown:</div>
 <div class="para logical" id="sec-4-4-3-dir-example-four-2-15"><div class="displaymath process-math">
 \begin{equation*}
-{\color{orange}{\forall x,y\in\Z}}\text{ }  {\color{red}{5|x \text{ and } 5|y}} \implies {\color{blue}{5|(x+y)}}
+{\color{orange}{\forall x,y\in\Z}}\text{ }  {\color{red}{5|x \text{ and } 5|y}} \implies {\color{blue}{5|(x-2y)}}
 \end{equation*}
 </div></div>
 <div class="para" id="sec-4-4-3-dir-example-four-2-16"></div></section><section class="subsection" id="sec-4-4-3-dir-example-four-begin"><h4 class="heading hide-type">
@@ -869,7 +869,7 @@ x+y\amp=(2a+1)\cdot(2b+1)\\
 <div class="para">From the<span class="process-math">\({\color{green}{\text{ muddle }}}\)</span>we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-4-1-1-what-we-assume.html">
 \begin{equation*}
-x+y=5{\color{purple}{(a-2b)}}
+x-2y=5{\color{purple}{(a-2b)}}
 \end{equation*}
 </div>
 <div class="para">and then we can reference a couple of our assumptions from <a href="sec-4-1-where-we-start.html#sec-4-1-1-what-we-assume" class="internal" title="Subsection 3.1.1: What We Can Assume">Subsection 3.1.1</a>, and say:</div>
@@ -889,7 +889,7 @@ x+y=5{\color{purple}{(a-2b)}}
 \amp=5(a-2b)
 \end{align*}
 </div>
-<div class="para" id="sec-4-4-3-dir-example-four-end-5-4">Since <span class="process-math">\(2b\)</span> is an integer it follows that <span class="process-math">\(a-2b\)</span> is an integer, thus by the definition of divides, 5 divides <span class="process-math">\(x-y\text{.}\)</span>
+<div class="para" id="sec-4-4-3-dir-example-four-end-5-4">Since <span class="process-math">\(2b\)</span> is an integer it follows that <span class="process-math">\(a-2b\)</span> is an integer, thus by the definition of divides, 5 divides <span class="process-math">\(x-2y\text{.}\)</span>
 </div>
 <div class="para" id="sec-4-4-3-dir-example-four-end-5-5">To summarize, since we chose arbitrary integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> and assume that 5 divides both of them, and have shown that <span class="process-math">\(5|(x-2y)\text{,}\)</span> by direct proof we have shown that for any integers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> if <span class="process-math">\(5|x\)</span> and <span class="process-math">\(5|y\)</span> then <span class="process-math">\(5|(x-2y)\text{.}\)</span><span class="process-math">\(\square\)</span>
 </div></article></section></section><section class="subsection" id="sec-4-4-4-dir-example-five"><h3 class="heading hide-type">
@@ -911,7 +911,7 @@ x+y=5{\color{purple}{(a-2b)}}
 <div class="para" id="sec-4-4-4-dir-example-five-2-14">The Breakdown:</div>
 <div class="para logical" id="sec-4-4-4-dir-example-five-2-15"><div class="displaymath process-math">
 \begin{equation*}
-{\color{orange}{\forall x,y\in\R \text{ with }x\gt0\text{ and }y\gt0}}\text{ }{\color{red}{a\lt b}}\implies{\color{blue}{0\lt (a^2-b^2)}} 
+{\color{orange}{\forall x,y\in\R \text{ with }x\gt0\text{ and }y\gt0}}\text{ }{\color{red}{a\lt b}}\implies{\color{blue}{0\lt (b^2-a^2)}} 
 \end{equation*}
 </div></div>
 <div class="para" id="sec-4-4-4-dir-example-five-2-16"></div></section><section class="subsection" id="sec-4-4-4-dir-example-five-begin"><h4 class="heading hide-type">

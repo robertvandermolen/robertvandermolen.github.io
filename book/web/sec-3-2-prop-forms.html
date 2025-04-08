@@ -172,9 +172,9 @@ window.MathJax = {
 #sec-1-4-2-9-1-1 { counter-set: sec-1-4-2-9-1-1 0; }
 #sec-1-4-2-9-1-1 > li::marker { content: "("counter(sec-1-4-2-9-1-1,lower-alpha)")"; }
 #sec-1-4-2-9-1-1 > li { counter-increment: sec-1-4-2-9-1-1; }
-#sec-3-2-prop-forms-13-5-1 { counter-set: sec-3-2-prop-forms-13-5-1 0; }
-#sec-3-2-prop-forms-13-5-1 > li::marker { content: "("counter(sec-3-2-prop-forms-13-5-1,upper-alpha)")"; }
-#sec-3-2-prop-forms-13-5-1 > li { counter-increment: sec-3-2-prop-forms-13-5-1; }
+#sec-3-2-prop-forms-16-5-1 { counter-set: sec-3-2-prop-forms-16-5-1 0; }
+#sec-3-2-prop-forms-16-5-1 > li::marker { content: "("counter(sec-3-2-prop-forms-16-5-1,upper-alpha)")"; }
+#sec-3-2-prop-forms-16-5-1 > li { counter-increment: sec-3-2-prop-forms-16-5-1; }
 #sec-3-5-ch-03-exercises-2 { counter-set: sec-3-5-ch-03-exercises-2 0; }
 #sec-3-5-ch-03-exercises-2 > li::marker { content: ""counter(sec-3-5-ch-03-exercises-2,decimal)"."; }
 #sec-3-5-ch-03-exercises-2 > li { counter-increment: sec-3-5-ch-03-exercises-2; }
@@ -826,7 +826,58 @@ window.MathJax = {
 <article class="example example-like" id="sec-3-2-prop-forms-13"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="sec-3-2-prop-forms-13-2">
+<div class="para" id="sec-3-2-prop-forms-13-1">We now have enough to explain the <em class="emphasis">why</em> behind some of our examples from <a href="sec-3-1-arguments.html#ex-validness" class="xref" data-knowl="./knowl/xref/ex-validness.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.4">Example 2.1.4</a>. First the example of:</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="r m b0 r0 l0 t0 lines">All parabolas are functions of degree 2</td></tr>
+<tr><td class="r m b2 r0 l0 t0 lines">All functions of degree 2 are quadratic</td></tr>
+<tr><td class="r m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> All parabolas are quadratic</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-3">This can be written with logical connectives in the fashion of:</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="r m b0 r0 l0 t0 lines">parabola <span class="process-math">\(\implies\)</span> function of degree 2</td></tr>
+<tr><td class="r m b2 r0 l0 t0 lines">function of degree 2 <span class="process-math">\(\implies\)</span> quadratic</td></tr>
+<tr><td class="r m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> parabola <span class="process-math">\(\implies\)</span> quadratic</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-5">This can now be seen as an simple application of Hypothetical Syllogism.</div>
+<div class="para" id="sec-3-2-prop-forms-13-6">The next example from <a href="sec-3-1-arguments.html#ex-validness" class="xref" data-knowl="./knowl/xref/ex-validness.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.4">Example 2.1.4</a>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="c m b0 r0 l0 t0 lines">An apple is purple</td></tr>
+<tr><td class="c m b2 r0 l0 t0 lines">An apple is a fruit</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> An apple is purple fruit</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-8">written with logical connectives would be</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="c m b0 r0 l0 t0 lines">An apple is purple</td></tr>
+<tr><td class="c m b2 r0 l0 t0 lines">An apple is a fruit</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> An apple is purple and an apple is a fruit</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-10">so we see this an application of Conjunction.</div>
+<div class="para" id="sec-3-2-prop-forms-13-11">Further, another example from <a href="sec-3-1-arguments.html#ex-validness" class="xref" data-knowl="./knowl/xref/ex-validness.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.4">Example 2.1.4</a>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="c m b0 r0 l0 t0 lines">All spiders have 8 legs</td></tr>
+<tr><td class="c m b2 r0 l0 t0 lines">A poodle is a spider</td></tr>
+<tr><td class="c m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> A poodle has 8 legs</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-13">again, using logical connectives can be seen as</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="r m b0 r0 l0 t0 lines">spiders <span class="process-math">\(\implies\)</span> 8 legs</td></tr>
+<tr><td class="r m b2 r0 l0 t0 lines">A poodle <span class="process-math">\(\implies\)</span> spider</td></tr>
+<tr><td class="r m b0 r0 l0 t0 lines">
+<span class="process-math">\(\therefore \)</span> A poodle <span class="process-math">\(\implies\)</span> 8 legs</td></tr>
+</table></div>
+<div class="para" id="sec-3-2-prop-forms-13-15">which is again a direct application of Hypothetical Syllogism.</div></article><div class="para" id="sec-3-2-prop-forms-14"></div>
+<div class="para" id="sec-3-2-prop-forms-15">We end this section with an example illustrates the <em class="emphasis">basics</em> of how our proofs will work in the future chapters. Specifically we will begin with a collection of premises and draw a conclusion based on those premises. In future chapters our proofs wil be more directed towards topics more classically studied in a math class, namely numbers.</div>
+<article class="example example-like" id="sec-3-2-prop-forms-16"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-3-2-prop-forms-16-2">
 <div class="para">For this example, let’s set a few propositions:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -854,54 +905,54 @@ W:\text{ We will be home by dark}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="sec-3-2-prop-forms-13-3">Next, consider the list of premises.</div>
-<ul class="disc" id="sec-3-2-prop-forms-13-4">
-<li id="sec-3-2-prop-forms-13-4-1"><div class="para" id="sec-3-2-prop-forms-13-4-1-1"><span class="process-math">\(\displaystyle \sim P\wedge Q:\text{ It is not sunny today and it is colder than yesterday}\)</span></div></li>
-<li id="sec-3-2-prop-forms-13-4-2"><div class="para" id="sec-3-2-prop-forms-13-4-2-1"><span class="process-math">\(\displaystyle R\implies P:\text{ We will go hiking only if it is sunny}\)</span></div></li>
-<li id="sec-3-2-prop-forms-13-4-3"><div class="para" id="sec-3-2-prop-forms-13-4-3-1"><span class="process-math">\(\displaystyle (\sim R)\implies S:\text{ If we do not go hiking then we will go on a bike ride.}\)</span></div></li>
-<li id="sec-3-2-prop-forms-13-4-4"><div class="para" id="sec-3-2-prop-forms-13-4-4-1"><span class="process-math">\(\displaystyle S\implies W:\text{ If we go on a bike ride then we will be home before dark}\)</span></div></li>
+<div class="para" id="sec-3-2-prop-forms-16-3">Next, consider the list of premises.</div>
+<ul class="disc" id="sec-3-2-prop-forms-16-4">
+<li id="sec-3-2-prop-forms-16-4-1"><div class="para" id="sec-3-2-prop-forms-16-4-1-1"><span class="process-math">\(\displaystyle \sim P\wedge Q:\text{ It is not sunny today and it is colder than yesterday}\)</span></div></li>
+<li id="sec-3-2-prop-forms-16-4-2"><div class="para" id="sec-3-2-prop-forms-16-4-2-1"><span class="process-math">\(\displaystyle R\implies P:\text{ We will go hiking only if it is sunny}\)</span></div></li>
+<li id="sec-3-2-prop-forms-16-4-3"><div class="para" id="sec-3-2-prop-forms-16-4-3-1"><span class="process-math">\(\displaystyle (\sim R)\implies S:\text{ If we do not go hiking then we will go on a bike ride.}\)</span></div></li>
+<li id="sec-3-2-prop-forms-16-4-4"><div class="para" id="sec-3-2-prop-forms-16-4-4-1"><span class="process-math">\(\displaystyle S\implies W:\text{ If we go on a bike ride then we will be home before dark}\)</span></div></li>
 </ul>
-<div class="para logical" id="sec-3-2-prop-forms-13-5">
+<div class="para logical" id="sec-3-2-prop-forms-16-5">
 <div class="para">When can then make the following arguments:</div>
-<ol class="upper-alpha" id="sec-3-2-prop-forms-13-5-1">
-<li id="sec-3-2-prop-forms-13-5-1-1">
-<div class="para" id="sec-3-2-prop-forms-13-5-1-1-1">To start we will only consider the first premise.</div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-1-2"><div class="tabular-box natural-width"><table class="tabular">
+<ol class="upper-alpha" id="sec-3-2-prop-forms-16-5-1">
+<li id="sec-3-2-prop-forms-16-5-1-1">
+<div class="para" id="sec-3-2-prop-forms-16-5-1-1-1">To start we will only consider the first premise.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-1-2"><div class="tabular-box natural-width"><table class="tabular">
 <tr><td class="c m b1 r0 l0 t0 lines"><span class="process-math">\((\sim P)\wedge Q\)</span></td></tr>
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\therefore \text{ }\sim P\)</span></td></tr>
 </table></div></div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-1-3">Since we have assumed that it is not sunny and colder than yesterday we can conclude it is not sunny outside, using a conjunction.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-1-3">Since we have assumed that it is not sunny and colder than yesterday we can conclude it is not sunny outside, using a conjunction.</div>
 </li>
-<li id="sec-3-2-prop-forms-13-5-1-2">
-<div class="para" id="sec-3-2-prop-forms-13-5-1-2-1">Now let’s use the conclusion from (A), with the next premise.</div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-2-2"><div class="tabular-box natural-width"><table class="tabular">
+<li id="sec-3-2-prop-forms-16-5-1-2">
+<div class="para" id="sec-3-2-prop-forms-16-5-1-2-1">Now let’s use the conclusion from (A), with the next premise.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-2-2"><div class="tabular-box natural-width"><table class="tabular">
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((\sim P)\)</span></td></tr>
 <tr><td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(R\implies P\)</span></td></tr>
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\therefore \text{ }\sim R\)</span></td></tr>
 </table></div></div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-2-3">That is, if we assume that it is not sunny and that we will go hiking only if it is sunny, then we can conclude that we do not go hiking, using Modus Tollens.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-2-3">That is, if we assume that it is not sunny and that we will go hiking only if it is sunny, then we can conclude that we do not go hiking, using Modus Tollens.</div>
 </li>
-<li id="sec-3-2-prop-forms-13-5-1-3">
-<div class="para" id="sec-3-2-prop-forms-13-5-1-3-1">Now using the conclusion from (B) and our next premises we see</div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-3-2"><div class="tabular-box natural-width"><table class="tabular">
+<li id="sec-3-2-prop-forms-16-5-1-3">
+<div class="para" id="sec-3-2-prop-forms-16-5-1-3-1">Now using the conclusion from (B) and our next premises we see</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-3-2"><div class="tabular-box natural-width"><table class="tabular">
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((\sim R)\)</span></td></tr>
 <tr><td class="c m b1 r0 l0 t0 lines"><span class="process-math">\((\sim R)\implies S\)</span></td></tr>
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\therefore \text{ } S\)</span></td></tr>
 </table></div></div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-3-3">Since we have assumed that we are not hiking and that if we don’t hike then we will go on a bike ride we can thus conclude that we will go on a bike ride by Modus Ponens.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-3-3">Since we have assumed that we are not hiking and that if we don’t hike then we will go on a bike ride we can thus conclude that we will go on a bike ride by Modus Ponens.</div>
 </li>
-<li id="sec-3-2-prop-forms-13-5-1-4">
-<div class="para" id="sec-3-2-prop-forms-13-5-1-4-1">Now using the conclusion of (C) and our next premise.</div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-4-2"><div class="tabular-box natural-width"><table class="tabular">
+<li id="sec-3-2-prop-forms-16-5-1-4">
+<div class="para" id="sec-3-2-prop-forms-16-5-1-4-1">Now using the conclusion of (C) and our next premise.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-4-2"><div class="tabular-box natural-width"><table class="tabular">
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(S\)</span></td></tr>
 <tr><td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(S\implies W\)</span></td></tr>
 <tr><td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\therefore \text{ }W\)</span></td></tr>
 </table></div></div>
-<div class="para" id="sec-3-2-prop-forms-13-5-1-4-3">Hence, since we assumed that we are going on a bike ride and if we go on a bike ride we will be back home by dark we can conclude that we will be back by dark, again by Modus Ponens.</div>
+<div class="para" id="sec-3-2-prop-forms-16-5-1-4-3">Hence, since we assumed that we are going on a bike ride and if we go on a bike ride we will be back home by dark we can conclude that we will be back by dark, again by Modus Ponens.</div>
 </li>
 </ol>
 </div>
-<div class="para" id="sec-3-2-prop-forms-13-6">We have just done our first proof, and shown if all the statements are assumed then we can conclude that we will be home before dark!</div></article></section></div>
+<div class="para" id="sec-3-2-prop-forms-16-6">We have just done our first proof, and shown if all the statements are assumed then we can conclude that we will be home before dark!</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-3-1-arguments.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-3-3-fallacy.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
