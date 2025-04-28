@@ -720,7 +720,22 @@ r-z=(s-z)-(s-r)=3t-3(m-k)=3(t-m+k)
 <div class="para" id="sec-7-5-patitions-9-2-1-15"><span class="process-math">\(\displaystyle\mathbf{\text{Proof of }\bigcup_{n\in\N}A_n\subseteq\Z}\)</span></div>
 <div class="para" id="sec-7-5-patitions-9-2-1-16">For this part let <span class="process-math">\(\displaystyle p\in\bigcup_{n\in\N}A_n\text{,}\)</span> by definition of union over a family, we can find a <span class="process-math">\(b\in\N\)</span> such that <span class="process-math">\(p\in A_b\text{,}\)</span> yet by definition of <span class="process-math">\(A_b\)</span> we have that <span class="process-math">\(p\in\Z\)</span> as desired. (most texts would call this the obvious direction)</div>
 <div class="para" id="sec-7-5-patitions-9-2-1-17"><span class="process-math">\(\displaystyle\mathbf{\text{Proof of }\bigcup_{n\in\N}A_n\supseteq\Z}\)</span></div>
-<div class="para" id="sec-7-5-patitions-9-2-1-18">Now, let <span class="process-math">\(q\in\Z\text{,}\)</span> Calculate <span class="process-math">\(q-q=0=3\cdot 0\)</span> and since 0 is an integer we have that 3 divides <span class="process-math">\(q-q\text{,}\)</span> hence <span class="process-math">\(q\in A_q\)</span> therefore <span class="process-math">\(\displaystyle q\in\bigcup_{n\in\N}A_n\)</span> as desired.</div>
+<div class="para logical" id="sec-7-5-patitions-9-2-1-18">
+<div class="para">Now, let <span class="process-math">\(\ell\in\Z\text{,}\)</span> by the division algorithm <a href="sec-6-5-big-ones.html#prop-div-algo" class="xref" data-knowl="./knowl/xref/prop-div-algo.html" data-reveal-label="Reveal" data-close-label="Close" title="Proposition 6.5.6: The Division Algorithm">Proposition 6.5.6</a>, we can find integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that <span class="process-math">\(0\leq r\lt |\ell|\)</span> and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prop-div-algo.html">
+\begin{equation*}
+\ell=3q+r
+\end{equation*}
+</div>
+<div class="para">thus <span class="process-math">\(r\in\mathbb{N}\text{.}\)</span> Next notice</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/prop-div-algo.html">
+\begin{equation*}
+\ell-r=(3q+r)-r=3q
+\end{equation*}
+</div>
+<div class="para">and since <span class="process-math">\(q\)</span> is an integer we have that 3 divides <span class="process-math">\(\ell-r\text{,}\)</span> therefore <span class="process-math">\(\ell\in A_r\text{.}\)</span> Hence <span class="process-math">\(\ell\in\bigcup_{n\in\mathbb{N}}A_n\)</span>
+</div>
+</div>
 <div class="para" id="sec-7-5-patitions-9-2-1-19">Since we have shown both <span class="process-math">\(\displaystyle \bigcup_{n\in\N}A_n\subseteq\Z\)</span> and <span class="process-math">\(\displaystyle \bigcup_{n\in\N}A_n\supseteq\Z\)</span> we can conclude <span class="process-math">\(\displaystyle \bigcup_{n\in\N}A_n=\Z\text{,}\)</span> thus <span class="process-math">\(\mathscr{A}\)</span> satisfies condition (iii) of being a partition.</div>
 <div class="para" id="sec-7-5-patitions-9-2-1-20">Since we have shown the three conditions of being a partition we can conclude that <span class="process-math">\(\mathscr{A}\)</span> is a partition.</div></article></details></div></article><div class="para" id="sec-7-5-patitions-10">It turns out that this last example is actually a quite apt example of partitions. Partitions turn out not to be something new, they are actually just equivalence relations. We make this comment more precise in the following two propositions.</div>
 <article class="proposition theorem-like" id="thm-equiv-is-partition"><h3 class="heading">
